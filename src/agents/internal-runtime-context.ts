@@ -163,6 +163,126 @@ function isRuntimeContextPromptHeader(line: string): boolean {
   );
 }
 
+const RUNTIME_METADATA_SECTION_LABELS = new Set([
+  "Conversation Info",
+  "Sender Metadata",
+  "Replied-to Message",
+  "Inbound Context",
+  "Thread Starter Message",
+  "Forwarded Message Context",
+  "Location Context",
+  "Current message",
+]);
+
+function readParagraph(text: string, start: number): { text: string; end: number } {
+  const normalizedStart = Math.max(0, start);
+  let cursor = normalizedStart;
+  while (cursor < text.length && /[\t ]/.test(text[cursor] ?? "")) {
+    cursor += 1;
+  }
+  const separatorMatch = /\r?\n\r?\n/g;
+  separatorMatch.lastIndex = cursor;
+  const match = separatorMatch.exec(text);
+  const end = match ? match.index : text.length;
+  return { text: text.slice(cursor, end).trim(), end };
+}
+
+function isStructuredPayloadParagraph(paragraph: string): boolean {
+  const trimmed = paragraph.trim();
+  return /^```(?:json|text)?\s*[\s\S]*```$/i.test(trimmed) || /^[\[{][\s\S]*[\]}]$/.test(trimmed);
+}
+
+function consumeBlankLines(text: string, start: number): number {
+  const match = /^(?:[\t ]*\r?\n)+/.exec(text.slice(start));
+  return match ? start + match[0].length : start;
+}
+
+function consumeMetadataSection(text: string, start: number): number | null {
+  const paragraph = readParagraph(text, start);
+  const lines = paragraph.text
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean);
+  if (lines.length === 0) {
+    return null;
+  }
+  const heading = lines[0]?.replace(/^##\s*/, "") ?? "";
+  if (!RUNTIME_METADATA_SECTION_LABELS.has(heading) && !heading.endsWith("(untrusted metadata):")) {
+    return null;
+  }
+  let cursor = paragraph.end;
+  const nextParagraphStart = consumeBlankLines(text, cursor);
+  if (nextParagraphStart > cursor) {
+    const nextParagraph = readParagraph(text, nextParagraphStart);
+    if (isStructuredPayloadParagraph(nextParagraph.text)) {
+      cursor = nextParagraph.end;
+    }
+  }
+  return cursor;
+}
+
+function consumeAsyncEventSection(text: string, start: number): number | null {
+  const paragraph = readParagraph(text, start);
+  const normalized = paragraph.text;
+  if (!normalized) {
+    return null;
+  }
+  const isHeading =
+    normalized.startsWith(
+      "An async command completion event was triggered, but no command output was found.",
+    ) ||
+    normalized.startsWith(
+      "An async command completion event was triggered, but user delivery is disabled for this run.",
+    ) ||
+    normalized.startsWith(
+      "An async command you ran earlier completed without captured stdout/stderr. The completion details are:",
+    ) ||
+    normalized.startsWith(
+      "An async command you ran earlier has completed. The command completion details are:",
+    );
+  if (!isHeading) {
+    return null;
+  }
+
+  let cursor = paragraph.end;
+  for (;;) {
+    const nextStart = consumeBlankLines(text, cursor);
+    if (nextStart === cursor) {
+      return cursor;
+    }
+    const nextParagraph = readParagraph(text, nextStart);
+    const nextText = nextParagraph.text;
+    if (
+      nextText.startsWith("Exec completed (") ||
+      nextText.startsWith("Exec failed (") ||
+      nextText.startsWith("Please relay the command output to the user in a helpful way.") ||
+      nextText.startsWith("If the command succeeded, share the relevant output.") ||
+      nextText.startsWith("Tell the user the command completed without captured output") ||
+      nextText.startsWith("Do not ask the user to provide missing logs")
+    ) {
+      cursor = nextParagraph.end;
+      continue;
+    }
+    return cursor;
+  }
+}
+
+function consumeExecStateSection(text: string, start: number): number | null {
+  const paragraph = readParagraph(text, start);
+  const lines = paragraph.text
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean);
+  if (lines.length === 0) {
+    return null;
+  }
+  const heading = lines[0]?.replace(/^##\s*/, "") ?? "";
+  if (heading !== "Current Exec Session State") {
+    return null;
+  }
+  return paragraph.end;
+}
+
 function stripRuntimeContextPromptPreface(text: string): string {
   const lines = text.split(/\r?\n/);
   let changed = false;
@@ -185,12 +305,32 @@ function stripRuntimeContextPromptPreface(text: string): string {
     output.push(line);
   }
 
-  return changed
+  let stripped = changed
     ? output
         .join("\n")
         .replace(/\n{3,}/g, "\n\n")
         .trim()
     : text;
+
+  let cursor = 0;
+  let rebuilt = "";
+  let sectionChanged = false;
+  while (cursor < stripped.length) {
+    const metadataEnd = consumeMetadataSection(stripped, cursor);
+    const asyncEnd = metadataEnd == null ? consumeAsyncEventSection(stripped, cursor) : null;
+    const execStateEnd =
+      metadataEnd == null && asyncEnd == null ? consumeExecStateSection(stripped, cursor) : null;
+    const sectionEnd = metadataEnd ?? asyncEnd ?? execStateEnd;
+    if (sectionEnd != null) {
+      sectionChanged = true;
+      cursor = consumeBlankLines(stripped, sectionEnd);
+      continue;
+    }
+    rebuilt += stripped[cursor] ?? "";
+    cursor += 1;
+  }
+
+  return sectionChanged ? rebuilt.replace(/\n{3,}/g, "\n\n").trim() : stripped;
 }
 
 export function stripInternalRuntimeContext(text: string): string {

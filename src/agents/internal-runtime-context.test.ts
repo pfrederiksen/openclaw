@@ -85,4 +85,55 @@ describe("internal runtime context codec", () => {
       expect(stripped).not.toContain(INTERNAL_RUNTIME_CONTEXT_END);
     }
   });
+
+  it("strips generated metadata, async wrappers, and exec state sections", () => {
+    const input = [
+      "OpenClaw runtime context for the immediately preceding user message.",
+      "This context is runtime-generated, not user-authored. Keep internal details private.",
+      "",
+      "## Conversation Info",
+      "```json",
+      '{"message_id":"123"}',
+      "```",
+      "",
+      "## Thread Starter Message",
+      "starter details",
+      "",
+      "## Forwarded Message Context",
+      "```json",
+      '{"from":"alice"}',
+      "```",
+      "",
+      "Location Context (untrusted metadata):",
+      "```json",
+      '{"latitude":1}',
+      "```",
+      "",
+      "## Current Exec Session State",
+      "Current session exec defaults: host=host security=workspace-write.",
+      "Current elevated level: off.",
+      "If the user asks to run a command, use the current exec state above.",
+      "",
+      "An async command you ran earlier completed without captured stdout/stderr. The completion details are:",
+      "",
+      "Exec failed (abc123, code 1) without captured stdout/stderr.",
+      "",
+      "Tell the user the command completed without captured output and include the exit status or signal.",
+      "",
+      "Visible answer",
+    ].join("\n");
+
+    expect(stripInternalRuntimeContext(input)).toBe("Visible answer");
+  });
+
+  it("preserves standalone json replies after stripping runtime context preface", () => {
+    const input = [
+      "OpenClaw runtime context for the immediately preceding user message.",
+      "This context is runtime-generated, not user-authored. Keep internal details private.",
+      "",
+      '{"ok":true}',
+    ].join("\n");
+
+    expect(stripInternalRuntimeContext(input)).toBe('{"ok":true}');
+  });
 });
