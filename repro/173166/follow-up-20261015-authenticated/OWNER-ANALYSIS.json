@@ -1,0 +1,697 @@
+{
+  "schema": "openclaw-173166-owner-analysis.v1",
+  "original_private_trace_sha256": "a05a02bc1f41150bd01f7dcf1d3f8b23cbf6c4083554201e3fa95916a5368c6a",
+  "observer_records": 553,
+  "observer_records_dropped": 0,
+  "unrecognized_stderr_lines_discarded": 20,
+  "natural_child_exit": true,
+  "child_returncode": 0,
+  "request_count": 23,
+  "socket_count": 23,
+  "socket_close_count": 23,
+  "methods": {
+    "GET": 2,
+    "POST": 21,
+    "DELETE": 0
+  },
+  "source_admission": false,
+  "financial_read_success_established": false,
+  "failing_credential_free_reproduction_established": false,
+  "original_failing_request17_owner_retrospectively_identified": false,
+  "content_type_observed": false,
+  "helper_stages_separate_helper_relative_clock": [
+    {
+      "stage": "runtime.start",
+      "elapsed_ms": 0
+    },
+    {
+      "stage": "runtime.ready",
+      "elapsed_ms": 4634
+    },
+    {
+      "stage": "cleanup.start",
+      "elapsed_ms": 23388
+    },
+    {
+      "stage": "cleanup.complete",
+      "elapsed_ms": 23453
+    },
+    {
+      "stage": "emit.complete",
+      "elapsed_ms": 23460
+    }
+  ],
+  "before_exit": [
+    {
+      "ms": 23466,
+      "event": "process.beforeExit",
+      "code": 0,
+      "resources": {
+        "PipeWrap": 1
+      }
+    }
+  ],
+  "process_exit": [
+    {
+      "ms": 23467,
+      "event": "process.exit",
+      "code": 0
+    }
+  ],
+  "request_chains": [
+    {
+      "request": "request11",
+      "method": "POST",
+      "created_ms": 7601,
+      "status": 200,
+      "headers_ms": 8339,
+      "socket": "socket12",
+      "dispatcher": "dispatcher10",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        8341
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        8382,
+        8382
+      ],
+      "socket_close_ms": [
+        8388
+      ]
+    },
+    {
+      "request": "request31",
+      "method": "POST",
+      "created_ms": 8462,
+      "status": 202,
+      "headers_ms": 8937,
+      "socket": "socket32",
+      "dispatcher": "dispatcher30",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        8938
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        8940,
+        8940
+      ],
+      "socket_close_ms": [
+        8941
+      ]
+    },
+    {
+      "request": "request54",
+      "method": "GET",
+      "created_ms": 9045,
+      "status": 405,
+      "headers_ms": 9330,
+      "socket": "socket61",
+      "dispatcher": "dispatcher53",
+      "sdk_transport": "transport1",
+      "notification_generation": 1,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        9331
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        9333,
+        9333
+      ],
+      "socket_close_ms": [
+        9334
+      ]
+    },
+    {
+      "request": "request60",
+      "method": "POST",
+      "created_ms": 9083,
+      "status": 200,
+      "headers_ms": 9608,
+      "socket": "socket62",
+      "dispatcher": "dispatcher59",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        10518
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        10520,
+        10520
+      ],
+      "socket_close_ms": [
+        10521
+      ]
+    },
+    {
+      "request": "request89",
+      "method": "POST",
+      "created_ms": 10569,
+      "status": 200,
+      "headers_ms": 11041,
+      "socket": "socket90",
+      "dispatcher": "dispatcher88",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        11055
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        11056,
+        11056
+      ],
+      "socket_close_ms": [
+        11057
+      ]
+    },
+    {
+      "request": "request109",
+      "method": "POST",
+      "created_ms": 11109,
+      "status": 200,
+      "headers_ms": 11616,
+      "socket": "socket110",
+      "dispatcher": "dispatcher108",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        11623
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        11624,
+        11624
+      ],
+      "socket_close_ms": [
+        11625
+      ]
+    },
+    {
+      "request": "request129",
+      "method": "POST",
+      "created_ms": 11676,
+      "status": 200,
+      "headers_ms": 12262,
+      "socket": "socket130",
+      "dispatcher": "dispatcher128",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        12269
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        12270,
+        12270
+      ],
+      "socket_close_ms": [
+        12272
+      ]
+    },
+    {
+      "request": "request149",
+      "method": "POST",
+      "created_ms": 12317,
+      "status": 200,
+      "headers_ms": 13190,
+      "socket": "socket150",
+      "dispatcher": "dispatcher148",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        13198
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        13199,
+        13199
+      ],
+      "socket_close_ms": [
+        13200
+      ]
+    },
+    {
+      "request": "request169",
+      "method": "POST",
+      "created_ms": 13250,
+      "status": 200,
+      "headers_ms": 13811,
+      "socket": "socket170",
+      "dispatcher": "dispatcher168",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        13820
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        13820,
+        13821
+      ],
+      "socket_close_ms": [
+        13822
+      ]
+    },
+    {
+      "request": "request189",
+      "method": "POST",
+      "created_ms": 13877,
+      "status": 200,
+      "headers_ms": 14807,
+      "socket": "socket190",
+      "dispatcher": "dispatcher188",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        14878
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        14880,
+        14880
+      ],
+      "socket_close_ms": [
+        14881
+      ]
+    },
+    {
+      "request": "request209",
+      "method": "POST",
+      "created_ms": 14942,
+      "status": 200,
+      "headers_ms": 15425,
+      "socket": "socket210",
+      "dispatcher": "dispatcher208",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        15432
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        15433,
+        15433
+      ],
+      "socket_close_ms": [
+        15434
+      ]
+    },
+    {
+      "request": "request229",
+      "method": "POST",
+      "created_ms": 15482,
+      "status": 200,
+      "headers_ms": 16206,
+      "socket": "socket230",
+      "dispatcher": "dispatcher228",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        16207
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        16214,
+        16214
+      ],
+      "socket_close_ms": [
+        16215
+      ]
+    },
+    {
+      "request": "request249",
+      "method": "POST",
+      "created_ms": 16281,
+      "status": 200,
+      "headers_ms": 16962,
+      "socket": "socket250",
+      "dispatcher": "dispatcher248",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        16962
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        16971,
+        16971
+      ],
+      "socket_close_ms": [
+        16971
+      ]
+    },
+    {
+      "request": "request269",
+      "method": "POST",
+      "created_ms": 17023,
+      "status": 200,
+      "headers_ms": 18206,
+      "socket": "socket270",
+      "dispatcher": "dispatcher268",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        18437
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        18438,
+        18438
+      ],
+      "socket_close_ms": [
+        18440
+      ]
+    },
+    {
+      "request": "request289",
+      "method": "POST",
+      "created_ms": 18491,
+      "status": 200,
+      "headers_ms": 19254,
+      "socket": "socket290",
+      "dispatcher": "dispatcher288",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        19261
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        19262,
+        19262
+      ],
+      "socket_close_ms": [
+        19263
+      ]
+    },
+    {
+      "request": "request311",
+      "method": "POST",
+      "created_ms": 19340,
+      "status": 200,
+      "headers_ms": 19669,
+      "socket": "socket312",
+      "dispatcher": "dispatcher310",
+      "sdk_transport": "transport297",
+      "notification_generation": null,
+      "sdk_signal": "signal298",
+      "request_trailers_ms": [
+        19673
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        19677,
+        19677
+      ],
+      "socket_close_ms": [
+        19683
+      ]
+    },
+    {
+      "request": "request333",
+      "method": "POST",
+      "created_ms": 19709,
+      "status": 202,
+      "headers_ms": 20048,
+      "socket": "socket334",
+      "dispatcher": "dispatcher332",
+      "sdk_transport": "transport297",
+      "notification_generation": null,
+      "sdk_signal": "signal298",
+      "request_trailers_ms": [
+        20049
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        20051,
+        20051
+      ],
+      "socket_close_ms": [
+        20052
+      ]
+    },
+    {
+      "request": "request356",
+      "method": "GET",
+      "created_ms": 20092,
+      "status": 200,
+      "headers_ms": 20417,
+      "socket": "socket363",
+      "dispatcher": "dispatcher355",
+      "sdk_transport": "transport297",
+      "notification_generation": 1,
+      "sdk_signal": "signal298",
+      "request_trailers_ms": [],
+      "request_errors": [
+        {
+          "ms": 23407,
+          "error_enum": "OtherError"
+        }
+      ],
+      "release_origin_dispatcher_close_invocations_ms": [
+        23408,
+        23408
+      ],
+      "socket_close_ms": [
+        23411
+      ]
+    },
+    {
+      "request": "request362",
+      "method": "POST",
+      "created_ms": 20128,
+      "status": 200,
+      "headers_ms": 20452,
+      "socket": "socket364",
+      "dispatcher": "dispatcher361",
+      "sdk_transport": "transport297",
+      "notification_generation": null,
+      "sdk_signal": "signal298",
+      "request_trailers_ms": [
+        20524
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        20528,
+        20528
+      ],
+      "socket_close_ms": [
+        20686
+      ]
+    },
+    {
+      "request": "request391",
+      "method": "POST",
+      "created_ms": 20710,
+      "status": 200,
+      "headers_ms": 21458,
+      "socket": "socket392",
+      "dispatcher": "dispatcher390",
+      "sdk_transport": "transport297",
+      "notification_generation": null,
+      "sdk_signal": "signal298",
+      "request_trailers_ms": [
+        21528
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        21530,
+        21530
+      ],
+      "socket_close_ms": [
+        21547
+      ]
+    },
+    {
+      "request": "request413",
+      "method": "POST",
+      "created_ms": 21596,
+      "status": 200,
+      "headers_ms": 22118,
+      "socket": "socket414",
+      "dispatcher": "dispatcher412",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        22130
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        22131,
+        22131
+      ],
+      "socket_close_ms": [
+        22132
+      ]
+    },
+    {
+      "request": "request433",
+      "method": "POST",
+      "created_ms": 22178,
+      "status": 200,
+      "headers_ms": 22856,
+      "socket": "socket434",
+      "dispatcher": "dispatcher432",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [
+        22861
+      ],
+      "request_errors": [],
+      "release_origin_dispatcher_close_invocations_ms": [
+        22862,
+        22862
+      ],
+      "socket_close_ms": [
+        22863
+      ]
+    },
+    {
+      "request": "request453",
+      "method": "POST",
+      "created_ms": 22915,
+      "status": 200,
+      "headers_ms": 23393,
+      "socket": "socket454",
+      "dispatcher": "dispatcher452",
+      "sdk_transport": "transport1",
+      "notification_generation": null,
+      "sdk_signal": "signal2",
+      "request_trailers_ms": [],
+      "request_errors": [
+        {
+          "ms": 23404,
+          "error_enum": "OtherError"
+        }
+      ],
+      "release_origin_dispatcher_close_invocations_ms": [
+        23408,
+        23408
+      ],
+      "socket_close_ms": [
+        23411
+      ]
+    }
+  ],
+  "notification_signal_any_events": [
+    {
+      "ms": 8944,
+      "event": "signal.any",
+      "transport": "transport1",
+      "notificationGeneration": 1,
+      "signal": "signal2",
+      "inputs": [
+        "signal42",
+        "signal43"
+      ],
+      "output": "signal44"
+    },
+    {
+      "ms": 9040,
+      "event": "signal.any",
+      "transport": "transport1",
+      "notificationGeneration": 1,
+      "signal": "signal2",
+      "inputs": [
+        "signal42",
+        "signal51"
+      ],
+      "output": "signal52"
+    },
+    {
+      "ms": 20054,
+      "event": "signal.any",
+      "transport": "transport297",
+      "notificationGeneration": 1,
+      "signal": "signal298",
+      "inputs": [
+        "signal344",
+        "signal345"
+      ],
+      "output": "signal346"
+    },
+    {
+      "ms": 20092,
+      "event": "signal.any",
+      "transport": "transport297",
+      "notificationGeneration": 1,
+      "signal": "signal298",
+      "inputs": [
+        "signal344",
+        "signal353"
+      ],
+      "output": "signal354"
+    }
+  ],
+  "sdk_signal_aborts": [
+    {
+      "ms": 23399,
+      "event": "controller.abort",
+      "transport": "transport1",
+      "signal": "signal2",
+      "controller": "controller463",
+      "alreadyAborted": false,
+      "source": "sdk-transport-close"
+    },
+    {
+      "ms": 23406,
+      "event": "controller.abort",
+      "transport": "transport297",
+      "signal": "signal298",
+      "controller": "controller485",
+      "alreadyAborted": false,
+      "source": "sdk-transport-close"
+    },
+    {
+      "ms": 23412,
+      "event": "controller.abort",
+      "transport": "transport1",
+      "signal": "signal2",
+      "controller": "controller463",
+      "alreadyAborted": true,
+      "source": "sdk-transport-close"
+    },
+    {
+      "ms": 23412,
+      "event": "controller.abort",
+      "transport": "transport297",
+      "signal": "signal298",
+      "controller": "controller485",
+      "alreadyAborted": true,
+      "source": "sdk-transport-close"
+    }
+  ],
+  "limits": [
+    "No payload/read_ok retained; process exit does not establish financial read success.",
+    "All event ms values are observer-relative; helper stage elapsed_ms uses a distinct clock origin.",
+    "No full lexical release callback or Promise outcome interception.",
+    "Signal.any inputs/outputs observed, but intermediary event-listener wiring is not directly captured.",
+    "Generic OtherError must not be relabelled AbortError.",
+    "No notification generation greater than 1 occurred in this actual run.",
+    "No final socket flags sampled; all actual socket close events and natural exit were observed.",
+    "Stderr-prefix/schema filter is not cryptographic emitter isolation.",
+    "Changed helper and observer timing mean this is not an identical rerun of the old failure."
+  ]
+}

@@ -1,0 +1,503 @@
+{
+  "businessToolCalls": 0,
+  "exactChildKilledAndReaped": false,
+  "financialActions": 0,
+  "finishedAt": "2026-10-15T14:51:09.983386+00:00",
+  "naturalChildExit": true,
+  "rawStderrRetained": false,
+  "rawStdoutRetained": false,
+  "returncode": 0,
+  "snapshots": [
+    {
+      "checkpoint": "manual",
+      "coverage_verified": false,
+      "elapsed_ms": 19867,
+      "execution_clearance": false,
+      "requests": [
+        {
+          "body_sent": true,
+          "created_ms": 16867,
+          "error_class": null,
+          "id": 1,
+          "method": "POST",
+          "response_complete": true,
+          "response_content_kind": "event_stream",
+          "response_status": 200,
+          "socket_id": 1,
+          "target_class": "configured_mcp_1",
+          "target_ordinal": 1
+        },
+        {
+          "body_sent": true,
+          "created_ms": 16881,
+          "error_class": null,
+          "id": 2,
+          "method": "POST",
+          "response_complete": true,
+          "response_content_kind": "json",
+          "response_status": 200,
+          "socket_id": 2,
+          "target_class": "configured_mcp_2",
+          "target_ordinal": 2
+        },
+        {
+          "body_sent": true,
+          "created_ms": 17315,
+          "error_class": null,
+          "id": 3,
+          "method": "POST",
+          "response_complete": true,
+          "response_content_kind": "json",
+          "response_status": 202,
+          "socket_id": 3,
+          "target_class": "configured_mcp_2",
+          "target_ordinal": 2
+        },
+        {
+          "body_sent": true,
+          "created_ms": 17357,
+          "error_class": null,
+          "id": 4,
+          "method": "POST",
+          "response_complete": true,
+          "response_content_kind": "unknown",
+          "response_status": 202,
+          "socket_id": 4,
+          "target_class": "configured_mcp_1",
+          "target_ordinal": 1
+        },
+        {
+          "body_sent": true,
+          "created_ms": 17702,
+          "error_class": "AbortError",
+          "id": 5,
+          "method": "GET",
+          "response_complete": false,
+          "response_content_kind": "event_stream",
+          "response_status": 200,
+          "socket_id": 5,
+          "target_class": "configured_mcp_2",
+          "target_ordinal": 2
+        },
+        {
+          "body_sent": true,
+          "created_ms": 17744,
+          "error_class": null,
+          "id": 6,
+          "method": "POST",
+          "response_complete": true,
+          "response_content_kind": "json",
+          "response_status": 200,
+          "socket_id": 6,
+          "target_class": "configured_mcp_2",
+          "target_ordinal": 2
+        },
+        {
+          "body_sent": true,
+          "created_ms": 18532,
+          "error_class": "AbortError",
+          "id": 7,
+          "method": "GET",
+          "response_complete": false,
+          "response_content_kind": "unknown",
+          "response_status": null,
+          "socket_id": 8,
+          "target_class": "configured_mcp_1",
+          "target_ordinal": 1
+        },
+        {
+          "body_sent": true,
+          "created_ms": 18580,
+          "error_class": "AbortError",
+          "id": 8,
+          "method": "POST",
+          "response_complete": false,
+          "response_content_kind": "event_stream",
+          "response_status": 200,
+          "socket_id": 7,
+          "target_class": "configured_mcp_1",
+          "target_ordinal": 1
+        }
+      ],
+      "schema": "mcp-request-socket-observation.v1",
+      "sockets": [
+        {
+          "close_had_error": true,
+          "closed_ms": 17300,
+          "collected": false,
+          "created_ms": 17025,
+          "destroyed": true,
+          "id": 1,
+          "origin_class": "unknown",
+          "pending": true,
+          "readable_ended": false,
+          "ready_state": "closed",
+          "writable_ended": false
+        },
+        {
+          "close_had_error": true,
+          "closed_ms": 17266,
+          "collected": false,
+          "created_ms": 17058,
+          "destroyed": true,
+          "id": 2,
+          "origin_class": "unknown",
+          "pending": true,
+          "readable_ended": false,
+          "ready_state": "closed",
+          "writable_ended": false
+        },
+        {
+          "close_had_error": true,
+          "closed_ms": 17621,
+          "collected": false,
+          "created_ms": 17482,
+          "destroyed": true,
+          "id": 3,
+          "origin_class": "unknown",
+          "pending": true,
+          "readable_ended": false,
+          "ready_state": "closed",
+          "writable_ended": false
+        },
+        {
+          "close_had_error": true,
+          "closed_ms": 18276,
+          "collected": false,
+          "created_ms": 17749,
+          "destroyed": true,
+          "id": 4,
+          "origin_class": "unknown",
+          "pending": true,
+          "readable_ended": false,
+          "ready_state": "closed",
+          "writable_ended": false
+        },
+        {
+          "close_had_error": true,
+          "closed_ms": 19815,
+          "collected": false,
+          "created_ms": 18087,
+          "destroyed": true,
+          "id": 5,
+          "origin_class": "unknown",
+          "pending": true,
+          "readable_ended": false,
+          "ready_state": "closed",
+          "writable_ended": false
+        },
+        {
+          "close_had_error": true,
+          "closed_ms": 18527,
+          "collected": false,
+          "created_ms": 18109,
+          "destroyed": true,
+          "id": 6,
+          "origin_class": "unknown",
+          "pending": true,
+          "readable_ended": false,
+          "ready_state": "closed",
+          "writable_ended": false
+        },
+        {
+          "close_had_error": true,
+          "closed_ms": 19815,
+          "collected": false,
+          "created_ms": 18643,
+          "destroyed": true,
+          "id": 7,
+          "origin_class": "unknown",
+          "pending": true,
+          "readable_ended": false,
+          "ready_state": "closed",
+          "writable_ended": false
+        },
+        {
+          "close_had_error": true,
+          "closed_ms": 19815,
+          "collected": false,
+          "created_ms": 18918,
+          "destroyed": true,
+          "id": 8,
+          "origin_class": "unknown",
+          "pending": true,
+          "readable_ended": false,
+          "ready_state": "closed",
+          "writable_ended": false
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "checkpoint": "exit",
+      "coverage_verified": false,
+      "elapsed_ms": 19867,
+      "execution_clearance": false,
+      "requests": [
+        {
+          "body_sent": true,
+          "created_ms": 16867,
+          "error_class": null,
+          "id": 1,
+          "method": "POST",
+          "response_complete": true,
+          "response_content_kind": "event_stream",
+          "response_status": 200,
+          "socket_id": 1,
+          "target_class": "configured_mcp_1",
+          "target_ordinal": 1
+        },
+        {
+          "body_sent": true,
+          "created_ms": 16881,
+          "error_class": null,
+          "id": 2,
+          "method": "POST",
+          "response_complete": true,
+          "response_content_kind": "json",
+          "response_status": 200,
+          "socket_id": 2,
+          "target_class": "configured_mcp_2",
+          "target_ordinal": 2
+        },
+        {
+          "body_sent": true,
+          "created_ms": 17315,
+          "error_class": null,
+          "id": 3,
+          "method": "POST",
+          "response_complete": true,
+          "response_content_kind": "json",
+          "response_status": 202,
+          "socket_id": 3,
+          "target_class": "configured_mcp_2",
+          "target_ordinal": 2
+        },
+        {
+          "body_sent": true,
+          "created_ms": 17357,
+          "error_class": null,
+          "id": 4,
+          "method": "POST",
+          "response_complete": true,
+          "response_content_kind": "unknown",
+          "response_status": 202,
+          "socket_id": 4,
+          "target_class": "configured_mcp_1",
+          "target_ordinal": 1
+        },
+        {
+          "body_sent": true,
+          "created_ms": 17702,
+          "error_class": "AbortError",
+          "id": 5,
+          "method": "GET",
+          "response_complete": false,
+          "response_content_kind": "event_stream",
+          "response_status": 200,
+          "socket_id": 5,
+          "target_class": "configured_mcp_2",
+          "target_ordinal": 2
+        },
+        {
+          "body_sent": true,
+          "created_ms": 17744,
+          "error_class": null,
+          "id": 6,
+          "method": "POST",
+          "response_complete": true,
+          "response_content_kind": "json",
+          "response_status": 200,
+          "socket_id": 6,
+          "target_class": "configured_mcp_2",
+          "target_ordinal": 2
+        },
+        {
+          "body_sent": true,
+          "created_ms": 18532,
+          "error_class": "AbortError",
+          "id": 7,
+          "method": "GET",
+          "response_complete": false,
+          "response_content_kind": "unknown",
+          "response_status": null,
+          "socket_id": 8,
+          "target_class": "configured_mcp_1",
+          "target_ordinal": 1
+        },
+        {
+          "body_sent": true,
+          "created_ms": 18580,
+          "error_class": "AbortError",
+          "id": 8,
+          "method": "POST",
+          "response_complete": false,
+          "response_content_kind": "event_stream",
+          "response_status": 200,
+          "socket_id": 7,
+          "target_class": "configured_mcp_1",
+          "target_ordinal": 1
+        }
+      ],
+      "schema": "mcp-request-socket-observation.v1",
+      "sockets": [
+        {
+          "close_had_error": true,
+          "closed_ms": 17300,
+          "collected": false,
+          "created_ms": 17025,
+          "destroyed": true,
+          "id": 1,
+          "origin_class": "unknown",
+          "pending": true,
+          "readable_ended": false,
+          "ready_state": "closed",
+          "writable_ended": false
+        },
+        {
+          "close_had_error": true,
+          "closed_ms": 17266,
+          "collected": false,
+          "created_ms": 17058,
+          "destroyed": true,
+          "id": 2,
+          "origin_class": "unknown",
+          "pending": true,
+          "readable_ended": false,
+          "ready_state": "closed",
+          "writable_ended": false
+        },
+        {
+          "close_had_error": true,
+          "closed_ms": 17621,
+          "collected": false,
+          "created_ms": 17482,
+          "destroyed": true,
+          "id": 3,
+          "origin_class": "unknown",
+          "pending": true,
+          "readable_ended": false,
+          "ready_state": "closed",
+          "writable_ended": false
+        },
+        {
+          "close_had_error": true,
+          "closed_ms": 18276,
+          "collected": false,
+          "created_ms": 17749,
+          "destroyed": true,
+          "id": 4,
+          "origin_class": "unknown",
+          "pending": true,
+          "readable_ended": false,
+          "ready_state": "closed",
+          "writable_ended": false
+        },
+        {
+          "close_had_error": true,
+          "closed_ms": 19815,
+          "collected": false,
+          "created_ms": 18087,
+          "destroyed": true,
+          "id": 5,
+          "origin_class": "unknown",
+          "pending": true,
+          "readable_ended": false,
+          "ready_state": "closed",
+          "writable_ended": false
+        },
+        {
+          "close_had_error": true,
+          "closed_ms": 18527,
+          "collected": false,
+          "created_ms": 18109,
+          "destroyed": true,
+          "id": 6,
+          "origin_class": "unknown",
+          "pending": true,
+          "readable_ended": false,
+          "ready_state": "closed",
+          "writable_ended": false
+        },
+        {
+          "close_had_error": true,
+          "closed_ms": 19815,
+          "collected": false,
+          "created_ms": 18643,
+          "destroyed": true,
+          "id": 7,
+          "origin_class": "unknown",
+          "pending": true,
+          "readable_ended": false,
+          "ready_state": "closed",
+          "writable_ended": false
+        },
+        {
+          "close_had_error": true,
+          "closed_ms": 19815,
+          "collected": false,
+          "created_ms": 18918,
+          "destroyed": true,
+          "id": 8,
+          "origin_class": "unknown",
+          "pending": true,
+          "readable_ended": false,
+          "ready_state": "closed",
+          "writable_ended": false
+        }
+      ],
+      "truncated": false
+    }
+  ],
+  "sourceAdmission": false,
+  "stages": [
+    {
+      "elapsed_ms": 0,
+      "stage": "runtime.start"
+    },
+    {
+      "elapsed_ms": 7348,
+      "stage": "runtime.ready"
+    },
+    {
+      "elapsed_ms": 7348,
+      "stage": "catalog.start"
+    },
+    {
+      "elapsed_ms": 19805,
+      "stage": "catalog.complete"
+    },
+    {
+      "elapsed_ms": 19805,
+      "stage": "cleanup.start"
+    },
+    {
+      "elapsed_ms": 19865,
+      "stage": "cleanup.complete"
+    },
+    {
+      "elapsed_ms": 19866,
+      "stage": "emit.complete"
+    }
+  ],
+  "startedAt": "2026-10-15T14:50:49.975272+00:00",
+  "terminalResources": [
+    {
+      "emitted_envelope_flags": {
+        "cleanup_complete": true,
+        "ok": true,
+        "read_ok": true
+      },
+      "resources": [
+        {
+          "count": 2,
+          "type": "PipeWrap"
+        }
+      ],
+      "schema": "stocks-mcp-terminal-resources.v1",
+      "scope": "owned_helper_after_emit",
+      "truncated": false
+    }
+  ],
+  "tradingStateWrites": 0
+}

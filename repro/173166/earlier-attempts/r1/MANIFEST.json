@@ -1,0 +1,35 @@
+{
+  "reason": "Two expired-session fixture assertions incorrectly checked message text instead of typed HTTP error.code. Not a runtime hang; original failures preserved.",
+  "files": [
+    {
+      "path": "observer.mjs",
+      "bytes": 6119,
+      "sha256": "e2e3be666d4a8984e64c5f32661605ed37cef2e46d84a4d16139abe93ec6a769",
+      "qualification": "Original private bytes SHA; published view may redact private paths."
+    },
+    {
+      "path": "client.mjs",
+      "bytes": 1853,
+      "sha256": "7e08ac99049dfddd1d284b0ed7a841fb1cef6d674dfd07799cc8a8e15e3d7fd3",
+      "qualification": "Original private bytes SHA; published view may redact private paths."
+    },
+    {
+      "path": "supervisor.mjs",
+      "bytes": 5756,
+      "sha256": "10dd047bac3be807c92fed56d4a7f5c37c6c5a3c4a93c52f92ef4ffc40833b64",
+      "qualification": "Original private bytes SHA; published view may redact private paths."
+    },
+    {
+      "path": "run-isolated.sh",
+      "bytes": 743,
+      "sha256": "68d93619346329159ef58c1d2a85bc914d6799fdfa393974536dd2fdcaa6c501",
+      "qualification": "Original private bytes SHA; published view may redact private paths."
+    },
+    {
+      "path": "runtime/generation-matrix-r1.json",
+      "bytes": 237649,
+      "sha256": "dc4129c3ad147c504a02af551beca2eba25c59302a01395f3d65f2692e9aa76e",
+      "qualification": "Original private bytes SHA; published view may redact private paths."
+    }
+  ]
+}

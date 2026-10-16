@@ -1,0 +1,192 @@
+{
+  "pin": "eb5b351e0f94dc7bf3f0390dd31064cad2ab9934",
+  "archiveSha256": "3618de29410a0912c1080f86bc4e2d5cf035d25082dab01e1d1a940e29c2e7c5",
+  "sourceFiles": [
+    {
+      "path": "src/agents/agent-bundle-mcp-runtime.ts",
+      "sha256": "f1fe0cb1e85d76cb4883d1af216739311d50ed6d9b5d2839e18ebeac1b22d55e"
+    },
+    {
+      "path": "src/agents/mcp-http-transport.ts",
+      "sha256": "e9d2c161bd3ce9f18012dbe98fe7bd66f8f19183ec64f74ec29d41d8cb1f19ea"
+    },
+    {
+      "path": "src/agents/mcp-http-fetch.ts",
+      "sha256": "f144f2e0707d4a81077c759b5cfc3dd9fa432fc6c5317c3599ee9462d8866f26"
+    },
+    {
+      "path": "src/agents/mcp-client-lifecycle.ts",
+      "sha256": "a46ea335b90c902a314295f1ce49c06b860066493e96f7c52642ed50b424012a"
+    },
+    {
+      "path": "src/infra/net/fetch-guard.ts",
+      "sha256": "03843d1c80972be77675903b6b90db065b9627f364fc08672d5e1378a3b87a9b"
+    },
+    {
+      "path": "src/infra/net/guarded-body-stream.ts",
+      "sha256": "0bd6e7a779d56b0d8dd982a9a863605919642c49947b547336846e1cc8b74942"
+    },
+    {
+      "path": "package.json",
+      "sha256": "65df9575a68743e8faf412aa38fd03ee58bbbd2b522be1dbd740836576fc8fed"
+    }
+  ],
+  "priorEvidence": [
+    {
+      "path": "prior-evidence/README-R6.md",
+      "sha256": "1d791e2c17cadc26d231001949650b9300c56e8d08ca043b67bda14a085015d6",
+      "bytes": 6654
+    },
+    {
+      "path": "prior-evidence/package-r5.json",
+      "sha256": "e1514efe43178de96fd35aa5350812b3322c4913503554b7ec12c5b927c71e1e",
+      "bytes": 855
+    },
+    {
+      "path": "prior-evidence/package-lock-r5.json",
+      "sha256": "29432ad560e644c813662d8f53f41f90c025a0cc7c0f3557e7bf0d97de473cae",
+      "bytes": 98055
+    },
+    {
+      "path": "prior-evidence/entry.ts",
+      "sha256": "9cb47069d8e22f9f7aa9912de2847720d7948bb4a39e5e055fbfd11b916f7539",
+      "bytes": 300
+    },
+    {
+      "path": "prior-evidence/build.mjs",
+      "sha256": "0e581c7cc86e4a6174547d1ae375ca56c9cfc01434f3215e9be748340b6929c5",
+      "bytes": 2274
+    },
+    {
+      "path": "prior-evidence/client.mjs",
+      "sha256": "d67f04750c76ecd5e425ad4b0a273d91b5499f22c26caf0448ada06cb7bd763f",
+      "bytes": 5665
+    },
+    {
+      "path": "prior-evidence/supervisor.mjs",
+      "sha256": "8fcb5908406f32e017aef62b44ff9413078c27a255250b5e1e033d8e5987c0de",
+      "bytes": 6399
+    },
+    {
+      "path": "prior-evidence/run-isolated.sh",
+      "sha256": "720eb76a0f6f71ab26754484865ac729266ed75fd1f462cd3056740113b5caa5",
+      "bytes": 824
+    },
+    {
+      "path": "prior-evidence/observer-r3.mjs",
+      "sha256": "26a2992a7962ff4234a93cfdd4c280e169611bbcb9edb1a8cedd7e611a5eed42",
+      "bytes": 3803
+    },
+    {
+      "path": "prior-evidence/client-r3.mjs",
+      "sha256": "b0035ed67b067acb3d06ed350f0b25632b245628c262596190d6a18bda2ec722",
+      "bytes": 1930
+    },
+    {
+      "path": "prior-evidence/supervisor-r3.mjs",
+      "sha256": "7d213e9437ba3cb22a28902c6250eed13b4bafa96875c79854a174b176297a95",
+      "bytes": 6801
+    },
+    {
+      "path": "prior-evidence/run-isolated-r3.sh",
+      "sha256": "583fe603fb31f464c828af67b2e9b67f12c1a0f92e375747083cfa46862ddce4",
+      "bytes": 820
+    },
+    {
+      "path": "prior-evidence/observer-r5.mjs",
+      "sha256": "d7e4422022c7884e7c7cc1c5f52936d16959193e32d41e57dda5c55b71619388",
+      "bytes": 3836
+    },
+    {
+      "path": "prior-evidence/client-runtime-r5.mjs",
+      "sha256": "13c16e4d659fc94f62725a56617361aee865c94af407b10deae2376f64d05008",
+      "bytes": 2927
+    },
+    {
+      "path": "prior-evidence/supervisor-runtime-r5.mjs",
+      "sha256": "4eb683b8b916896166f7954bfe437ca65982acc6c3c7c0bf1e5f575d7967babf",
+      "bytes": 7215
+    },
+    {
+      "path": "prior-evidence/run-isolated-runtime-r5.sh",
+      "sha256": "a2bf371cd4ca1d1f2f765f6528e68606cfc2f66793af1afe971e987f7796fd1c",
+      "bytes": 776
+    },
+    {
+      "path": "prior-evidence/client-runtime-r6.mjs",
+      "sha256": "9b790e7179c59c5bb6150d251f3363813d2c067c4590fa1403c0f358a9961695",
+      "bytes": 3070
+    },
+    {
+      "path": "prior-evidence/supervisor-runtime-r6.mjs",
+      "sha256": "601ce17661e456a07f70af8f90eea58a2dfeba6adefa6ab57ea088dd4d84fdd1",
+      "bytes": 7451
+    },
+    {
+      "path": "prior-evidence/run-isolated-runtime-r6.sh",
+      "sha256": "896523f8cecdb75213f3a33f0b67b556c198da32aeb92cbccc0184a47b5a81de",
+      "bytes": 776
+    },
+    {
+      "path": "prior-evidence/freeze-r6.mjs",
+      "sha256": "7f44916b42404c08376fdf0464e2ca64864359350204bf70728fd84091d52214",
+      "bytes": 2938
+    },
+    {
+      "path": "prior-evidence/runtime/expanded-r5-original-seven.json",
+      "sha256": "a2e20ec0d4a910b4e052f40a624a089eee3a64ccca509b33a90e2ee8e0e006e1",
+      "bytes": 132881
+    },
+    {
+      "path": "prior-evidence/runtime/expanded-r5-post-sse-three.json",
+      "sha256": "31dbec6930c33053b044bc732d3ed39970c941d8f2c5a71ddbe2e8ee2b24d7ee",
+      "bytes": 83801
+    },
+    {
+      "path": "prior-evidence/runtime/actual-runtime-stateless-r5.json",
+      "sha256": "33f6698f67649888332ec55b35553caca2deb50fd47c3fde160b53bef4c5ff11",
+      "bytes": 228649
+    },
+    {
+      "path": "prior-evidence/runtime/direct-lazy-calltool-r6.json",
+      "sha256": "4c7ac22e7e3e7b901335052f9f6bf6032dea801ff0ec241dd80f0851744b4228",
+      "bytes": 185919
+    },
+    {
+      "path": "prior-evidence/FROZEN-FIXTURE-EVIDENCE-r6.json",
+      "sha256": "cbb7bf8a1ea3539c8760a9ef2bbbf02e0cb9d914a36fd4d87aa1373477241719",
+      "bytes": 12662
+    },
+    {
+      "path": "prior-evidence/runtime/root-expanded-seven-r6.json",
+      "sha256": "bebbba2c1a5b6a4dbf10532205a7da86f25fec75a7afdeb886f06984de340e59",
+      "bytes": 133178
+    },
+    {
+      "path": "prior-evidence/runtime/root-post-sse-r6.json",
+      "sha256": "1c321f7e8469a5cd91951804233c70aa34169f23ebe2b1884511189d8c4b3b4a",
+      "bytes": 83939
+    },
+    {
+      "path": "prior-evidence/runtime/root-native-runtime-r6.json",
+      "sha256": "882288a4eddf38884dffb839fa9930ab8ad582de05a6a52d81648777fff7d00a",
+      "bytes": 228791
+    },
+    {
+      "path": "prior-evidence/runtime/root-direct-lazy-r6.json",
+      "sha256": "ced2c11f54c439b7190f9b2737ac5c976dc07f85f920d33713dc97bab1cfcb00",
+      "bytes": 186183
+    },
+    {
+      "path": "prior-evidence/PUBLIC-ROOT-FULL-READ-TRACE-r1.json",
+      "sha256": "8eb8eba303e161eff5f95179435b7aadbc3bc405de835a169ed8bd902398e22a",
+      "bytes": 50672
+    },
+    {
+      "path": "prior-evidence/PUBLIC-ROOT-CATALOG-ONLY-r1.json",
+      "sha256": "5e7784706fb05aef106ebd5206d91de069342eb4fe16ba15c54600267f1e7bfa",
+      "bytes": 13740
+    }
+  ],
+  "dependencies": "Exact expanded prior fixture manifest and npm lock; installed via existing verified cache for local execution, npm ci for independent users."
+}

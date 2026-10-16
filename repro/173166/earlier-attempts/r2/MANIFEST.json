@@ -1,0 +1,35 @@
+{
+  "reason": "Immediate replacement call sees asynchronous catalog recovery before a connected replacement exists. Not the reported terminal socket hang; preserve before bounded read-only fixture wait.",
+  "files": [
+    {
+      "path": "observer.mjs",
+      "bytes": 6119,
+      "sha256": "e2e3be666d4a8984e64c5f32661605ed37cef2e46d84a4d16139abe93ec6a769",
+      "qualification": "Original private bytes SHA; published view may redact private paths."
+    },
+    {
+      "path": "client.mjs",
+      "bytes": 1839,
+      "sha256": "c51ce97dd1a317f65dd535337c7d9839c5799d9bd9b35e34b7914b621551087b",
+      "qualification": "Original private bytes SHA; published view may redact private paths."
+    },
+    {
+      "path": "supervisor.mjs",
+      "bytes": 5756,
+      "sha256": "10dd047bac3be807c92fed56d4a7f5c37c6c5a3c4a93c52f92ef4ffc40833b64",
+      "qualification": "Original private bytes SHA; published view may redact private paths."
+    },
+    {
+      "path": "run-isolated.sh",
+      "bytes": 743,
+      "sha256": "68d93619346329159ef58c1d2a85bc914d6799fdfa393974536dd2fdcaa6c501",
+      "qualification": "Original private bytes SHA; published view may redact private paths."
+    },
+    {
+      "path": "runtime/generation-matrix-r2.json",
+      "bytes": 238741,
+      "sha256": "ade97d8f4bc74b20ade8ab13142eb71f42d8055dd2e91b417f45ae84482679a7",
+      "qualification": "Original private bytes SHA; published view may redact private paths."
+    }
+  ]
+}

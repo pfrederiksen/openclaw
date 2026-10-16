@@ -1,0 +1,498 @@
+{
+  "sourcePin": "fc5d78172cde956a98d2aab3d66c8cabe65fab69",
+  "currentMainArchiveSha256": "f7397ef666ea2be43ed82ad3ffabae6749f10fb5d599495fd49b64efa2d37c0f",
+  "dependencies": [
+    {
+      "name": "@modelcontextprotocol/sdk",
+      "pinned": "1.32.1",
+      "actual": "1.32.1",
+      "upstream": "1.32.1",
+      "matches": true
+    },
+    {
+      "name": "@openclaw/fs-safe",
+      "pinned": "0.26.5",
+      "actual": "0.26.5",
+      "upstream": "0.26.5",
+      "matches": true
+    },
+    {
+      "name": "@openclaw/proc-safe",
+      "pinned": "0.3.0",
+      "actual": "0.3.0",
+      "upstream": "0.3.0",
+      "matches": true
+    },
+    {
+      "name": "@openclaw/proxyline",
+      "pinned": "0.4.0",
+      "actual": "0.4.0",
+      "upstream": "0.4.0",
+      "matches": true
+    },
+    {
+      "name": "acorn",
+      "pinned": "8.19.0",
+      "actual": "8.19.0",
+      "upstream": "8.19.0",
+      "matches": true
+    },
+    {
+      "name": "chalk",
+      "pinned": "6.0.1",
+      "actual": "6.0.1",
+      "upstream": "6.0.1",
+      "matches": true
+    },
+    {
+      "name": "commander",
+      "pinned": "15.0.0",
+      "actual": "15.0.0",
+      "upstream": "15.0.0",
+      "matches": true
+    },
+    {
+      "name": "dotenv",
+      "pinned": "18.0.6",
+      "actual": "18.0.6",
+      "upstream": "18.0.6",
+      "matches": true
+    },
+    {
+      "name": "esbuild",
+      "pinned": "0.28.2",
+      "actual": "0.28.2",
+      "upstream": "0.28.2",
+      "matches": true
+    },
+    {
+      "name": "execa",
+      "pinned": "10.1.0",
+      "actual": "10.1.0",
+      "upstream": "10.1.0",
+      "matches": true
+    },
+    {
+      "name": "file-type",
+      "pinned": "22.1.1",
+      "actual": "22.1.1",
+      "upstream": "22.1.1",
+      "matches": true
+    },
+    {
+      "name": "ignore",
+      "pinned": "7.0.12",
+      "actual": "7.0.12",
+      "upstream": "7.0.12",
+      "matches": true
+    },
+    {
+      "name": "import-meta-resolve",
+      "pinned": "4.2.0",
+      "actual": "4.2.0",
+      "upstream": "4.2.0",
+      "matches": true
+    },
+    {
+      "name": "ipaddr.js",
+      "pinned": "2.5.0",
+      "actual": "2.5.0",
+      "upstream": "2.5.0",
+      "matches": true
+    },
+    {
+      "name": "json5",
+      "pinned": "2.2.3",
+      "actual": "2.2.3",
+      "upstream": "2.2.3",
+      "matches": true
+    },
+    {
+      "name": "kysely",
+      "pinned": "0.29.6",
+      "actual": "0.29.6",
+      "upstream": "0.29.6",
+      "matches": true
+    },
+    {
+      "name": "minimatch",
+      "pinned": "10.2.6",
+      "actual": "10.2.6",
+      "upstream": "10.2.6",
+      "matches": true
+    },
+    {
+      "name": "p-limit",
+      "pinned": "7.3.3",
+      "actual": "7.3.3",
+      "upstream": "7.3.3",
+      "matches": true
+    },
+    {
+      "name": "p-map",
+      "pinned": "7.0.8",
+      "actual": "7.0.8",
+      "upstream": "7.0.8",
+      "matches": true
+    },
+    {
+      "name": "partial-json",
+      "pinned": "0.1.7",
+      "actual": "0.1.7",
+      "upstream": "0.1.7",
+      "matches": true
+    },
+    {
+      "name": "semver",
+      "pinned": "7.8.5",
+      "actual": "7.8.5",
+      "upstream": "7.8.5",
+      "matches": true
+    },
+    {
+      "name": "string-width",
+      "pinned": "8.3.0",
+      "actual": "8.3.0",
+      "upstream": "8.3.0",
+      "matches": true
+    },
+    {
+      "name": "tslog",
+      "pinned": "5.2.0",
+      "actual": "5.2.0",
+      "upstream": "5.2.0",
+      "matches": true
+    },
+    {
+      "name": "tsx",
+      "pinned": "4.23.15",
+      "actual": "4.23.15",
+      "upstream": "4.23.15",
+      "matches": true
+    },
+    {
+      "name": "typebox",
+      "pinned": "1.3.36",
+      "actual": "1.3.36",
+      "upstream": "1.3.36",
+      "matches": true
+    },
+    {
+      "name": "undici",
+      "pinned": "8.11.2",
+      "actual": "8.11.2",
+      "upstream": "8.11.2",
+      "matches": true
+    },
+    {
+      "name": "yaml",
+      "pinned": "2.9.1",
+      "actual": "2.9.1",
+      "upstream": "2.9.1",
+      "matches": true
+    },
+    {
+      "name": "zod",
+      "pinned": "4.6.5",
+      "actual": "4.6.5",
+      "upstream": "4.6.5",
+      "matches": true
+    }
+  ],
+  "matrices": [
+    {
+      "file": "runtime/expanded-r5-original-seven.json",
+      "sha256": "a2e20ec0d4a910b4e052f40a624a089eee3a64ccca509b33a90e2ee8e0e006e1",
+      "scenarios": [
+        {
+          "variant": "main",
+          "scenario": "success",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 1468,
+          "assertionsPass": true
+        },
+        {
+          "variant": "main",
+          "scenario": "delete-error",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 1340,
+          "assertionsPass": true
+        },
+        {
+          "variant": "main",
+          "scenario": "delete-stalled-body",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 1390,
+          "assertionsPass": true
+        },
+        {
+          "variant": "main",
+          "scenario": "sse-close",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 1474,
+          "assertionsPass": true
+        },
+        {
+          "variant": "main",
+          "scenario": "abort-post",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 1531,
+          "assertionsPass": true
+        },
+        {
+          "variant": "main",
+          "scenario": "legacy-sse",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 1487,
+          "assertionsPass": true
+        },
+        {
+          "variant": "main",
+          "scenario": "peer-control",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 1691,
+          "assertionsPass": true
+        }
+      ]
+    },
+    {
+      "file": "runtime/expanded-r5-post-sse-three.json",
+      "sha256": "31dbec6930c33053b044bc732d3ed39970c941d8f2c5a71ddbe2e8ee2b24d7ee",
+      "scenarios": [
+        {
+          "variant": "main",
+          "scenario": "post-sse-one",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 1944,
+          "assertionsPass": true
+        },
+        {
+          "variant": "main",
+          "scenario": "post-sse-many",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 1695,
+          "assertionsPass": true
+        },
+        {
+          "variant": "main",
+          "scenario": "post-sse-notification",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 1364,
+          "assertionsPass": true
+        }
+      ]
+    },
+    {
+      "file": "runtime/actual-runtime-stateless-r5.json",
+      "sha256": "33f6698f67649888332ec55b35553caca2deb50fd47c3fde160b53bef4c5ff11",
+      "scenarios": [
+        {
+          "variant": "main",
+          "scenario": "runtime-catalog",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 14244,
+          "assertionsPass": true
+        },
+        {
+          "variant": "main",
+          "scenario": "runtime-read",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 12091,
+          "assertionsPass": true
+        },
+        {
+          "variant": "main",
+          "scenario": "runtime-read-gc",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 10517,
+          "assertionsPass": true
+        },
+        {
+          "variant": "release",
+          "scenario": "runtime-catalog",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 2293,
+          "assertionsPass": true
+        },
+        {
+          "variant": "release",
+          "scenario": "runtime-read",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 2145,
+          "assertionsPass": true
+        },
+        {
+          "variant": "release",
+          "scenario": "runtime-read-gc",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 1967,
+          "assertionsPass": true
+        }
+      ]
+    },
+    {
+      "file": "runtime/direct-lazy-calltool-r6.json",
+      "sha256": "4c7ac22e7e3e7b901335052f9f6bf6032dea801ff0ec241dd80f0851744b4228",
+      "scenarios": [
+        {
+          "variant": "main",
+          "scenario": "runtime-lazy",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 10040,
+          "assertionsPass": true
+        },
+        {
+          "variant": "main",
+          "scenario": "runtime-lazy-gc",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 11350,
+          "assertionsPass": true
+        },
+        {
+          "variant": "release",
+          "scenario": "runtime-lazy",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 2244,
+          "assertionsPass": true
+        },
+        {
+          "variant": "release",
+          "scenario": "runtime-lazy-gc",
+          "naturalExit": true,
+          "code": 0,
+          "elapsedMs": 2998,
+          "assertionsPass": true
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "README-R6.md",
+      "sha256": "1d791e2c17cadc26d231001949650b9300c56e8d08ca043b67bda14a085015d6"
+    },
+    {
+      "file": "package-r5.json",
+      "sha256": "e1514efe43178de96fd35aa5350812b3322c4913503554b7ec12c5b927c71e1e"
+    },
+    {
+      "file": "package-lock-r5.json",
+      "sha256": "29432ad560e644c813662d8f53f41f90c025a0cc7c0f3557e7bf0d97de473cae"
+    },
+    {
+      "file": "entry.ts",
+      "sha256": "9cb47069d8e22f9f7aa9912de2847720d7948bb4a39e5e055fbfd11b916f7539"
+    },
+    {
+      "file": "build.mjs",
+      "sha256": "0e581c7cc86e4a6174547d1ae375ca56c9cfc01434f3215e9be748340b6929c5"
+    },
+    {
+      "file": "client.mjs",
+      "sha256": "d67f04750c76ecd5e425ad4b0a273d91b5499f22c26caf0448ada06cb7bd763f"
+    },
+    {
+      "file": "supervisor.mjs",
+      "sha256": "8fcb5908406f32e017aef62b44ff9413078c27a255250b5e1e033d8e5987c0de"
+    },
+    {
+      "file": "run-isolated.sh",
+      "sha256": "720eb76a0f6f71ab26754484865ac729266ed75fd1f462cd3056740113b5caa5"
+    },
+    {
+      "file": "observer-r3.mjs",
+      "sha256": "26a2992a7962ff4234a93cfdd4c280e169611bbcb9edb1a8cedd7e611a5eed42"
+    },
+    {
+      "file": "client-r3.mjs",
+      "sha256": "b0035ed67b067acb3d06ed350f0b25632b245628c262596190d6a18bda2ec722"
+    },
+    {
+      "file": "supervisor-r3.mjs",
+      "sha256": "7d213e9437ba3cb22a28902c6250eed13b4bafa96875c79854a174b176297a95"
+    },
+    {
+      "file": "run-isolated-r3.sh",
+      "sha256": "583fe603fb31f464c828af67b2e9b67f12c1a0f92e375747083cfa46862ddce4"
+    },
+    {
+      "file": "observer-r5.mjs",
+      "sha256": "d7e4422022c7884e7c7cc1c5f52936d16959193e32d41e57dda5c55b71619388"
+    },
+    {
+      "file": "client-runtime-r5.mjs",
+      "sha256": "13c16e4d659fc94f62725a56617361aee865c94af407b10deae2376f64d05008"
+    },
+    {
+      "file": "supervisor-runtime-r5.mjs",
+      "sha256": "4eb683b8b916896166f7954bfe437ca65982acc6c3c7c0bf1e5f575d7967babf"
+    },
+    {
+      "file": "run-isolated-runtime-r5.sh",
+      "sha256": "a2bf371cd4ca1d1f2f765f6528e68606cfc2f66793af1afe971e987f7796fd1c"
+    },
+    {
+      "file": "client-runtime-r6.mjs",
+      "sha256": "9b790e7179c59c5bb6150d251f3363813d2c067c4590fa1403c0f358a9961695"
+    },
+    {
+      "file": "supervisor-runtime-r6.mjs",
+      "sha256": "601ce17661e456a07f70af8f90eea58a2dfeba6adefa6ab57ea088dd4d84fdd1"
+    },
+    {
+      "file": "run-isolated-runtime-r6.sh",
+      "sha256": "896523f8cecdb75213f3a33f0b67b556c198da32aeb92cbccc0184a47b5a81de"
+    },
+    {
+      "file": "freeze-r6.mjs",
+      "sha256": "7f44916b42404c08376fdf0464e2ca64864359350204bf70728fd84091d52214"
+    },
+    {
+      "file": "source/src/agents/agent-bundle-mcp-runtime.ts",
+      "sha256": "f1fe0cb1e85d76cb4883d1af216739311d50ed6d9b5d2839e18ebeac1b22d55e"
+    },
+    {
+      "file": "source/src/agents/mcp-http-fetch.ts",
+      "sha256": "f144f2e0707d4a81077c759b5cfc3dd9fa432fc6c5317c3599ee9462d8866f26"
+    },
+    {
+      "file": "source/src/agents/mcp-http-transport.ts",
+      "sha256": "e9d2c161bd3ce9f18012dbe98fe7bd66f8f19183ec64f74ec29d41d8cb1f19ea"
+    },
+    {
+      "file": "source/src/agents/mcp-client-lifecycle.ts",
+      "sha256": "a46ea335b90c902a314295f1ce49c06b860066493e96f7c52642ed50b424012a"
+    },
+    {
+      "file": "source/src/infra/net/fetch-guard.ts",
+      "sha256": "03843d1c80972be77675903b6b90db065b9627f364fc08672d5e1378a3b87a9b"
+    },
+    {
+      "file": "source/src/infra/net/guarded-body-stream.ts",
+      "sha256": "0bd6e7a779d56b0d8dd982a9a863605919642c49947b547336846e1cc8b74942"
+    }
+  ],
+  "allAssertionsPass": true,
+  "allDirectDependenciesMatch": true,
+  "failingCurrentMainReproductionEstablished": false,
+  "productionSourceModified": false
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "path": "earlier-attempts/r1/observer.mjs",
+    "originalSha256": "e2e3be666d4a8984e64c5f32661605ed37cef2e46d84a4d16139abe93ec6a769",
+    "publishedSha256": "e2e3be666d4a8984e64c5f32661605ed37cef2e46d84a4d16139abe93ec6a769",
+    "redaction": "Private local path prefixes only; no event/status edits."
+  },
+  {
+    "path": "earlier-attempts/r1/client.mjs",
+    "originalSha256": "7e08ac99049dfddd1d284b0ed7a841fb1cef6d674dfd07799cc8a8e15e3d7fd3",
+    "publishedSha256": "7e08ac99049dfddd1d284b0ed7a841fb1cef6d674dfd07799cc8a8e15e3d7fd3",
+    "redaction": "Private local path prefixes only; no event/status edits."
+  },
+  {
+    "path": "earlier-attempts/r1/supervisor.mjs",
+    "originalSha256": "10dd047bac3be807c92fed56d4a7f5c37c6c5a3c4a93c52f92ef4ffc40833b64",
+    "publishedSha256": "10dd047bac3be807c92fed56d4a7f5c37c6c5a3c4a93c52f92ef4ffc40833b64",
+    "redaction": "Private local path prefixes only; no event/status edits."
+  },
+  {
+    "path": "earlier-attempts/r1/run-isolated.sh",
+    "originalSha256": "68d93619346329159ef58c1d2a85bc914d6799fdfa393974536dd2fdcaa6c501",
+    "publishedSha256": "68d93619346329159ef58c1d2a85bc914d6799fdfa393974536dd2fdcaa6c501",
+    "redaction": "Private local path prefixes only; no event/status edits."
+  },
+  {
+    "path": "earlier-attempts/r1/runtime/generation-matrix-r1.json",
+    "originalSha256": "dc4129c3ad147c504a02af551beca2eba25c59302a01395f3d65f2692e9aa76e",
+    "publishedSha256": "829186ba0966beddaf7c6330a9b65484498202efb125120e9b74b92936c7a8f5",
+    "redaction": "Private local path prefixes only; no event/status edits."
+  },
+  {
+    "path": "earlier-attempts/r2/observer.mjs",
+    "originalSha256": "e2e3be666d4a8984e64c5f32661605ed37cef2e46d84a4d16139abe93ec6a769",
+    "publishedSha256": "e2e3be666d4a8984e64c5f32661605ed37cef2e46d84a4d16139abe93ec6a769",
+    "redaction": "Private local path prefixes only; no event/status edits."
+  },
+  {
+    "path": "earlier-attempts/r2/client.mjs",
+    "originalSha256": "c51ce97dd1a317f65dd535337c7d9839c5799d9bd9b35e34b7914b621551087b",
+    "publishedSha256": "c51ce97dd1a317f65dd535337c7d9839c5799d9bd9b35e34b7914b621551087b",
+    "redaction": "Private local path prefixes only; no event/status edits."
+  },
+  {
+    "path": "earlier-attempts/r2/supervisor.mjs",
+    "originalSha256": "10dd047bac3be807c92fed56d4a7f5c37c6c5a3c4a93c52f92ef4ffc40833b64",
+    "publishedSha256": "10dd047bac3be807c92fed56d4a7f5c37c6c5a3c4a93c52f92ef4ffc40833b64",
+    "redaction": "Private local path prefixes only; no event/status edits."
+  },
+  {
+    "path": "earlier-attempts/r2/run-isolated.sh",
+    "originalSha256": "68d93619346329159ef58c1d2a85bc914d6799fdfa393974536dd2fdcaa6c501",
+    "publishedSha256": "68d93619346329159ef58c1d2a85bc914d6799fdfa393974536dd2fdcaa6c501",
+    "redaction": "Private local path prefixes only; no event/status edits."
+  },
+  {
+    "path": "earlier-attempts/r2/runtime/generation-matrix-r2.json",
+    "originalSha256": "ade97d8f4bc74b20ade8ab13142eb71f42d8055dd2e91b417f45ae84482679a7",
+    "publishedSha256": "3a1402607df635ab35b146a2df52ea938ffd60bd651499cf9dd4aa2f06de9112",
+    "redaction": "Private local path prefixes only; no event/status edits."
+  }
+]

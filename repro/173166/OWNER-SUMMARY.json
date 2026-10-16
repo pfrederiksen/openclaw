@@ -1,0 +1,173 @@
+{
+  "sourcePin": "eb5b351e0f94dc7bf3f0390dd31064cad2ab9934",
+  "controls": 10,
+  "allAssertionsPass": true,
+  "failingCredentialFreeReproduction": false,
+  "actualDeploymentOwnerIdentified": false,
+  "strictObserverSha256": "cca9c9f4c4dc2defcdb3d49d686508380ea135d83219ffb7e78f6daa0595f8f9",
+  "rows": [
+    {
+      "variant": "main",
+      "scenario": "baseline",
+      "naturalExitZero": true,
+      "notificationGets": 1,
+      "sessionGeneration": 1,
+      "gets": [
+        {
+          "request": "request35",
+          "socket": "socket43",
+          "dispatcher": "dispatcher34",
+          "sdkTransport": "transport1",
+          "notificationGeneration": 1,
+          "sdkSignal": "signal2",
+          "status": 200,
+          "sdkSignalAbortObserved": true,
+          "releaseOriginDispatcherCloseInvocation": true,
+          "socketCloseObserved": true,
+          "requestErrorCodes": [
+            "OtherError"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "main",
+      "scenario": "notification-eof",
+      "naturalExitZero": true,
+      "notificationGets": 2,
+      "sessionGeneration": 1,
+      "gets": [
+        {
+          "request": "request35",
+          "socket": "socket43",
+          "dispatcher": "dispatcher34",
+          "sdkTransport": "transport1",
+          "notificationGeneration": 1,
+          "sdkSignal": "signal2",
+          "status": 200,
+          "sdkSignalAbortObserved": true,
+          "releaseOriginDispatcherCloseInvocation": true,
+          "socketCloseObserved": true,
+          "requestErrorCodes": []
+        },
+        {
+          "request": "request127",
+          "socket": "socket128",
+          "dispatcher": "dispatcher126",
+          "sdkTransport": "transport1",
+          "notificationGeneration": 2,
+          "sdkSignal": "signal2",
+          "status": 200,
+          "sdkSignalAbortObserved": true,
+          "releaseOriginDispatcherCloseInvocation": true,
+          "socketCloseObserved": true,
+          "requestErrorCodes": [
+            "OtherError"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "main",
+      "scenario": "notification-drop",
+      "naturalExitZero": true,
+      "notificationGets": 2,
+      "sessionGeneration": 1,
+      "gets": [
+        {
+          "request": "request35",
+          "socket": "socket43",
+          "dispatcher": "dispatcher34",
+          "sdkTransport": "transport1",
+          "notificationGeneration": 1,
+          "sdkSignal": "signal2",
+          "status": 200,
+          "sdkSignalAbortObserved": true,
+          "releaseOriginDispatcherCloseInvocation": true,
+          "socketCloseObserved": true,
+          "requestErrorCodes": [
+            "UND_ERR_SOCKET"
+          ]
+        },
+        {
+          "request": "request131",
+          "socket": "socket132",
+          "dispatcher": "dispatcher130",
+          "sdkTransport": "transport1",
+          "notificationGeneration": 2,
+          "sdkSignal": "signal2",
+          "status": 200,
+          "sdkSignalAbortObserved": true,
+          "releaseOriginDispatcherCloseInvocation": true,
+          "socketCloseObserved": true,
+          "requestErrorCodes": [
+            "OtherError"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "main",
+      "scenario": "expired-session",
+      "naturalExitZero": true,
+      "notificationGets": 2,
+      "sessionGeneration": 2,
+      "gets": [
+        {
+          "request": "request35",
+          "socket": "socket43",
+          "dispatcher": "dispatcher34",
+          "sdkTransport": "transport1",
+          "notificationGeneration": 1,
+          "sdkSignal": "signal2",
+          "status": 200,
+          "sdkSignalAbortObserved": true,
+          "releaseOriginDispatcherCloseInvocation": true,
+          "socketCloseObserved": true,
+          "requestErrorCodes": [
+            "OtherError"
+          ]
+        },
+        {
+          "request": "request160",
+          "socket": "socket167",
+          "dispatcher": "dispatcher159",
+          "sdkTransport": "transport106",
+          "notificationGeneration": 1,
+          "sdkSignal": "signal107",
+          "status": 200,
+          "sdkSignalAbortObserved": true,
+          "releaseOriginDispatcherCloseInvocation": true,
+          "socketCloseObserved": true,
+          "requestErrorCodes": [
+            "OtherError"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "release",
+      "scenario": "baseline",
+      "naturalExitZero": true,
+      "notificationGets": 1,
+      "sessionGeneration": 1,
+      "gets": [
+        {
+          "request": "request35",
+          "socket": "socket43",
+          "dispatcher": "dispatcher34",
+          "sdkTransport": "transport1",
+          "notificationGeneration": 1,
+          "sdkSignal": "signal2",
+          "status": 200,
+          "sdkSignalAbortObserved": true,
+          "releaseOriginDispatcherCloseInvocation": true,
+          "socketCloseObserved": true,
+          "requestErrorCodes": [
+            "OtherError"
+          ]
+        }
+      ]
+    }
+  ]
+}

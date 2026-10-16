@@ -1,0 +1,7136 @@
+{
+  "currentMainSourcePin": "fc5d78172cde956a98d2aab3d66c8cabe65fab69",
+  "currentMainSdkVersion": "1.32.1",
+  "installedRelease": "2026.10.3",
+  "installedReleaseSdkVersion": "1.31.0",
+  "node": "v24.21.0",
+  "platform": "linux 6.8.0-146-generic x64",
+  "supervisorBudgetMs": 30000,
+  "rpcTimeoutMs": 1500,
+  "noExplicitGetCatalogPrewarm": true,
+  "alphaPostSseBody": "closed after valid RPC result",
+  "betaNotificationGet": "HTTP200 body held until client cleanup",
+  "isolation": {
+    "networkInterfaces": [
+      "lo"
+    ],
+    "home": "/home/fixture",
+    "credentialEnvKeys": []
+  },
+  "results": [
+    {
+      "variant": "main",
+      "scenario": "runtime-lazy",
+      "elapsedMs": 10040,
+      "naturalExit": true,
+      "code": 0,
+      "signal": null,
+      "assertions": {
+        "naturalChildExitZero": true,
+        "actualRuntimeCachedCatalogOnly": true,
+        "actualRuntimeLazyReadCalls": true,
+        "noExplicitCatalogPrewarm": true,
+        "actualRuntimeDisposeAndJoin": true,
+        "noSessionHeadersOrDeletes": true,
+        "expectedGcControl": true,
+        "outputComplete": true,
+        "noTcpAtBeforeExit": true,
+        "noServerSocketsAtChildExit": true,
+        "noHeldBodiesAtChildExit": true
+      },
+      "heldBodiesAtCleanup": [],
+      "heldBodiesAtChildExit": [],
+      "openServerConnectionsAtChildExit": [],
+      "events": [
+        {
+          "ms": 0,
+          "event": "fixture.runtime_import.start",
+          "variant": "main"
+        },
+        {
+          "ms": 9270,
+          "event": "fixture.runtime_import.complete",
+          "variant": "main"
+        },
+        {
+          "ms": 9276,
+          "event": "fixture.lazy_start.no_getCatalog"
+        },
+        {
+          "ms": 9276,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_alpha",
+          "sequence": 1
+        },
+        {
+          "ms": 9352,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9356,
+          "event": "request.create",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9369,
+          "event": "socket.connected",
+          "socket": "socket3"
+        },
+        {
+          "ms": 9371,
+          "event": "request.socket",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "socket": "socket3"
+        },
+        {
+          "ms": 9394,
+          "event": "request.headers",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 9396,
+          "event": "request.trailers",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9426,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9427,
+          "event": "request.create",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9435,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 9435,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 9440,
+          "event": "socket.closed",
+          "socket": "socket3"
+        },
+        {
+          "ms": 9440,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 9440,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 9440,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 9440,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 9457,
+          "event": "socket.connected",
+          "socket": "socket6"
+        },
+        {
+          "ms": 9457,
+          "event": "request.socket",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "socket": "socket6"
+        },
+        {
+          "ms": 9459,
+          "event": "request.headers",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 202
+        },
+        {
+          "ms": 9460,
+          "event": "request.trailers",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9461,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 9461,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 9462,
+          "event": "socket.closed",
+          "socket": "socket6"
+        },
+        {
+          "ms": 9462,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 9462,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 9462,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 9462,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 9465,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9465,
+          "event": "request.create",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9469,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9469,
+          "event": "request.create",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9470,
+          "event": "socket.connected",
+          "socket": "socket11"
+        },
+        {
+          "ms": 9470,
+          "event": "request.socket",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "socket": "socket11"
+        },
+        {
+          "ms": 9471,
+          "event": "socket.connected",
+          "socket": "socket12"
+        },
+        {
+          "ms": 9471,
+          "event": "request.socket",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "socket": "socket12"
+        },
+        {
+          "ms": 9471,
+          "event": "request.headers",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/alpha",
+          "status": 405
+        },
+        {
+          "ms": 9472,
+          "event": "request.trailers",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9473,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 9473,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 9474,
+          "event": "socket.closed",
+          "socket": "socket11"
+        },
+        {
+          "ms": 9474,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 9474,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 9474,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 9474,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 9475,
+          "event": "request.headers",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 9475,
+          "event": "request.trailers",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9485,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9486,
+          "event": "request.create",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9487,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 9487,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 9488,
+          "event": "socket.closed",
+          "socket": "socket12"
+        },
+        {
+          "ms": 9488,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 9488,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 9488,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 9488,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 9488,
+          "event": "socket.connected",
+          "socket": "socket15"
+        },
+        {
+          "ms": 9488,
+          "event": "request.socket",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "socket": "socket15"
+        },
+        {
+          "ms": 9490,
+          "event": "request.headers",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 9490,
+          "event": "request.trailers",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9494,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_alpha",
+          "sequence": 1,
+          "text": "synthetic-1"
+        },
+        {
+          "ms": 9494,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_alpha",
+          "sequence": 2
+        },
+        {
+          "ms": 9496,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9496,
+          "event": "request.create",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9497,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 9497,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 9498,
+          "event": "socket.closed",
+          "socket": "socket15"
+        },
+        {
+          "ms": 9498,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 9498,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 9498,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 9498,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 9498,
+          "event": "socket.connected",
+          "socket": "socket18"
+        },
+        {
+          "ms": 9498,
+          "event": "request.socket",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "socket": "socket18"
+        },
+        {
+          "ms": 9518,
+          "event": "request.headers",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 9519,
+          "event": "request.trailers",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9520,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_alpha",
+          "sequence": 2,
+          "text": "synthetic-2"
+        },
+        {
+          "ms": 9520,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_alpha",
+          "sequence": 3
+        },
+        {
+          "ms": 9522,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9523,
+          "event": "request.create",
+          "request": "request20",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9524,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 9524,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 9525,
+          "event": "socket.closed",
+          "socket": "socket18"
+        },
+        {
+          "ms": 9525,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 9525,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 9525,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 9525,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 9525,
+          "event": "socket.connected",
+          "socket": "socket21"
+        },
+        {
+          "ms": 9525,
+          "event": "request.socket",
+          "request": "request20",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "socket": "socket21"
+        },
+        {
+          "ms": 9527,
+          "event": "request.headers",
+          "request": "request20",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 9527,
+          "event": "request.trailers",
+          "request": "request20",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9530,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_alpha",
+          "sequence": 3,
+          "text": "synthetic-3"
+        },
+        {
+          "ms": 9530,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_beta",
+          "sequence": 1
+        },
+        {
+          "ms": 9534,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 9535,
+          "event": "request.create",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 9536,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 9536,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 9537,
+          "event": "socket.closed",
+          "socket": "socket21"
+        },
+        {
+          "ms": 9537,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 9537,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 9537,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 9537,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 9538,
+          "event": "socket.connected",
+          "socket": "socket24"
+        },
+        {
+          "ms": 9538,
+          "event": "request.socket",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "socket": "socket24"
+        },
+        {
+          "ms": 9539,
+          "event": "request.headers",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 9539,
+          "event": "request.trailers",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 9541,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 9541,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 9543,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 9543,
+          "event": "request.create",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 9544,
+          "event": "socket.closed",
+          "socket": "socket24"
+        },
+        {
+          "ms": 9544,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 9544,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 9544,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 9544,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 9545,
+          "event": "socket.connected",
+          "socket": "socket27"
+        },
+        {
+          "ms": 9545,
+          "event": "request.socket",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "socket": "socket27"
+        },
+        {
+          "ms": 9546,
+          "event": "request.headers",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 202
+        },
+        {
+          "ms": 9546,
+          "event": "request.trailers",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 9547,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 9547,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 9548,
+          "event": "socket.closed",
+          "socket": "socket27"
+        },
+        {
+          "ms": 9548,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 9548,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 9548,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 9548,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 9550,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/beta"
+        },
+        {
+          "ms": 9550,
+          "event": "request.create",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/beta"
+        },
+        {
+          "ms": 9553,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 9554,
+          "event": "request.create",
+          "request": "request31",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 9555,
+          "event": "socket.connected",
+          "socket": "socket32"
+        },
+        {
+          "ms": 9555,
+          "event": "request.socket",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "socket": "socket32"
+        },
+        {
+          "ms": 9555,
+          "event": "socket.connected",
+          "socket": "socket33"
+        },
+        {
+          "ms": 9555,
+          "event": "request.socket",
+          "request": "request31",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "socket": "socket33"
+        },
+        {
+          "ms": 9556,
+          "event": "request.headers",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 9560,
+          "event": "request.headers",
+          "request": "request31",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 9560,
+          "event": "request.trailers",
+          "request": "request31",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 9561,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 9561,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 9564,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 9564,
+          "event": "request.create",
+          "request": "request35",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 9565,
+          "event": "socket.closed",
+          "socket": "socket33"
+        },
+        {
+          "ms": 9565,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 9565,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 9565,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 9565,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 9565,
+          "event": "socket.connected",
+          "socket": "socket36"
+        },
+        {
+          "ms": 9566,
+          "event": "request.socket",
+          "request": "request35",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "socket": "socket36"
+        },
+        {
+          "ms": 9570,
+          "event": "request.headers",
+          "request": "request35",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 9571,
+          "event": "request.trailers",
+          "request": "request35",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 9572,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 9572,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 9573,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_beta",
+          "sequence": 1,
+          "text": "synthetic-1"
+        },
+        {
+          "ms": 9573,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_beta",
+          "sequence": 2
+        },
+        {
+          "ms": 9575,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 9575,
+          "event": "request.create",
+          "request": "request38",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 9575,
+          "event": "socket.closed",
+          "socket": "socket36"
+        },
+        {
+          "ms": 9576,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 9576,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 9576,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 9576,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 9576,
+          "event": "socket.connected",
+          "socket": "socket39"
+        },
+        {
+          "ms": 9576,
+          "event": "request.socket",
+          "request": "request38",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "socket": "socket39"
+        },
+        {
+          "ms": 9577,
+          "event": "request.headers",
+          "request": "request38",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 9577,
+          "event": "request.trailers",
+          "request": "request38",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 9578,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 9578,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 9579,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_beta",
+          "sequence": 2,
+          "text": "synthetic-2"
+        },
+        {
+          "ms": 9579,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_alpha",
+          "sequence": 4
+        },
+        {
+          "ms": 9580,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9580,
+          "event": "request.create",
+          "request": "request41",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9581,
+          "event": "socket.closed",
+          "socket": "socket39"
+        },
+        {
+          "ms": 9581,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 9581,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 9581,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 9581,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 9581,
+          "event": "socket.connected",
+          "socket": "socket42"
+        },
+        {
+          "ms": 9581,
+          "event": "request.socket",
+          "request": "request41",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "socket": "socket42"
+        },
+        {
+          "ms": 9582,
+          "event": "request.headers",
+          "request": "request41",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 9583,
+          "event": "request.trailers",
+          "request": "request41",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 9584,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_alpha",
+          "sequence": 4,
+          "text": "synthetic-4"
+        },
+        {
+          "ms": 9585,
+          "event": "peekCatalog.complete",
+          "serverCount": 2,
+          "toolCount": 2,
+          "diagnostics": 0
+        },
+        {
+          "ms": 9588,
+          "event": "request.error",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/beta",
+          "error": 20
+        },
+        {
+          "ms": 9602,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 9602,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 9602,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 9602,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 9604,
+          "event": "runtime.dispose.complete"
+        },
+        {
+          "ms": 9605,
+          "event": "runtime.join.complete"
+        },
+        {
+          "ms": 9605,
+          "event": "cleanup.complete",
+          "result": "closed",
+          "resources": {
+            "PipeWrap": 2,
+            "TCPSocketWrap": 2,
+            "Immediate": 1
+          }
+        },
+        {
+          "ms": 9605,
+          "event": "output.complete"
+        },
+        {
+          "ms": 9606,
+          "event": "socket.closed",
+          "socket": "socket42"
+        },
+        {
+          "ms": 9606,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 9606,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 9606,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 9606,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 9606,
+          "event": "socket.closed",
+          "socket": "socket32"
+        },
+        {
+          "ms": 9606,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 9606,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 9606,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 9606,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 9606,
+          "event": "process.beforeExit",
+          "code": 0,
+          "resources": {
+            "PipeWrap": 2
+          }
+        },
+        {
+          "ms": 9607,
+          "event": "process.exit",
+          "code": 0
+        }
+      ],
+      "serverEvents": [
+        {
+          "ms": 9729,
+          "event": "server.request",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "initialize",
+          "rpcId": 0,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 9737,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request1",
+          "socket": "server-socket1",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 9738,
+          "event": "server.response.finish",
+          "socket": "server-socket1",
+          "request": "server-request1"
+        },
+        {
+          "ms": 9738,
+          "event": "server.response.close",
+          "socket": "server-socket1",
+          "request": "server-request1"
+        },
+        {
+          "ms": 9787,
+          "event": "server.socket.close",
+          "socket": "server-socket1"
+        },
+        {
+          "ms": 9806,
+          "event": "server.request",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized",
+          "rpcId": null,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 9807,
+          "event": "server.response.finish",
+          "socket": "server-socket2",
+          "request": "server-request2"
+        },
+        {
+          "ms": 9807,
+          "event": "server.response.close",
+          "socket": "server-socket2",
+          "request": "server-request2"
+        },
+        {
+          "ms": 9811,
+          "event": "server.socket.close",
+          "socket": "server-socket2"
+        },
+        {
+          "ms": 9819,
+          "event": "server.request",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "path": "/alpha",
+          "method": "GET",
+          "rpcMethod": null,
+          "rpcId": null,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 9819,
+          "event": "server.response.finish",
+          "socket": "server-socket3",
+          "request": "server-request3"
+        },
+        {
+          "ms": 9819,
+          "event": "server.response.close",
+          "socket": "server-socket3",
+          "request": "server-request3"
+        },
+        {
+          "ms": 9820,
+          "event": "server.request",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/list",
+          "rpcId": 1,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 9820,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request4",
+          "socket": "server-socket4",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 9820,
+          "event": "server.response.finish",
+          "socket": "server-socket4",
+          "request": "server-request4"
+        },
+        {
+          "ms": 9820,
+          "event": "server.response.close",
+          "socket": "server-socket4",
+          "request": "server-request4"
+        },
+        {
+          "ms": 9824,
+          "event": "server.socket.close",
+          "socket": "server-socket3"
+        },
+        {
+          "ms": 9836,
+          "event": "server.socket.close",
+          "socket": "server-socket4"
+        },
+        {
+          "ms": 9837,
+          "event": "server.request",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 2,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 9838,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request5",
+          "socket": "server-socket5",
+          "rpcMethod": "tools/call"
+        },
+        {
+          "ms": 9838,
+          "event": "server.response.finish",
+          "socket": "server-socket5",
+          "request": "server-request5"
+        },
+        {
+          "ms": 9838,
+          "event": "server.response.close",
+          "socket": "server-socket5",
+          "request": "server-request5"
+        },
+        {
+          "ms": 9846,
+          "event": "server.socket.close",
+          "socket": "server-socket5"
+        },
+        {
+          "ms": 9848,
+          "event": "server.request",
+          "socket": "server-socket6",
+          "request": "server-request6",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 3,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 9848,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request6",
+          "socket": "server-socket6",
+          "rpcMethod": "tools/call"
+        },
+        {
+          "ms": 9848,
+          "event": "server.response.finish",
+          "socket": "server-socket6",
+          "request": "server-request6"
+        },
+        {
+          "ms": 9848,
+          "event": "server.response.close",
+          "socket": "server-socket6",
+          "request": "server-request6"
+        },
+        {
+          "ms": 9873,
+          "event": "server.socket.close",
+          "socket": "server-socket6"
+        },
+        {
+          "ms": 9875,
+          "event": "server.request",
+          "socket": "server-socket7",
+          "request": "server-request7",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 4,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 9875,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request7",
+          "socket": "server-socket7",
+          "rpcMethod": "tools/call"
+        },
+        {
+          "ms": 9875,
+          "event": "server.response.finish",
+          "socket": "server-socket7",
+          "request": "server-request7"
+        },
+        {
+          "ms": 9875,
+          "event": "server.response.close",
+          "socket": "server-socket7",
+          "request": "server-request7"
+        },
+        {
+          "ms": 9886,
+          "event": "server.socket.close",
+          "socket": "server-socket7"
+        },
+        {
+          "ms": 9887,
+          "event": "server.request",
+          "socket": "server-socket8",
+          "request": "server-request8",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "initialize",
+          "rpcId": 0,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 9887,
+          "event": "server.response.finish",
+          "socket": "server-socket8",
+          "request": "server-request8"
+        },
+        {
+          "ms": 9887,
+          "event": "server.response.close",
+          "socket": "server-socket8",
+          "request": "server-request8"
+        },
+        {
+          "ms": 9890,
+          "event": "server.socket.close",
+          "socket": "server-socket8"
+        },
+        {
+          "ms": 9894,
+          "event": "server.request",
+          "socket": "server-socket9",
+          "request": "server-request9",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized",
+          "rpcId": null,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 9894,
+          "event": "server.response.finish",
+          "socket": "server-socket9",
+          "request": "server-request9"
+        },
+        {
+          "ms": 9894,
+          "event": "server.response.close",
+          "socket": "server-socket9",
+          "request": "server-request9"
+        },
+        {
+          "ms": 9896,
+          "event": "server.socket.close",
+          "socket": "server-socket9"
+        },
+        {
+          "ms": 9904,
+          "event": "server.request",
+          "socket": "server-socket10",
+          "request": "server-request10",
+          "path": "/beta",
+          "method": "GET",
+          "rpcMethod": null,
+          "rpcId": null,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 9906,
+          "event": "server.request",
+          "socket": "server-socket11",
+          "request": "server-request11",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "tools/list",
+          "rpcId": 1,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 9906,
+          "event": "server.response.finish",
+          "socket": "server-socket11",
+          "request": "server-request11"
+        },
+        {
+          "ms": 9906,
+          "event": "server.response.close",
+          "socket": "server-socket11",
+          "request": "server-request11"
+        },
+        {
+          "ms": 9910,
+          "event": "server.socket.close",
+          "socket": "server-socket11"
+        },
+        {
+          "ms": 9918,
+          "event": "server.request",
+          "socket": "server-socket12",
+          "request": "server-request12",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 2,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 9918,
+          "event": "server.response.finish",
+          "socket": "server-socket12",
+          "request": "server-request12"
+        },
+        {
+          "ms": 9918,
+          "event": "server.response.close",
+          "socket": "server-socket12",
+          "request": "server-request12"
+        },
+        {
+          "ms": 9921,
+          "event": "server.socket.close",
+          "socket": "server-socket12"
+        },
+        {
+          "ms": 9925,
+          "event": "server.request",
+          "socket": "server-socket13",
+          "request": "server-request13",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 3,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 9925,
+          "event": "server.response.finish",
+          "socket": "server-socket13",
+          "request": "server-request13"
+        },
+        {
+          "ms": 9925,
+          "event": "server.response.close",
+          "socket": "server-socket13",
+          "request": "server-request13"
+        },
+        {
+          "ms": 9927,
+          "event": "server.socket.close",
+          "socket": "server-socket13"
+        },
+        {
+          "ms": 9930,
+          "event": "server.request",
+          "socket": "server-socket14",
+          "request": "server-request14",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 5,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 9931,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request14",
+          "socket": "server-socket14",
+          "rpcMethod": "tools/call"
+        },
+        {
+          "ms": 9931,
+          "event": "server.response.finish",
+          "socket": "server-socket14",
+          "request": "server-request14"
+        },
+        {
+          "ms": 9931,
+          "event": "server.response.close",
+          "socket": "server-socket14",
+          "request": "server-request14"
+        },
+        {
+          "ms": 9952,
+          "event": "server.socket.close",
+          "socket": "server-socket10"
+        },
+        {
+          "ms": 9952,
+          "event": "server.response.close",
+          "socket": "server-socket10",
+          "request": "server-request10"
+        },
+        {
+          "ms": 9952,
+          "event": "server.socket.close",
+          "socket": "server-socket14"
+        },
+        {
+          "ms": 10038,
+          "event": "supervisor.child_joined",
+          "code": 0,
+          "signal": null,
+          "killed": false
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "variant": "main",
+      "scenario": "runtime-lazy-gc",
+      "elapsedMs": 11350,
+      "naturalExit": true,
+      "code": 0,
+      "signal": null,
+      "assertions": {
+        "naturalChildExitZero": true,
+        "actualRuntimeCachedCatalogOnly": true,
+        "actualRuntimeLazyReadCalls": true,
+        "noExplicitCatalogPrewarm": true,
+        "actualRuntimeDisposeAndJoin": true,
+        "noSessionHeadersOrDeletes": true,
+        "expectedGcControl": true,
+        "outputComplete": true,
+        "noTcpAtBeforeExit": true,
+        "noServerSocketsAtChildExit": true,
+        "noHeldBodiesAtChildExit": true
+      },
+      "heldBodiesAtCleanup": [],
+      "heldBodiesAtChildExit": [],
+      "openServerConnectionsAtChildExit": [],
+      "events": [
+        {
+          "ms": 0,
+          "event": "fixture.runtime_import.start",
+          "variant": "main"
+        },
+        {
+          "ms": 10569,
+          "event": "fixture.runtime_import.complete",
+          "variant": "main"
+        },
+        {
+          "ms": 10573,
+          "event": "fixture.lazy_start.no_getCatalog"
+        },
+        {
+          "ms": 10573,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_alpha",
+          "sequence": 1
+        },
+        {
+          "ms": 10627,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10630,
+          "event": "request.create",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10652,
+          "event": "socket.connected",
+          "socket": "socket3"
+        },
+        {
+          "ms": 10653,
+          "event": "request.socket",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "socket": "socket3"
+        },
+        {
+          "ms": 10661,
+          "event": "request.headers",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 10662,
+          "event": "request.trailers",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10683,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10683,
+          "event": "request.create",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10692,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 10692,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 10696,
+          "event": "socket.closed",
+          "socket": "socket3"
+        },
+        {
+          "ms": 10697,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 10697,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 10697,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 10697,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 10697,
+          "event": "socket.connected",
+          "socket": "socket6"
+        },
+        {
+          "ms": 10697,
+          "event": "request.socket",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "socket": "socket6"
+        },
+        {
+          "ms": 10700,
+          "event": "request.headers",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 202
+        },
+        {
+          "ms": 10701,
+          "event": "request.trailers",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10702,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 10702,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 10703,
+          "event": "socket.closed",
+          "socket": "socket6"
+        },
+        {
+          "ms": 10703,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 10703,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 10703,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 10703,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 10706,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10707,
+          "event": "request.create",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10710,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10711,
+          "event": "request.create",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10712,
+          "event": "socket.connected",
+          "socket": "socket11"
+        },
+        {
+          "ms": 10712,
+          "event": "request.socket",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "socket": "socket11"
+        },
+        {
+          "ms": 10713,
+          "event": "socket.connected",
+          "socket": "socket12"
+        },
+        {
+          "ms": 10713,
+          "event": "request.socket",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "socket": "socket12"
+        },
+        {
+          "ms": 10714,
+          "event": "request.headers",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/alpha",
+          "status": 405
+        },
+        {
+          "ms": 10714,
+          "event": "request.trailers",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10715,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 10715,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 10716,
+          "event": "socket.closed",
+          "socket": "socket11"
+        },
+        {
+          "ms": 10716,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 10716,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 10716,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 10716,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 10717,
+          "event": "request.headers",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 10717,
+          "event": "request.trailers",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10731,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10731,
+          "event": "request.create",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10732,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 10732,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 10733,
+          "event": "socket.closed",
+          "socket": "socket12"
+        },
+        {
+          "ms": 10733,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 10733,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 10733,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 10733,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 10734,
+          "event": "socket.connected",
+          "socket": "socket15"
+        },
+        {
+          "ms": 10734,
+          "event": "request.socket",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "socket": "socket15"
+        },
+        {
+          "ms": 10735,
+          "event": "request.headers",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 10735,
+          "event": "request.trailers",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10739,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_alpha",
+          "sequence": 1,
+          "text": "synthetic-1"
+        },
+        {
+          "ms": 10739,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_alpha",
+          "sequence": 2
+        },
+        {
+          "ms": 10741,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10741,
+          "event": "request.create",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10742,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 10742,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 10743,
+          "event": "socket.closed",
+          "socket": "socket15"
+        },
+        {
+          "ms": 10743,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 10743,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 10743,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 10743,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 10744,
+          "event": "socket.connected",
+          "socket": "socket18"
+        },
+        {
+          "ms": 10744,
+          "event": "request.socket",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "socket": "socket18"
+        },
+        {
+          "ms": 10745,
+          "event": "request.headers",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 10745,
+          "event": "request.trailers",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10747,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_alpha",
+          "sequence": 2,
+          "text": "synthetic-2"
+        },
+        {
+          "ms": 10747,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_alpha",
+          "sequence": 3
+        },
+        {
+          "ms": 10749,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10749,
+          "event": "request.create",
+          "request": "request20",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10750,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 10750,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 10751,
+          "event": "socket.closed",
+          "socket": "socket18"
+        },
+        {
+          "ms": 10751,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 10751,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 10751,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 10751,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 10751,
+          "event": "socket.connected",
+          "socket": "socket21"
+        },
+        {
+          "ms": 10752,
+          "event": "request.socket",
+          "request": "request20",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "socket": "socket21"
+        },
+        {
+          "ms": 10753,
+          "event": "request.headers",
+          "request": "request20",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 10753,
+          "event": "request.trailers",
+          "request": "request20",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10755,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_alpha",
+          "sequence": 3,
+          "text": "synthetic-3"
+        },
+        {
+          "ms": 10755,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_beta",
+          "sequence": 1
+        },
+        {
+          "ms": 10759,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 10759,
+          "event": "request.create",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 10760,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 10760,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 10764,
+          "event": "socket.closed",
+          "socket": "socket21"
+        },
+        {
+          "ms": 10764,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 10764,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 10764,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 10764,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 10764,
+          "event": "socket.connected",
+          "socket": "socket24"
+        },
+        {
+          "ms": 10765,
+          "event": "request.socket",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "socket": "socket24"
+        },
+        {
+          "ms": 10766,
+          "event": "request.headers",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 10766,
+          "event": "request.trailers",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 10768,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 10768,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 10771,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 10771,
+          "event": "request.create",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 10772,
+          "event": "socket.closed",
+          "socket": "socket24"
+        },
+        {
+          "ms": 10772,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 10772,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 10772,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 10772,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 10772,
+          "event": "socket.connected",
+          "socket": "socket27"
+        },
+        {
+          "ms": 10773,
+          "event": "request.socket",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "socket": "socket27"
+        },
+        {
+          "ms": 10774,
+          "event": "request.headers",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 202
+        },
+        {
+          "ms": 10774,
+          "event": "request.trailers",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 10776,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 10776,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 10777,
+          "event": "socket.closed",
+          "socket": "socket27"
+        },
+        {
+          "ms": 10777,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 10777,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 10777,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 10777,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 10779,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/beta"
+        },
+        {
+          "ms": 10779,
+          "event": "request.create",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/beta"
+        },
+        {
+          "ms": 10782,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 10783,
+          "event": "request.create",
+          "request": "request31",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 10785,
+          "event": "socket.connected",
+          "socket": "socket32"
+        },
+        {
+          "ms": 10786,
+          "event": "request.socket",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "socket": "socket32"
+        },
+        {
+          "ms": 10787,
+          "event": "socket.connected",
+          "socket": "socket33"
+        },
+        {
+          "ms": 10787,
+          "event": "request.socket",
+          "request": "request31",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "socket": "socket33"
+        },
+        {
+          "ms": 10790,
+          "event": "request.headers",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 10792,
+          "event": "request.headers",
+          "request": "request31",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 10793,
+          "event": "request.trailers",
+          "request": "request31",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 10794,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 10794,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 10798,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 10799,
+          "event": "request.create",
+          "request": "request35",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 10800,
+          "event": "socket.closed",
+          "socket": "socket33"
+        },
+        {
+          "ms": 10800,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 10800,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 10800,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 10800,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 10800,
+          "event": "socket.connected",
+          "socket": "socket36"
+        },
+        {
+          "ms": 10800,
+          "event": "request.socket",
+          "request": "request35",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "socket": "socket36"
+        },
+        {
+          "ms": 10801,
+          "event": "request.headers",
+          "request": "request35",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 10801,
+          "event": "request.trailers",
+          "request": "request35",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 10802,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 10802,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 10803,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_beta",
+          "sequence": 1,
+          "text": "synthetic-1"
+        },
+        {
+          "ms": 10803,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_beta",
+          "sequence": 2
+        },
+        {
+          "ms": 10804,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 10805,
+          "event": "request.create",
+          "request": "request38",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 10805,
+          "event": "socket.closed",
+          "socket": "socket36"
+        },
+        {
+          "ms": 10805,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 10805,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 10805,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 10805,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 10806,
+          "event": "socket.connected",
+          "socket": "socket39"
+        },
+        {
+          "ms": 10806,
+          "event": "request.socket",
+          "request": "request38",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "socket": "socket39"
+        },
+        {
+          "ms": 10808,
+          "event": "request.headers",
+          "request": "request38",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 10808,
+          "event": "request.trailers",
+          "request": "request38",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 10809,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 10809,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 10809,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_beta",
+          "sequence": 2,
+          "text": "synthetic-2"
+        },
+        {
+          "ms": 10810,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_alpha",
+          "sequence": 4
+        },
+        {
+          "ms": 10811,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10812,
+          "event": "request.create",
+          "request": "request41",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10812,
+          "event": "socket.closed",
+          "socket": "socket39"
+        },
+        {
+          "ms": 10812,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 10812,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 10812,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 10812,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 10812,
+          "event": "socket.connected",
+          "socket": "socket42"
+        },
+        {
+          "ms": 10812,
+          "event": "request.socket",
+          "request": "request41",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "socket": "socket42"
+        },
+        {
+          "ms": 10815,
+          "event": "request.headers",
+          "request": "request41",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 10815,
+          "event": "request.trailers",
+          "request": "request41",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 10816,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_alpha",
+          "sequence": 4,
+          "text": "synthetic-4"
+        },
+        {
+          "ms": 10817,
+          "event": "peekCatalog.complete",
+          "serverCount": 2,
+          "toolCount": 2,
+          "diagnostics": 0
+        },
+        {
+          "ms": 10817,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 10817,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 10865,
+          "event": "socket.closed",
+          "socket": "socket42"
+        },
+        {
+          "ms": 10865,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 10865,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 10865,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 10865,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 10946,
+          "event": "fixture.gc.complete"
+        },
+        {
+          "ms": 10948,
+          "event": "request.error",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/beta",
+          "error": 20
+        },
+        {
+          "ms": 10958,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 10958,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 10959,
+          "event": "runtime.dispose.complete"
+        },
+        {
+          "ms": 10959,
+          "event": "runtime.join.complete"
+        },
+        {
+          "ms": 10959,
+          "event": "cleanup.complete",
+          "result": "closed",
+          "resources": {
+            "PipeWrap": 2,
+            "TCPSocketWrap": 1
+          }
+        },
+        {
+          "ms": 10959,
+          "event": "output.complete"
+        },
+        {
+          "ms": 10960,
+          "event": "socket.closed",
+          "socket": "socket32"
+        },
+        {
+          "ms": 10960,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 10960,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 10960,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 10960,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 10960,
+          "event": "process.beforeExit",
+          "code": 0,
+          "resources": {
+            "PipeWrap": 2
+          }
+        },
+        {
+          "ms": 10960,
+          "event": "process.exit",
+          "code": 0
+        }
+      ],
+      "serverEvents": [
+        {
+          "ms": 10974,
+          "event": "server.request",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "initialize",
+          "rpcId": 0,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 10974,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request1",
+          "socket": "server-socket1",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 10974,
+          "event": "server.response.finish",
+          "socket": "server-socket1",
+          "request": "server-request1"
+        },
+        {
+          "ms": 10974,
+          "event": "server.response.close",
+          "socket": "server-socket1",
+          "request": "server-request1"
+        },
+        {
+          "ms": 11011,
+          "event": "server.socket.close",
+          "socket": "server-socket1"
+        },
+        {
+          "ms": 11017,
+          "event": "server.request",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized",
+          "rpcId": null,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 11017,
+          "event": "server.response.finish",
+          "socket": "server-socket2",
+          "request": "server-request2"
+        },
+        {
+          "ms": 11017,
+          "event": "server.response.close",
+          "socket": "server-socket2",
+          "request": "server-request2"
+        },
+        {
+          "ms": 11020,
+          "event": "server.socket.close",
+          "socket": "server-socket2"
+        },
+        {
+          "ms": 11030,
+          "event": "server.request",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "path": "/alpha",
+          "method": "GET",
+          "rpcMethod": null,
+          "rpcId": null,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 11030,
+          "event": "server.response.finish",
+          "socket": "server-socket3",
+          "request": "server-request3"
+        },
+        {
+          "ms": 11030,
+          "event": "server.response.close",
+          "socket": "server-socket3",
+          "request": "server-request3"
+        },
+        {
+          "ms": 11031,
+          "event": "server.request",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/list",
+          "rpcId": 1,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 11031,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request4",
+          "socket": "server-socket4",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 11031,
+          "event": "server.response.finish",
+          "socket": "server-socket4",
+          "request": "server-request4"
+        },
+        {
+          "ms": 11031,
+          "event": "server.response.close",
+          "socket": "server-socket4",
+          "request": "server-request4"
+        },
+        {
+          "ms": 11033,
+          "event": "server.socket.close",
+          "socket": "server-socket3"
+        },
+        {
+          "ms": 11050,
+          "event": "server.socket.close",
+          "socket": "server-socket4"
+        },
+        {
+          "ms": 11052,
+          "event": "server.request",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 2,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 11052,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request5",
+          "socket": "server-socket5",
+          "rpcMethod": "tools/call"
+        },
+        {
+          "ms": 11052,
+          "event": "server.response.finish",
+          "socket": "server-socket5",
+          "request": "server-request5"
+        },
+        {
+          "ms": 11052,
+          "event": "server.response.close",
+          "socket": "server-socket5",
+          "request": "server-request5"
+        },
+        {
+          "ms": 11060,
+          "event": "server.socket.close",
+          "socket": "server-socket5"
+        },
+        {
+          "ms": 11062,
+          "event": "server.request",
+          "socket": "server-socket6",
+          "request": "server-request6",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 3,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 11062,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request6",
+          "socket": "server-socket6",
+          "rpcMethod": "tools/call"
+        },
+        {
+          "ms": 11062,
+          "event": "server.response.finish",
+          "socket": "server-socket6",
+          "request": "server-request6"
+        },
+        {
+          "ms": 11062,
+          "event": "server.response.close",
+          "socket": "server-socket6",
+          "request": "server-request6"
+        },
+        {
+          "ms": 11068,
+          "event": "server.socket.close",
+          "socket": "server-socket6"
+        },
+        {
+          "ms": 11070,
+          "event": "server.request",
+          "socket": "server-socket7",
+          "request": "server-request7",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 4,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 11070,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request7",
+          "socket": "server-socket7",
+          "rpcMethod": "tools/call"
+        },
+        {
+          "ms": 11070,
+          "event": "server.response.finish",
+          "socket": "server-socket7",
+          "request": "server-request7"
+        },
+        {
+          "ms": 11070,
+          "event": "server.response.close",
+          "socket": "server-socket7",
+          "request": "server-request7"
+        },
+        {
+          "ms": 11081,
+          "event": "server.socket.close",
+          "socket": "server-socket7"
+        },
+        {
+          "ms": 11083,
+          "event": "server.request",
+          "socket": "server-socket8",
+          "request": "server-request8",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "initialize",
+          "rpcId": 0,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 11083,
+          "event": "server.response.finish",
+          "socket": "server-socket8",
+          "request": "server-request8"
+        },
+        {
+          "ms": 11083,
+          "event": "server.response.close",
+          "socket": "server-socket8",
+          "request": "server-request8"
+        },
+        {
+          "ms": 11086,
+          "event": "server.socket.close",
+          "socket": "server-socket8"
+        },
+        {
+          "ms": 11091,
+          "event": "server.request",
+          "socket": "server-socket9",
+          "request": "server-request9",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized",
+          "rpcId": null,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 11091,
+          "event": "server.response.finish",
+          "socket": "server-socket9",
+          "request": "server-request9"
+        },
+        {
+          "ms": 11091,
+          "event": "server.response.close",
+          "socket": "server-socket9",
+          "request": "server-request9"
+        },
+        {
+          "ms": 11095,
+          "event": "server.socket.close",
+          "socket": "server-socket9"
+        },
+        {
+          "ms": 11104,
+          "event": "server.request",
+          "socket": "server-socket10",
+          "request": "server-request10",
+          "path": "/beta",
+          "method": "GET",
+          "rpcMethod": null,
+          "rpcId": null,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 11107,
+          "event": "server.request",
+          "socket": "server-socket11",
+          "request": "server-request11",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "tools/list",
+          "rpcId": 1,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 11108,
+          "event": "server.response.finish",
+          "socket": "server-socket11",
+          "request": "server-request11"
+        },
+        {
+          "ms": 11108,
+          "event": "server.response.close",
+          "socket": "server-socket11",
+          "request": "server-request11"
+        },
+        {
+          "ms": 11112,
+          "event": "server.socket.close",
+          "socket": "server-socket11"
+        },
+        {
+          "ms": 11118,
+          "event": "server.request",
+          "socket": "server-socket12",
+          "request": "server-request12",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 2,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 11118,
+          "event": "server.response.finish",
+          "socket": "server-socket12",
+          "request": "server-request12"
+        },
+        {
+          "ms": 11118,
+          "event": "server.response.close",
+          "socket": "server-socket12",
+          "request": "server-request12"
+        },
+        {
+          "ms": 11120,
+          "event": "server.socket.close",
+          "socket": "server-socket12"
+        },
+        {
+          "ms": 11125,
+          "event": "server.request",
+          "socket": "server-socket13",
+          "request": "server-request13",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 3,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 11125,
+          "event": "server.response.finish",
+          "socket": "server-socket13",
+          "request": "server-request13"
+        },
+        {
+          "ms": 11125,
+          "event": "server.response.close",
+          "socket": "server-socket13",
+          "request": "server-request13"
+        },
+        {
+          "ms": 11127,
+          "event": "server.socket.close",
+          "socket": "server-socket13"
+        },
+        {
+          "ms": 11131,
+          "event": "server.request",
+          "socket": "server-socket14",
+          "request": "server-request14",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 5,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 11132,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request14",
+          "socket": "server-socket14",
+          "rpcMethod": "tools/call"
+        },
+        {
+          "ms": 11132,
+          "event": "server.response.finish",
+          "socket": "server-socket14",
+          "request": "server-request14"
+        },
+        {
+          "ms": 11132,
+          "event": "server.response.close",
+          "socket": "server-socket14",
+          "request": "server-request14"
+        },
+        {
+          "ms": 11136,
+          "event": "server.socket.close",
+          "socket": "server-socket14"
+        },
+        {
+          "ms": 11275,
+          "event": "server.socket.close",
+          "socket": "server-socket10"
+        },
+        {
+          "ms": 11275,
+          "event": "server.response.close",
+          "socket": "server-socket10",
+          "request": "server-request10"
+        },
+        {
+          "ms": 11349,
+          "event": "supervisor.child_joined",
+          "code": 0,
+          "signal": null,
+          "killed": false
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "variant": "release",
+      "scenario": "runtime-lazy",
+      "elapsedMs": 2244,
+      "naturalExit": true,
+      "code": 0,
+      "signal": null,
+      "assertions": {
+        "naturalChildExitZero": true,
+        "actualRuntimeCachedCatalogOnly": true,
+        "actualRuntimeLazyReadCalls": true,
+        "noExplicitCatalogPrewarm": true,
+        "actualRuntimeDisposeAndJoin": true,
+        "noSessionHeadersOrDeletes": true,
+        "expectedGcControl": true,
+        "outputComplete": true,
+        "noTcpAtBeforeExit": true,
+        "noServerSocketsAtChildExit": true,
+        "noHeldBodiesAtChildExit": true
+      },
+      "heldBodiesAtCleanup": [],
+      "heldBodiesAtChildExit": [],
+      "openServerConnectionsAtChildExit": [],
+      "events": [
+        {
+          "ms": 0,
+          "event": "fixture.runtime_import.start",
+          "variant": "release"
+        },
+        {
+          "ms": 1507,
+          "event": "fixture.runtime_import.complete",
+          "variant": "release"
+        },
+        {
+          "ms": 1517,
+          "event": "fixture.lazy_start.no_getCatalog"
+        },
+        {
+          "ms": 1517,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_alpha",
+          "sequence": 1
+        },
+        {
+          "ms": 1597,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1602,
+          "event": "request.create",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1613,
+          "event": "socket.connected",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1615,
+          "event": "request.socket",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "socket": "socket3"
+        },
+        {
+          "ms": 1627,
+          "event": "request.headers",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 1629,
+          "event": "request.trailers",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1661,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1662,
+          "event": "request.create",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1671,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1671,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1677,
+          "event": "socket.closed",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1677,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1677,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1700,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1701,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1701,
+          "event": "socket.connected",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1701,
+          "event": "request.socket",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "socket": "socket6"
+        },
+        {
+          "ms": 1707,
+          "event": "request.headers",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 202
+        },
+        {
+          "ms": 1708,
+          "event": "request.trailers",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1710,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1710,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1710,
+          "event": "socket.closed",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1711,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1711,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1711,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1711,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1717,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1718,
+          "event": "request.create",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1721,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1722,
+          "event": "request.create",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1722,
+          "event": "socket.connected",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1723,
+          "event": "request.socket",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "socket": "socket11"
+        },
+        {
+          "ms": 1723,
+          "event": "socket.connected",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1724,
+          "event": "request.socket",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "socket": "socket12"
+        },
+        {
+          "ms": 1725,
+          "event": "request.headers",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/alpha",
+          "status": 405
+        },
+        {
+          "ms": 1725,
+          "event": "request.trailers",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1727,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1727,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1729,
+          "event": "socket.closed",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1729,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1729,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1729,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1729,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1729,
+          "event": "request.headers",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 1730,
+          "event": "request.trailers",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1756,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1757,
+          "event": "request.create",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1759,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1759,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1760,
+          "event": "socket.closed",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1760,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1760,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1760,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1760,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1761,
+          "event": "socket.connected",
+          "socket": "socket15"
+        },
+        {
+          "ms": 1761,
+          "event": "request.socket",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "socket": "socket15"
+        },
+        {
+          "ms": 1764,
+          "event": "request.headers",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 1766,
+          "event": "request.trailers",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1775,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_alpha",
+          "sequence": 1,
+          "text": "synthetic-1"
+        },
+        {
+          "ms": 1775,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_alpha",
+          "sequence": 2
+        },
+        {
+          "ms": 1777,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1778,
+          "event": "request.create",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1779,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1779,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1780,
+          "event": "socket.closed",
+          "socket": "socket15"
+        },
+        {
+          "ms": 1780,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1780,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1780,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1780,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1780,
+          "event": "socket.connected",
+          "socket": "socket18"
+        },
+        {
+          "ms": 1780,
+          "event": "request.socket",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "socket": "socket18"
+        },
+        {
+          "ms": 1781,
+          "event": "request.headers",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 1781,
+          "event": "request.trailers",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1783,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_alpha",
+          "sequence": 2,
+          "text": "synthetic-2"
+        },
+        {
+          "ms": 1783,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_alpha",
+          "sequence": 3
+        },
+        {
+          "ms": 1786,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1786,
+          "event": "request.create",
+          "request": "request20",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1788,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 1788,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 1789,
+          "event": "socket.closed",
+          "socket": "socket18"
+        },
+        {
+          "ms": 1789,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 1789,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 1789,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 1789,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 1789,
+          "event": "socket.connected",
+          "socket": "socket21"
+        },
+        {
+          "ms": 1789,
+          "event": "request.socket",
+          "request": "request20",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "socket": "socket21"
+        },
+        {
+          "ms": 1791,
+          "event": "request.headers",
+          "request": "request20",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 1791,
+          "event": "request.trailers",
+          "request": "request20",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1793,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_alpha",
+          "sequence": 3,
+          "text": "synthetic-3"
+        },
+        {
+          "ms": 1793,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_beta",
+          "sequence": 1
+        },
+        {
+          "ms": 1797,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 1797,
+          "event": "request.create",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 1798,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 1798,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 1799,
+          "event": "socket.closed",
+          "socket": "socket21"
+        },
+        {
+          "ms": 1799,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 1799,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 1799,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 1799,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 1799,
+          "event": "socket.connected",
+          "socket": "socket24"
+        },
+        {
+          "ms": 1799,
+          "event": "request.socket",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "socket": "socket24"
+        },
+        {
+          "ms": 1801,
+          "event": "request.headers",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 1801,
+          "event": "request.trailers",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 1803,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 1803,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 1805,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 1806,
+          "event": "request.create",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 1809,
+          "event": "socket.closed",
+          "socket": "socket24"
+        },
+        {
+          "ms": 1809,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 1809,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 1809,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 1809,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 1810,
+          "event": "socket.connected",
+          "socket": "socket27"
+        },
+        {
+          "ms": 1810,
+          "event": "request.socket",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "socket": "socket27"
+        },
+        {
+          "ms": 1812,
+          "event": "request.headers",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 202
+        },
+        {
+          "ms": 1812,
+          "event": "request.trailers",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 1813,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 1814,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 1814,
+          "event": "socket.closed",
+          "socket": "socket27"
+        },
+        {
+          "ms": 1815,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 1815,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 1815,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 1815,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 1816,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/beta"
+        },
+        {
+          "ms": 1817,
+          "event": "request.create",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/beta"
+        },
+        {
+          "ms": 1819,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 1819,
+          "event": "request.create",
+          "request": "request31",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 1820,
+          "event": "socket.connected",
+          "socket": "socket32"
+        },
+        {
+          "ms": 1821,
+          "event": "request.socket",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "socket": "socket32"
+        },
+        {
+          "ms": 1822,
+          "event": "socket.connected",
+          "socket": "socket33"
+        },
+        {
+          "ms": 1822,
+          "event": "request.socket",
+          "request": "request31",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "socket": "socket33"
+        },
+        {
+          "ms": 1823,
+          "event": "request.headers",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 1826,
+          "event": "request.headers",
+          "request": "request31",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 1826,
+          "event": "request.trailers",
+          "request": "request31",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 1827,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 1828,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 1830,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 1831,
+          "event": "request.create",
+          "request": "request35",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 1832,
+          "event": "socket.closed",
+          "socket": "socket33"
+        },
+        {
+          "ms": 1833,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 1833,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 1833,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 1833,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 1833,
+          "event": "socket.connected",
+          "socket": "socket36"
+        },
+        {
+          "ms": 1834,
+          "event": "request.socket",
+          "request": "request35",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "socket": "socket36"
+        },
+        {
+          "ms": 1836,
+          "event": "request.headers",
+          "request": "request35",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 1836,
+          "event": "request.trailers",
+          "request": "request35",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 1838,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 1838,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 1840,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_beta",
+          "sequence": 1,
+          "text": "synthetic-1"
+        },
+        {
+          "ms": 1840,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_beta",
+          "sequence": 2
+        },
+        {
+          "ms": 1842,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 1842,
+          "event": "request.create",
+          "request": "request38",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 1843,
+          "event": "socket.closed",
+          "socket": "socket36"
+        },
+        {
+          "ms": 1844,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 1844,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 1844,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 1844,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 1844,
+          "event": "socket.connected",
+          "socket": "socket39"
+        },
+        {
+          "ms": 1844,
+          "event": "request.socket",
+          "request": "request38",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "socket": "socket39"
+        },
+        {
+          "ms": 1846,
+          "event": "request.headers",
+          "request": "request38",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 1847,
+          "event": "request.trailers",
+          "request": "request38",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 1848,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 1848,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 1850,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_beta",
+          "sequence": 2,
+          "text": "synthetic-2"
+        },
+        {
+          "ms": 1850,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_alpha",
+          "sequence": 4
+        },
+        {
+          "ms": 1851,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1852,
+          "event": "request.create",
+          "request": "request41",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1853,
+          "event": "socket.closed",
+          "socket": "socket39"
+        },
+        {
+          "ms": 1853,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 1853,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 1854,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 1854,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 1854,
+          "event": "socket.connected",
+          "socket": "socket42"
+        },
+        {
+          "ms": 1855,
+          "event": "request.socket",
+          "request": "request41",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "socket": "socket42"
+        },
+        {
+          "ms": 1856,
+          "event": "request.headers",
+          "request": "request41",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 1857,
+          "event": "request.trailers",
+          "request": "request41",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1858,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_alpha",
+          "sequence": 4,
+          "text": "synthetic-4"
+        },
+        {
+          "ms": 1859,
+          "event": "peekCatalog.complete",
+          "serverCount": 2,
+          "toolCount": 2,
+          "diagnostics": 0
+        },
+        {
+          "ms": 1861,
+          "event": "request.error",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/beta",
+          "error": 20
+        },
+        {
+          "ms": 1863,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 1863,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 1864,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 1864,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 1866,
+          "event": "runtime.dispose.complete"
+        },
+        {
+          "ms": 1866,
+          "event": "runtime.join.complete"
+        },
+        {
+          "ms": 1915,
+          "event": "release.state_close.complete"
+        },
+        {
+          "ms": 1915,
+          "event": "cleanup.complete",
+          "result": "closed",
+          "resources": {
+            "PipeWrap": 2,
+            "TCPSocketWrap": 2,
+            "Immediate": 1
+          }
+        },
+        {
+          "ms": 1915,
+          "event": "output.complete"
+        },
+        {
+          "ms": 1916,
+          "event": "socket.closed",
+          "socket": "socket42"
+        },
+        {
+          "ms": 1916,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 1916,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 1916,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 1916,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 1917,
+          "event": "socket.closed",
+          "socket": "socket32"
+        },
+        {
+          "ms": 1917,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 1917,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 1917,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 1917,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 1917,
+          "event": "process.beforeExit",
+          "code": 0,
+          "resources": {
+            "PipeWrap": 2
+          }
+        },
+        {
+          "ms": 1917,
+          "event": "process.exit",
+          "code": 0
+        }
+      ],
+      "serverEvents": [
+        {
+          "ms": 1910,
+          "event": "server.request",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "initialize",
+          "rpcId": 0,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 1910,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request1",
+          "socket": "server-socket1",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1910,
+          "event": "server.response.finish",
+          "socket": "server-socket1",
+          "request": "server-request1"
+        },
+        {
+          "ms": 1910,
+          "event": "server.response.close",
+          "socket": "server-socket1",
+          "request": "server-request1"
+        },
+        {
+          "ms": 1963,
+          "event": "server.socket.close",
+          "socket": "server-socket1"
+        },
+        {
+          "ms": 1995,
+          "event": "server.request",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized",
+          "rpcId": null,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 1995,
+          "event": "server.response.finish",
+          "socket": "server-socket2",
+          "request": "server-request2"
+        },
+        {
+          "ms": 1995,
+          "event": "server.response.close",
+          "socket": "server-socket2",
+          "request": "server-request2"
+        },
+        {
+          "ms": 1999,
+          "event": "server.socket.close",
+          "socket": "server-socket2"
+        },
+        {
+          "ms": 2013,
+          "event": "server.request",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "path": "/alpha",
+          "method": "GET",
+          "rpcMethod": null,
+          "rpcId": null,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2013,
+          "event": "server.response.finish",
+          "socket": "server-socket3",
+          "request": "server-request3"
+        },
+        {
+          "ms": 2013,
+          "event": "server.response.close",
+          "socket": "server-socket3",
+          "request": "server-request3"
+        },
+        {
+          "ms": 2013,
+          "event": "server.request",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/list",
+          "rpcId": 1,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2013,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request4",
+          "socket": "server-socket4",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 2013,
+          "event": "server.response.finish",
+          "socket": "server-socket4",
+          "request": "server-request4"
+        },
+        {
+          "ms": 2013,
+          "event": "server.response.close",
+          "socket": "server-socket4",
+          "request": "server-request4"
+        },
+        {
+          "ms": 2017,
+          "event": "server.socket.close",
+          "socket": "server-socket3"
+        },
+        {
+          "ms": 2048,
+          "event": "server.socket.close",
+          "socket": "server-socket4"
+        },
+        {
+          "ms": 2051,
+          "event": "server.request",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 2,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2051,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request5",
+          "socket": "server-socket5",
+          "rpcMethod": "tools/call"
+        },
+        {
+          "ms": 2051,
+          "event": "server.response.finish",
+          "socket": "server-socket5",
+          "request": "server-request5"
+        },
+        {
+          "ms": 2051,
+          "event": "server.response.close",
+          "socket": "server-socket5",
+          "request": "server-request5"
+        },
+        {
+          "ms": 2068,
+          "event": "server.socket.close",
+          "socket": "server-socket5"
+        },
+        {
+          "ms": 2069,
+          "event": "server.request",
+          "socket": "server-socket6",
+          "request": "server-request6",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 3,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2070,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request6",
+          "socket": "server-socket6",
+          "rpcMethod": "tools/call"
+        },
+        {
+          "ms": 2070,
+          "event": "server.response.finish",
+          "socket": "server-socket6",
+          "request": "server-request6"
+        },
+        {
+          "ms": 2070,
+          "event": "server.response.close",
+          "socket": "server-socket6",
+          "request": "server-request6"
+        },
+        {
+          "ms": 2077,
+          "event": "server.socket.close",
+          "socket": "server-socket6"
+        },
+        {
+          "ms": 2079,
+          "event": "server.request",
+          "socket": "server-socket7",
+          "request": "server-request7",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 4,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2079,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request7",
+          "socket": "server-socket7",
+          "rpcMethod": "tools/call"
+        },
+        {
+          "ms": 2079,
+          "event": "server.response.finish",
+          "socket": "server-socket7",
+          "request": "server-request7"
+        },
+        {
+          "ms": 2079,
+          "event": "server.response.close",
+          "socket": "server-socket7",
+          "request": "server-request7"
+        },
+        {
+          "ms": 2087,
+          "event": "server.socket.close",
+          "socket": "server-socket7"
+        },
+        {
+          "ms": 2089,
+          "event": "server.request",
+          "socket": "server-socket8",
+          "request": "server-request8",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "initialize",
+          "rpcId": 0,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2089,
+          "event": "server.response.finish",
+          "socket": "server-socket8",
+          "request": "server-request8"
+        },
+        {
+          "ms": 2089,
+          "event": "server.response.close",
+          "socket": "server-socket8",
+          "request": "server-request8"
+        },
+        {
+          "ms": 2092,
+          "event": "server.socket.close",
+          "socket": "server-socket8"
+        },
+        {
+          "ms": 2100,
+          "event": "server.request",
+          "socket": "server-socket9",
+          "request": "server-request9",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized",
+          "rpcId": null,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2100,
+          "event": "server.response.finish",
+          "socket": "server-socket9",
+          "request": "server-request9"
+        },
+        {
+          "ms": 2100,
+          "event": "server.response.close",
+          "socket": "server-socket9",
+          "request": "server-request9"
+        },
+        {
+          "ms": 2103,
+          "event": "server.socket.close",
+          "socket": "server-socket9"
+        },
+        {
+          "ms": 2110,
+          "event": "server.request",
+          "socket": "server-socket10",
+          "request": "server-request10",
+          "path": "/beta",
+          "method": "GET",
+          "rpcMethod": null,
+          "rpcId": null,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2113,
+          "event": "server.request",
+          "socket": "server-socket11",
+          "request": "server-request11",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "tools/list",
+          "rpcId": 1,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2113,
+          "event": "server.response.finish",
+          "socket": "server-socket11",
+          "request": "server-request11"
+        },
+        {
+          "ms": 2113,
+          "event": "server.response.close",
+          "socket": "server-socket11",
+          "request": "server-request11"
+        },
+        {
+          "ms": 2117,
+          "event": "server.socket.close",
+          "socket": "server-socket11"
+        },
+        {
+          "ms": 2123,
+          "event": "server.request",
+          "socket": "server-socket12",
+          "request": "server-request12",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 2,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2124,
+          "event": "server.response.finish",
+          "socket": "server-socket12",
+          "request": "server-request12"
+        },
+        {
+          "ms": 2124,
+          "event": "server.response.close",
+          "socket": "server-socket12",
+          "request": "server-request12"
+        },
+        {
+          "ms": 2128,
+          "event": "server.socket.close",
+          "socket": "server-socket12"
+        },
+        {
+          "ms": 2134,
+          "event": "server.request",
+          "socket": "server-socket13",
+          "request": "server-request13",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 3,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2134,
+          "event": "server.response.finish",
+          "socket": "server-socket13",
+          "request": "server-request13"
+        },
+        {
+          "ms": 2134,
+          "event": "server.response.close",
+          "socket": "server-socket13",
+          "request": "server-request13"
+        },
+        {
+          "ms": 2138,
+          "event": "server.socket.close",
+          "socket": "server-socket13"
+        },
+        {
+          "ms": 2144,
+          "event": "server.request",
+          "socket": "server-socket14",
+          "request": "server-request14",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 5,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2144,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request14",
+          "socket": "server-socket14",
+          "rpcMethod": "tools/call"
+        },
+        {
+          "ms": 2144,
+          "event": "server.response.finish",
+          "socket": "server-socket14",
+          "request": "server-request14"
+        },
+        {
+          "ms": 2144,
+          "event": "server.response.close",
+          "socket": "server-socket14",
+          "request": "server-request14"
+        },
+        {
+          "ms": 2151,
+          "event": "server.socket.close",
+          "socket": "server-socket10"
+        },
+        {
+          "ms": 2151,
+          "event": "server.response.close",
+          "socket": "server-socket10",
+          "request": "server-request10"
+        },
+        {
+          "ms": 2154,
+          "event": "server.socket.close",
+          "socket": "server-socket14"
+        },
+        {
+          "ms": 2243,
+          "event": "supervisor.child_joined",
+          "code": 0,
+          "signal": null,
+          "killed": false
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "variant": "release",
+      "scenario": "runtime-lazy-gc",
+      "elapsedMs": 2998,
+      "naturalExit": true,
+      "code": 0,
+      "signal": null,
+      "assertions": {
+        "naturalChildExitZero": true,
+        "actualRuntimeCachedCatalogOnly": true,
+        "actualRuntimeLazyReadCalls": true,
+        "noExplicitCatalogPrewarm": true,
+        "actualRuntimeDisposeAndJoin": true,
+        "noSessionHeadersOrDeletes": true,
+        "expectedGcControl": true,
+        "outputComplete": true,
+        "noTcpAtBeforeExit": true,
+        "noServerSocketsAtChildExit": true,
+        "noHeldBodiesAtChildExit": true
+      },
+      "heldBodiesAtCleanup": [],
+      "heldBodiesAtChildExit": [],
+      "openServerConnectionsAtChildExit": [],
+      "events": [
+        {
+          "ms": 0,
+          "event": "fixture.runtime_import.start",
+          "variant": "release"
+        },
+        {
+          "ms": 1768,
+          "event": "fixture.runtime_import.complete",
+          "variant": "release"
+        },
+        {
+          "ms": 1774,
+          "event": "fixture.lazy_start.no_getCatalog"
+        },
+        {
+          "ms": 1774,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_alpha",
+          "sequence": 1
+        },
+        {
+          "ms": 1873,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1884,
+          "event": "request.create",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1899,
+          "event": "socket.connected",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1902,
+          "event": "request.socket",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "socket": "socket3"
+        },
+        {
+          "ms": 1926,
+          "event": "request.headers",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 1929,
+          "event": "request.trailers",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1991,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 1992,
+          "event": "request.create",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2007,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 2007,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 2014,
+          "event": "socket.closed",
+          "socket": "socket3"
+        },
+        {
+          "ms": 2014,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 2014,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 2014,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 2014,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 2015,
+          "event": "socket.connected",
+          "socket": "socket6"
+        },
+        {
+          "ms": 2015,
+          "event": "request.socket",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "socket": "socket6"
+        },
+        {
+          "ms": 2016,
+          "event": "request.headers",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 202
+        },
+        {
+          "ms": 2017,
+          "event": "request.trailers",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2019,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 2019,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 2019,
+          "event": "socket.closed",
+          "socket": "socket6"
+        },
+        {
+          "ms": 2019,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 2020,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 2020,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 2020,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 2023,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2023,
+          "event": "request.create",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2027,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2028,
+          "event": "request.create",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2029,
+          "event": "socket.connected",
+          "socket": "socket11"
+        },
+        {
+          "ms": 2029,
+          "event": "request.socket",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "socket": "socket11"
+        },
+        {
+          "ms": 2030,
+          "event": "socket.connected",
+          "socket": "socket12"
+        },
+        {
+          "ms": 2030,
+          "event": "request.socket",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "socket": "socket12"
+        },
+        {
+          "ms": 2031,
+          "event": "request.headers",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/alpha",
+          "status": 405
+        },
+        {
+          "ms": 2031,
+          "event": "request.trailers",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2033,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 2033,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 2033,
+          "event": "socket.closed",
+          "socket": "socket11"
+        },
+        {
+          "ms": 2033,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 2033,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 2033,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 2033,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 2038,
+          "event": "request.headers",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 2039,
+          "event": "request.trailers",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2076,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2079,
+          "event": "request.create",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2081,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 2081,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 2082,
+          "event": "socket.closed",
+          "socket": "socket12"
+        },
+        {
+          "ms": 2085,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 2085,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 2085,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 2085,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 2086,
+          "event": "socket.connected",
+          "socket": "socket15"
+        },
+        {
+          "ms": 2086,
+          "event": "request.socket",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "socket": "socket15"
+        },
+        {
+          "ms": 2092,
+          "event": "request.headers",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 2093,
+          "event": "request.trailers",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2101,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_alpha",
+          "sequence": 1,
+          "text": "synthetic-1"
+        },
+        {
+          "ms": 2101,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_alpha",
+          "sequence": 2
+        },
+        {
+          "ms": 2106,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2107,
+          "event": "request.create",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2110,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 2110,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 2115,
+          "event": "socket.closed",
+          "socket": "socket15"
+        },
+        {
+          "ms": 2115,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 2115,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 2115,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 2115,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 2116,
+          "event": "socket.connected",
+          "socket": "socket18"
+        },
+        {
+          "ms": 2116,
+          "event": "request.socket",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "socket": "socket18"
+        },
+        {
+          "ms": 2123,
+          "event": "request.headers",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 2123,
+          "event": "request.trailers",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2131,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_alpha",
+          "sequence": 2,
+          "text": "synthetic-2"
+        },
+        {
+          "ms": 2131,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_alpha",
+          "sequence": 3
+        },
+        {
+          "ms": 2133,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2135,
+          "event": "request.create",
+          "request": "request20",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2136,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 2136,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 2139,
+          "event": "socket.closed",
+          "socket": "socket18"
+        },
+        {
+          "ms": 2139,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 2139,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 2139,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 2139,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 2139,
+          "event": "socket.connected",
+          "socket": "socket21"
+        },
+        {
+          "ms": 2139,
+          "event": "request.socket",
+          "request": "request20",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "socket": "socket21"
+        },
+        {
+          "ms": 2141,
+          "event": "request.headers",
+          "request": "request20",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 2141,
+          "event": "request.trailers",
+          "request": "request20",
+          "dispatcher": "dispatcher19",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2147,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_alpha",
+          "sequence": 3,
+          "text": "synthetic-3"
+        },
+        {
+          "ms": 2147,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_beta",
+          "sequence": 1
+        },
+        {
+          "ms": 2152,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 2153,
+          "event": "request.create",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 2156,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 2156,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 2157,
+          "event": "socket.closed",
+          "socket": "socket21"
+        },
+        {
+          "ms": 2157,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 2157,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 2157,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 2157,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher19"
+        },
+        {
+          "ms": 2157,
+          "event": "socket.connected",
+          "socket": "socket24"
+        },
+        {
+          "ms": 2157,
+          "event": "request.socket",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "socket": "socket24"
+        },
+        {
+          "ms": 2162,
+          "event": "request.headers",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 2162,
+          "event": "request.trailers",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 2165,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 2165,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 2168,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 2169,
+          "event": "request.create",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 2170,
+          "event": "socket.closed",
+          "socket": "socket24"
+        },
+        {
+          "ms": 2170,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 2170,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 2170,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 2170,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 2170,
+          "event": "socket.connected",
+          "socket": "socket27"
+        },
+        {
+          "ms": 2170,
+          "event": "request.socket",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "socket": "socket27"
+        },
+        {
+          "ms": 2178,
+          "event": "request.headers",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 202
+        },
+        {
+          "ms": 2178,
+          "event": "request.trailers",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 2179,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 2179,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 2183,
+          "event": "socket.closed",
+          "socket": "socket27"
+        },
+        {
+          "ms": 2183,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 2183,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 2183,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 2183,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 2188,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/beta"
+        },
+        {
+          "ms": 2191,
+          "event": "request.create",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/beta"
+        },
+        {
+          "ms": 2197,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 2198,
+          "event": "request.create",
+          "request": "request31",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 2199,
+          "event": "socket.connected",
+          "socket": "socket32"
+        },
+        {
+          "ms": 2202,
+          "event": "request.socket",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "socket": "socket32"
+        },
+        {
+          "ms": 2203,
+          "event": "socket.connected",
+          "socket": "socket33"
+        },
+        {
+          "ms": 2203,
+          "event": "request.socket",
+          "request": "request31",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "socket": "socket33"
+        },
+        {
+          "ms": 2204,
+          "event": "request.headers",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 2206,
+          "event": "request.headers",
+          "request": "request31",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 2209,
+          "event": "request.trailers",
+          "request": "request31",
+          "dispatcher": "dispatcher30",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 2212,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 2212,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 2216,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 2216,
+          "event": "request.create",
+          "request": "request35",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 2217,
+          "event": "socket.closed",
+          "socket": "socket33"
+        },
+        {
+          "ms": 2217,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 2217,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 2217,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 2217,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher30"
+        },
+        {
+          "ms": 2217,
+          "event": "socket.connected",
+          "socket": "socket36"
+        },
+        {
+          "ms": 2218,
+          "event": "request.socket",
+          "request": "request35",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "socket": "socket36"
+        },
+        {
+          "ms": 2220,
+          "event": "request.headers",
+          "request": "request35",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 2220,
+          "event": "request.trailers",
+          "request": "request35",
+          "dispatcher": "dispatcher34",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 2221,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 2221,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 2222,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_beta",
+          "sequence": 1,
+          "text": "synthetic-1"
+        },
+        {
+          "ms": 2222,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_beta",
+          "sequence": 2
+        },
+        {
+          "ms": 2224,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 2224,
+          "event": "request.create",
+          "request": "request38",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 2225,
+          "event": "socket.closed",
+          "socket": "socket36"
+        },
+        {
+          "ms": 2225,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 2225,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 2225,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 2225,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher34"
+        },
+        {
+          "ms": 2225,
+          "event": "socket.connected",
+          "socket": "socket39"
+        },
+        {
+          "ms": 2225,
+          "event": "request.socket",
+          "request": "request38",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "socket": "socket39"
+        },
+        {
+          "ms": 2229,
+          "event": "request.headers",
+          "request": "request38",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta",
+          "status": 200
+        },
+        {
+          "ms": 2229,
+          "event": "request.trailers",
+          "request": "request38",
+          "dispatcher": "dispatcher37",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/beta"
+        },
+        {
+          "ms": 2230,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 2230,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 2231,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_beta",
+          "sequence": 2,
+          "text": "synthetic-2"
+        },
+        {
+          "ms": 2231,
+          "event": "runtime.lazy_call.start",
+          "serverName": "synthetic_alpha",
+          "sequence": 4
+        },
+        {
+          "ms": 2232,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2232,
+          "event": "request.create",
+          "request": "request41",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2233,
+          "event": "socket.closed",
+          "socket": "socket39"
+        },
+        {
+          "ms": 2233,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 2234,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 2234,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 2234,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher37"
+        },
+        {
+          "ms": 2234,
+          "event": "socket.connected",
+          "socket": "socket42"
+        },
+        {
+          "ms": 2234,
+          "event": "request.socket",
+          "request": "request41",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "socket": "socket42"
+        },
+        {
+          "ms": 2238,
+          "event": "request.headers",
+          "request": "request41",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha",
+          "status": 200
+        },
+        {
+          "ms": 2238,
+          "event": "request.trailers",
+          "request": "request41",
+          "dispatcher": "dispatcher40",
+          "fetchId": null,
+          "method": "POST",
+          "path": "/alpha"
+        },
+        {
+          "ms": 2240,
+          "event": "runtime.echo.complete",
+          "serverName": "synthetic_alpha",
+          "sequence": 4,
+          "text": "synthetic-4"
+        },
+        {
+          "ms": 2241,
+          "event": "peekCatalog.complete",
+          "serverCount": 2,
+          "toolCount": 2,
+          "diagnostics": 0
+        },
+        {
+          "ms": 2241,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 2241,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 2359,
+          "event": "socket.closed",
+          "socket": "socket42"
+        },
+        {
+          "ms": 2359,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 2359,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 2359,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 2359,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher40"
+        },
+        {
+          "ms": 2522,
+          "event": "fixture.gc.complete"
+        },
+        {
+          "ms": 2536,
+          "event": "request.error",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "fetchId": null,
+          "method": "GET",
+          "path": "/beta",
+          "error": 20
+        },
+        {
+          "ms": 2542,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 2542,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 2544,
+          "event": "runtime.dispose.complete"
+        },
+        {
+          "ms": 2544,
+          "event": "runtime.join.complete"
+        },
+        {
+          "ms": 2605,
+          "event": "release.state_close.complete"
+        },
+        {
+          "ms": 2605,
+          "event": "cleanup.complete",
+          "result": "closed",
+          "resources": {
+            "PipeWrap": 2,
+            "TCPSocketWrap": 1
+          }
+        },
+        {
+          "ms": 2605,
+          "event": "output.complete"
+        },
+        {
+          "ms": 2605,
+          "event": "socket.closed",
+          "socket": "socket32"
+        },
+        {
+          "ms": 2606,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 2606,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 2606,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 2606,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 2606,
+          "event": "process.beforeExit",
+          "code": 0,
+          "resources": {
+            "PipeWrap": 2
+          }
+        },
+        {
+          "ms": 2606,
+          "event": "process.exit",
+          "code": 0
+        }
+      ],
+      "serverEvents": [
+        {
+          "ms": 2256,
+          "event": "server.request",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "initialize",
+          "rpcId": 0,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2264,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request1",
+          "socket": "server-socket1",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 2264,
+          "event": "server.response.finish",
+          "socket": "server-socket1",
+          "request": "server-request1"
+        },
+        {
+          "ms": 2264,
+          "event": "server.response.close",
+          "socket": "server-socket1",
+          "request": "server-request1"
+        },
+        {
+          "ms": 2356,
+          "event": "server.socket.close",
+          "socket": "server-socket1"
+        },
+        {
+          "ms": 2363,
+          "event": "server.request",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized",
+          "rpcId": null,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2363,
+          "event": "server.response.finish",
+          "socket": "server-socket2",
+          "request": "server-request2"
+        },
+        {
+          "ms": 2363,
+          "event": "server.response.close",
+          "socket": "server-socket2",
+          "request": "server-request2"
+        },
+        {
+          "ms": 2366,
+          "event": "server.socket.close",
+          "socket": "server-socket2"
+        },
+        {
+          "ms": 2377,
+          "event": "server.request",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "path": "/alpha",
+          "method": "GET",
+          "rpcMethod": null,
+          "rpcId": null,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2384,
+          "event": "server.response.finish",
+          "socket": "server-socket3",
+          "request": "server-request3"
+        },
+        {
+          "ms": 2384,
+          "event": "server.response.close",
+          "socket": "server-socket3",
+          "request": "server-request3"
+        },
+        {
+          "ms": 2385,
+          "event": "server.request",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/list",
+          "rpcId": 1,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2385,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request4",
+          "socket": "server-socket4",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 2385,
+          "event": "server.response.finish",
+          "socket": "server-socket4",
+          "request": "server-request4"
+        },
+        {
+          "ms": 2385,
+          "event": "server.response.close",
+          "socket": "server-socket4",
+          "request": "server-request4"
+        },
+        {
+          "ms": 2385,
+          "event": "server.socket.close",
+          "socket": "server-socket3"
+        },
+        {
+          "ms": 2429,
+          "event": "server.socket.close",
+          "socket": "server-socket4"
+        },
+        {
+          "ms": 2436,
+          "event": "server.request",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 2,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2436,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request5",
+          "socket": "server-socket5",
+          "rpcMethod": "tools/call"
+        },
+        {
+          "ms": 2436,
+          "event": "server.response.finish",
+          "socket": "server-socket5",
+          "request": "server-request5"
+        },
+        {
+          "ms": 2436,
+          "event": "server.response.close",
+          "socket": "server-socket5",
+          "request": "server-request5"
+        },
+        {
+          "ms": 2457,
+          "event": "server.socket.close",
+          "socket": "server-socket5"
+        },
+        {
+          "ms": 2469,
+          "event": "server.request",
+          "socket": "server-socket6",
+          "request": "server-request6",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 3,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2469,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request6",
+          "socket": "server-socket6",
+          "rpcMethod": "tools/call"
+        },
+        {
+          "ms": 2469,
+          "event": "server.response.finish",
+          "socket": "server-socket6",
+          "request": "server-request6"
+        },
+        {
+          "ms": 2469,
+          "event": "server.response.close",
+          "socket": "server-socket6",
+          "request": "server-request6"
+        },
+        {
+          "ms": 2487,
+          "event": "server.socket.close",
+          "socket": "server-socket6"
+        },
+        {
+          "ms": 2488,
+          "event": "server.request",
+          "socket": "server-socket7",
+          "request": "server-request7",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 4,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2488,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request7",
+          "socket": "server-socket7",
+          "rpcMethod": "tools/call"
+        },
+        {
+          "ms": 2488,
+          "event": "server.response.finish",
+          "socket": "server-socket7",
+          "request": "server-request7"
+        },
+        {
+          "ms": 2488,
+          "event": "server.response.close",
+          "socket": "server-socket7",
+          "request": "server-request7"
+        },
+        {
+          "ms": 2504,
+          "event": "server.socket.close",
+          "socket": "server-socket7"
+        },
+        {
+          "ms": 2508,
+          "event": "server.request",
+          "socket": "server-socket8",
+          "request": "server-request8",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "initialize",
+          "rpcId": 0,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2509,
+          "event": "server.response.finish",
+          "socket": "server-socket8",
+          "request": "server-request8"
+        },
+        {
+          "ms": 2509,
+          "event": "server.response.close",
+          "socket": "server-socket8",
+          "request": "server-request8"
+        },
+        {
+          "ms": 2512,
+          "event": "server.socket.close",
+          "socket": "server-socket8"
+        },
+        {
+          "ms": 2524,
+          "event": "server.request",
+          "socket": "server-socket9",
+          "request": "server-request9",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized",
+          "rpcId": null,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2524,
+          "event": "server.response.finish",
+          "socket": "server-socket9",
+          "request": "server-request9"
+        },
+        {
+          "ms": 2524,
+          "event": "server.response.close",
+          "socket": "server-socket9",
+          "request": "server-request9"
+        },
+        {
+          "ms": 2527,
+          "event": "server.socket.close",
+          "socket": "server-socket9"
+        },
+        {
+          "ms": 2549,
+          "event": "server.request",
+          "socket": "server-socket10",
+          "request": "server-request10",
+          "path": "/beta",
+          "method": "GET",
+          "rpcMethod": null,
+          "rpcId": null,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2550,
+          "event": "server.request",
+          "socket": "server-socket11",
+          "request": "server-request11",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "tools/list",
+          "rpcId": 1,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2550,
+          "event": "server.response.finish",
+          "socket": "server-socket11",
+          "request": "server-request11"
+        },
+        {
+          "ms": 2550,
+          "event": "server.response.close",
+          "socket": "server-socket11",
+          "request": "server-request11"
+        },
+        {
+          "ms": 2560,
+          "event": "server.socket.close",
+          "socket": "server-socket11"
+        },
+        {
+          "ms": 2566,
+          "event": "server.request",
+          "socket": "server-socket12",
+          "request": "server-request12",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 2,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2567,
+          "event": "server.response.finish",
+          "socket": "server-socket12",
+          "request": "server-request12"
+        },
+        {
+          "ms": 2567,
+          "event": "server.response.close",
+          "socket": "server-socket12",
+          "request": "server-request12"
+        },
+        {
+          "ms": 2569,
+          "event": "server.socket.close",
+          "socket": "server-socket12"
+        },
+        {
+          "ms": 2575,
+          "event": "server.request",
+          "socket": "server-socket13",
+          "request": "server-request13",
+          "path": "/beta",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 3,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2575,
+          "event": "server.response.finish",
+          "socket": "server-socket13",
+          "request": "server-request13"
+        },
+        {
+          "ms": 2575,
+          "event": "server.response.close",
+          "socket": "server-socket13",
+          "request": "server-request13"
+        },
+        {
+          "ms": 2579,
+          "event": "server.socket.close",
+          "socket": "server-socket13"
+        },
+        {
+          "ms": 2582,
+          "event": "server.request",
+          "socket": "server-socket14",
+          "request": "server-request14",
+          "path": "/alpha",
+          "method": "POST",
+          "rpcMethod": "tools/call",
+          "rpcId": 5,
+          "hasSessionHeader": false
+        },
+        {
+          "ms": 2582,
+          "event": "server.post_rpc_result_sent_body_closed",
+          "request": "server-request14",
+          "socket": "server-socket14",
+          "rpcMethod": "tools/call"
+        },
+        {
+          "ms": 2582,
+          "event": "server.response.finish",
+          "socket": "server-socket14",
+          "request": "server-request14"
+        },
+        {
+          "ms": 2582,
+          "event": "server.response.close",
+          "socket": "server-socket14",
+          "request": "server-request14"
+        },
+        {
+          "ms": 2590,
+          "event": "server.socket.close",
+          "socket": "server-socket14"
+        },
+        {
+          "ms": 2886,
+          "event": "server.socket.close",
+          "socket": "server-socket10"
+        },
+        {
+          "ms": 2886,
+          "event": "server.response.close",
+          "socket": "server-socket10",
+          "request": "server-request10"
+        },
+        {
+          "ms": 2997,
+          "event": "supervisor.child_joined",
+          "code": 0,
+          "signal": null,
+          "killed": false
+        }
+      ],
+      "stderr": ""
+    }
+  ]
+}

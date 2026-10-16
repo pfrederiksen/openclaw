@@ -1,0 +1,5231 @@
+{
+  "node": "v24.21.0",
+  "platform": "linux 6.8.0-146-generic x64",
+  "isolation": {
+    "networkInterfaces": [
+      "lo"
+    ],
+    "home": "/home/fixture",
+    "credentialEnvKeys": []
+  },
+  "results": [
+    {
+      "scenario": "success",
+      "elapsedMs": 3153,
+      "naturalExit": true,
+      "code": 0,
+      "signal": null,
+      "openServerConnectionsAtChildExit": [],
+      "events": [
+        {
+          "ms": 1973,
+          "event": "fetch.start",
+          "fetchId": "fetch1",
+          "method": "POST"
+        },
+        {
+          "ms": 1995,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher1",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 2003,
+          "event": "request.create",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 2015,
+          "event": "socket.connected",
+          "socket": "socket3"
+        },
+        {
+          "ms": 2018,
+          "event": "request.socket",
+          "request": "request2",
+          "socket": "socket3"
+        },
+        {
+          "ms": 2061,
+          "event": "request.headers",
+          "request": "request2",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 2063,
+          "event": "request.trailers",
+          "request": "request2",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 2072,
+          "event": "fetch.response",
+          "fetchId": "fetch1",
+          "status": 200
+        },
+        {
+          "ms": 2091,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 2091,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 2109,
+          "event": "fetch.start",
+          "fetchId": "fetch2",
+          "method": "POST"
+        },
+        {
+          "ms": 2113,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher4",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 2115,
+          "event": "request.create",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 2118,
+          "event": "socket.closed",
+          "socket": "socket3"
+        },
+        {
+          "ms": 2118,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 2118,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 2118,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 2118,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 2120,
+          "event": "socket.connected",
+          "socket": "socket6"
+        },
+        {
+          "ms": 2120,
+          "event": "request.socket",
+          "request": "request5",
+          "socket": "socket6"
+        },
+        {
+          "ms": 2124,
+          "event": "request.headers",
+          "request": "request5",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 202
+        },
+        {
+          "ms": 2124,
+          "event": "request.trailers",
+          "request": "request5",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 2125,
+          "event": "fetch.response",
+          "fetchId": "fetch2",
+          "status": 202
+        },
+        {
+          "ms": 2127,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 2127,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 2128,
+          "event": "socket.closed",
+          "socket": "socket6"
+        },
+        {
+          "ms": 2128,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 2128,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 2129,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 2129,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 2140,
+          "event": "fetch.start",
+          "fetchId": "fetch3",
+          "method": "GET"
+        },
+        {
+          "ms": 2148,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher7",
+          "method": "GET",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 2151,
+          "event": "request.create",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "method": "GET",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 2152,
+          "event": "connect.complete"
+        },
+        {
+          "ms": 2153,
+          "event": "fetch.start",
+          "fetchId": "fetch4",
+          "method": "POST"
+        },
+        {
+          "ms": 2155,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher9",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 2156,
+          "event": "request.create",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 2158,
+          "event": "socket.connected",
+          "socket": "socket11"
+        },
+        {
+          "ms": 2158,
+          "event": "request.socket",
+          "request": "request8",
+          "socket": "socket11"
+        },
+        {
+          "ms": 2160,
+          "event": "socket.connected",
+          "socket": "socket12"
+        },
+        {
+          "ms": 2160,
+          "event": "request.socket",
+          "request": "request10",
+          "socket": "socket12"
+        },
+        {
+          "ms": 2162,
+          "event": "request.headers",
+          "request": "request8",
+          "dispatcher": null,
+          "method": "GET",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 2163,
+          "event": "fetch.response",
+          "fetchId": "fetch3",
+          "status": 200
+        },
+        {
+          "ms": 2174,
+          "event": "request.headers",
+          "request": "request10",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 2179,
+          "event": "request.trailers",
+          "request": "request10",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 2179,
+          "event": "fetch.response",
+          "fetchId": "fetch4",
+          "status": 200
+        },
+        {
+          "ms": 2181,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 2181,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 2192,
+          "event": "tools.complete",
+          "count": 1
+        },
+        {
+          "ms": 2193,
+          "event": "fetch.start",
+          "fetchId": "fetch5",
+          "method": "DELETE"
+        },
+        {
+          "ms": 2197,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher13",
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 2198,
+          "event": "request.create",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 2200,
+          "event": "socket.closed",
+          "socket": "socket12"
+        },
+        {
+          "ms": 2200,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 2200,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 2200,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 2200,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 2200,
+          "event": "socket.connected",
+          "socket": "socket15"
+        },
+        {
+          "ms": 2201,
+          "event": "request.socket",
+          "request": "request14",
+          "socket": "socket15"
+        },
+        {
+          "ms": 2203,
+          "event": "request.headers",
+          "request": "request14",
+          "dispatcher": null,
+          "method": "DELETE",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 2203,
+          "event": "request.trailers",
+          "request": "request14",
+          "dispatcher": null,
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 2205,
+          "event": "fetch.response",
+          "fetchId": "fetch5",
+          "status": 200
+        },
+        {
+          "ms": 2206,
+          "event": "fetch.body.cancel.start",
+          "fetchId": "fetch5"
+        },
+        {
+          "ms": 2206,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 2206,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 2208,
+          "event": "request.error",
+          "request": "request8",
+          "dispatcher": null,
+          "method": "GET",
+          "path": "/synthetic-mcp",
+          "error": 20
+        },
+        {
+          "ms": 2210,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 2210,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 2213,
+          "event": "cleanup.complete",
+          "result": "closed",
+          "resources": {
+            "PipeWrap": 2,
+            "TCPSocketWrap": 2,
+            "Immediate": 1
+          }
+        },
+        {
+          "ms": 2213,
+          "event": "output.complete"
+        },
+        {
+          "ms": 2215,
+          "event": "socket.closed",
+          "socket": "socket11"
+        },
+        {
+          "ms": 2215,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 2216,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 2216,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 2216,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 2216,
+          "event": "socket.closed",
+          "socket": "socket15"
+        },
+        {
+          "ms": 2217,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 2217,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 2217,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 2217,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 2217,
+          "event": "fetch.body.cancel.settled",
+          "fetchId": "fetch5"
+        },
+        {
+          "ms": 2217,
+          "event": "process.beforeExit",
+          "code": 0,
+          "resources": {
+            "PipeWrap": 2
+          }
+        },
+        {
+          "ms": 2218,
+          "event": "process.exit",
+          "code": 0
+        }
+      ],
+      "serverEvents": [
+        {
+          "ms": 2882,
+          "event": "server.request",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 2900,
+          "event": "server.response.finish",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 2900,
+          "event": "server.response.close",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 2943,
+          "event": "server.socket.close",
+          "socket": "server-socket1"
+        },
+        {
+          "ms": 2966,
+          "event": "server.request",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 2967,
+          "event": "server.response.finish",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 2967,
+          "event": "server.response.close",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 2971,
+          "event": "server.socket.close",
+          "socket": "server-socket2"
+        },
+        {
+          "ms": 3003,
+          "event": "server.request",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "path": "/synthetic-mcp",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 3005,
+          "event": "server.request",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 3005,
+          "event": "server.response.finish",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 3005,
+          "event": "server.response.close",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 3027,
+          "event": "server.socket.close",
+          "socket": "server-socket4"
+        },
+        {
+          "ms": 3046,
+          "event": "server.request",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "path": "/synthetic-mcp",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 3047,
+          "event": "server.response.finish",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 3047,
+          "event": "server.response.close",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 3056,
+          "event": "server.socket.close",
+          "socket": "server-socket5"
+        },
+        {
+          "ms": 3056,
+          "event": "server.socket.close",
+          "socket": "server-socket3"
+        },
+        {
+          "ms": 3057,
+          "event": "server.response.close",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 3152,
+          "event": "supervisor.child_joined",
+          "code": 0,
+          "signal": null,
+          "killed": false
+        }
+      ],
+      "stderr": "",
+      "assertions": {
+        "naturalChildExitZero": true,
+        "outputComplete": true,
+        "noTcpAtBeforeExit": true,
+        "zeroServerSocketsAtChildExit": true,
+        "expectedCleanupResult": true,
+        "expectedReadOutcome": true,
+        "remoteErrorPreserved": true,
+        "peerRemainsUsable": true
+      }
+    },
+    {
+      "scenario": "delete-error",
+      "elapsedMs": 1939,
+      "naturalExit": true,
+      "code": 0,
+      "signal": null,
+      "openServerConnectionsAtChildExit": [],
+      "events": [
+        {
+          "ms": 1132,
+          "event": "fetch.start",
+          "fetchId": "fetch1",
+          "method": "POST"
+        },
+        {
+          "ms": 1156,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher1",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1161,
+          "event": "request.create",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1173,
+          "event": "socket.connected",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1175,
+          "event": "request.socket",
+          "request": "request2",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1189,
+          "event": "request.headers",
+          "request": "request2",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1191,
+          "event": "request.trailers",
+          "request": "request2",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1202,
+          "event": "fetch.response",
+          "fetchId": "fetch1",
+          "status": 200
+        },
+        {
+          "ms": 1221,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1221,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1243,
+          "event": "fetch.start",
+          "fetchId": "fetch2",
+          "method": "POST"
+        },
+        {
+          "ms": 1246,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher4",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1247,
+          "event": "request.create",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1251,
+          "event": "socket.closed",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1251,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1251,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1251,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1251,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1251,
+          "event": "socket.connected",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1252,
+          "event": "request.socket",
+          "request": "request5",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1256,
+          "event": "request.headers",
+          "request": "request5",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 202
+        },
+        {
+          "ms": 1256,
+          "event": "request.trailers",
+          "request": "request5",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1258,
+          "event": "fetch.response",
+          "fetchId": "fetch2",
+          "status": 202
+        },
+        {
+          "ms": 1259,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1259,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1260,
+          "event": "socket.closed",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1260,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1260,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1260,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1260,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1263,
+          "event": "fetch.start",
+          "fetchId": "fetch3",
+          "method": "GET"
+        },
+        {
+          "ms": 1267,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher7",
+          "method": "GET",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1268,
+          "event": "request.create",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "method": "GET",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1268,
+          "event": "connect.complete"
+        },
+        {
+          "ms": 1269,
+          "event": "fetch.start",
+          "fetchId": "fetch4",
+          "method": "POST"
+        },
+        {
+          "ms": 1271,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher9",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1271,
+          "event": "request.create",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1272,
+          "event": "socket.connected",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1272,
+          "event": "request.socket",
+          "request": "request8",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1273,
+          "event": "socket.connected",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1273,
+          "event": "request.socket",
+          "request": "request10",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1280,
+          "event": "request.headers",
+          "request": "request8",
+          "dispatcher": null,
+          "method": "GET",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1282,
+          "event": "fetch.response",
+          "fetchId": "fetch3",
+          "status": 200
+        },
+        {
+          "ms": 1288,
+          "event": "request.headers",
+          "request": "request10",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1291,
+          "event": "request.trailers",
+          "request": "request10",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1292,
+          "event": "fetch.response",
+          "fetchId": "fetch4",
+          "status": 200
+        },
+        {
+          "ms": 1293,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1293,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1299,
+          "event": "tools.complete",
+          "count": 1
+        },
+        {
+          "ms": 1300,
+          "event": "fetch.start",
+          "fetchId": "fetch5",
+          "method": "DELETE"
+        },
+        {
+          "ms": 1304,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher13",
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1305,
+          "event": "request.create",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1306,
+          "event": "socket.closed",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1306,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1306,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1306,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1306,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1306,
+          "event": "socket.connected",
+          "socket": "socket15"
+        },
+        {
+          "ms": 1307,
+          "event": "request.socket",
+          "request": "request14",
+          "socket": "socket15"
+        },
+        {
+          "ms": 1311,
+          "event": "request.headers",
+          "request": "request14",
+          "dispatcher": null,
+          "method": "DELETE",
+          "path": "/synthetic-mcp",
+          "status": 500
+        },
+        {
+          "ms": 1311,
+          "event": "request.trailers",
+          "request": "request14",
+          "dispatcher": null,
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1312,
+          "event": "fetch.response",
+          "fetchId": "fetch5",
+          "status": 500
+        },
+        {
+          "ms": 1312,
+          "event": "fetch.body.cancel.start",
+          "fetchId": "fetch5"
+        },
+        {
+          "ms": 1313,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1313,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1313,
+          "event": "cleanup.remote_error",
+          "name": "Error",
+          "code": 500
+        },
+        {
+          "ms": 1314,
+          "event": "request.error",
+          "request": "request8",
+          "dispatcher": null,
+          "method": "GET",
+          "path": "/synthetic-mcp",
+          "error": 20
+        },
+        {
+          "ms": 1316,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1316,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1319,
+          "event": "cleanup.complete",
+          "result": "uncertain",
+          "resources": {
+            "PipeWrap": 2,
+            "TCPSocketWrap": 2,
+            "Immediate": 1
+          }
+        },
+        {
+          "ms": 1319,
+          "event": "output.complete"
+        },
+        {
+          "ms": 1320,
+          "event": "socket.closed",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1320,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1320,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1320,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1320,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1320,
+          "event": "socket.closed",
+          "socket": "socket15"
+        },
+        {
+          "ms": 1320,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1320,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1320,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1320,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1320,
+          "event": "fetch.body.cancel.settled",
+          "fetchId": "fetch5"
+        },
+        {
+          "ms": 1320,
+          "event": "process.beforeExit",
+          "code": 0,
+          "resources": {
+            "PipeWrap": 2
+          }
+        },
+        {
+          "ms": 1321,
+          "event": "process.exit",
+          "code": 0
+        }
+      ],
+      "serverEvents": [
+        {
+          "ms": 1707,
+          "event": "server.request",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1708,
+          "event": "server.response.finish",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1708,
+          "event": "server.response.close",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1751,
+          "event": "server.socket.close",
+          "socket": "server-socket1"
+        },
+        {
+          "ms": 1781,
+          "event": "server.request",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1781,
+          "event": "server.response.finish",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1781,
+          "event": "server.response.close",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1788,
+          "event": "server.socket.close",
+          "socket": "server-socket2"
+        },
+        {
+          "ms": 1806,
+          "event": "server.request",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "path": "/synthetic-mcp",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1807,
+          "event": "server.request",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1808,
+          "event": "server.response.finish",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1808,
+          "event": "server.response.close",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1821,
+          "event": "server.socket.close",
+          "socket": "server-socket4"
+        },
+        {
+          "ms": 1837,
+          "event": "server.request",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "path": "/synthetic-mcp",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1837,
+          "event": "server.response.finish",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1838,
+          "event": "server.response.close",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1841,
+          "event": "server.socket.close",
+          "socket": "server-socket5"
+        },
+        {
+          "ms": 1843,
+          "event": "server.socket.close",
+          "socket": "server-socket3"
+        },
+        {
+          "ms": 1843,
+          "event": "server.response.close",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1939,
+          "event": "supervisor.child_joined",
+          "code": 0,
+          "signal": null,
+          "killed": false
+        }
+      ],
+      "stderr": "",
+      "assertions": {
+        "naturalChildExitZero": true,
+        "outputComplete": true,
+        "noTcpAtBeforeExit": true,
+        "zeroServerSocketsAtChildExit": true,
+        "expectedCleanupResult": true,
+        "expectedReadOutcome": true,
+        "remoteErrorPreserved": true,
+        "peerRemainsUsable": true
+      }
+    },
+    {
+      "scenario": "delete-stalled-body",
+      "elapsedMs": 1948,
+      "naturalExit": true,
+      "code": 0,
+      "signal": null,
+      "openServerConnectionsAtChildExit": [],
+      "events": [
+        {
+          "ms": 1163,
+          "event": "fetch.start",
+          "fetchId": "fetch1",
+          "method": "POST"
+        },
+        {
+          "ms": 1182,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher1",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1187,
+          "event": "request.create",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1197,
+          "event": "socket.connected",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1199,
+          "event": "request.socket",
+          "request": "request2",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1210,
+          "event": "request.headers",
+          "request": "request2",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1213,
+          "event": "request.trailers",
+          "request": "request2",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1219,
+          "event": "fetch.response",
+          "fetchId": "fetch1",
+          "status": 200
+        },
+        {
+          "ms": 1232,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1232,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1248,
+          "event": "fetch.start",
+          "fetchId": "fetch2",
+          "method": "POST"
+        },
+        {
+          "ms": 1251,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher4",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1251,
+          "event": "request.create",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1255,
+          "event": "socket.closed",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1255,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1255,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1255,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1255,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1256,
+          "event": "socket.connected",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1256,
+          "event": "request.socket",
+          "request": "request5",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1258,
+          "event": "request.headers",
+          "request": "request5",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 202
+        },
+        {
+          "ms": 1258,
+          "event": "request.trailers",
+          "request": "request5",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1259,
+          "event": "fetch.response",
+          "fetchId": "fetch2",
+          "status": 202
+        },
+        {
+          "ms": 1260,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1260,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1261,
+          "event": "socket.closed",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1262,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1262,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1262,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1262,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1263,
+          "event": "fetch.start",
+          "fetchId": "fetch3",
+          "method": "GET"
+        },
+        {
+          "ms": 1266,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher7",
+          "method": "GET",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1266,
+          "event": "request.create",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "method": "GET",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1267,
+          "event": "connect.complete"
+        },
+        {
+          "ms": 1267,
+          "event": "fetch.start",
+          "fetchId": "fetch4",
+          "method": "POST"
+        },
+        {
+          "ms": 1269,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher9",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1269,
+          "event": "request.create",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1270,
+          "event": "socket.connected",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1270,
+          "event": "request.socket",
+          "request": "request8",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1271,
+          "event": "socket.connected",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1271,
+          "event": "request.socket",
+          "request": "request10",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1272,
+          "event": "request.headers",
+          "request": "request8",
+          "dispatcher": null,
+          "method": "GET",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1273,
+          "event": "fetch.response",
+          "fetchId": "fetch3",
+          "status": 200
+        },
+        {
+          "ms": 1279,
+          "event": "request.headers",
+          "request": "request10",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1279,
+          "event": "request.trailers",
+          "request": "request10",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1280,
+          "event": "fetch.response",
+          "fetchId": "fetch4",
+          "status": 200
+        },
+        {
+          "ms": 1281,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1281,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1286,
+          "event": "tools.complete",
+          "count": 1
+        },
+        {
+          "ms": 1286,
+          "event": "fetch.start",
+          "fetchId": "fetch5",
+          "method": "DELETE"
+        },
+        {
+          "ms": 1288,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher13",
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1288,
+          "event": "request.create",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1289,
+          "event": "socket.closed",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1289,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1289,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1289,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1289,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1289,
+          "event": "socket.connected",
+          "socket": "socket15"
+        },
+        {
+          "ms": 1290,
+          "event": "request.socket",
+          "request": "request14",
+          "socket": "socket15"
+        },
+        {
+          "ms": 1293,
+          "event": "request.headers",
+          "request": "request14",
+          "dispatcher": null,
+          "method": "DELETE",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1294,
+          "event": "fetch.response",
+          "fetchId": "fetch5",
+          "status": 200
+        },
+        {
+          "ms": 1294,
+          "event": "fetch.body.cancel.start",
+          "fetchId": "fetch5"
+        },
+        {
+          "ms": 1295,
+          "event": "request.error",
+          "request": "request14",
+          "dispatcher": null,
+          "method": "DELETE",
+          "path": "/synthetic-mcp",
+          "error": 20
+        },
+        {
+          "ms": 1296,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1296,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1297,
+          "event": "request.error",
+          "request": "request8",
+          "dispatcher": null,
+          "method": "GET",
+          "path": "/synthetic-mcp",
+          "error": 20
+        },
+        {
+          "ms": 1299,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1299,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1301,
+          "event": "cleanup.complete",
+          "result": "closed",
+          "resources": {
+            "PipeWrap": 2,
+            "TCPSocketWrap": 2
+          }
+        },
+        {
+          "ms": 1301,
+          "event": "output.complete"
+        },
+        {
+          "ms": 1302,
+          "event": "socket.closed",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1302,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1302,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1302,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1302,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1302,
+          "event": "socket.closed",
+          "socket": "socket15"
+        },
+        {
+          "ms": 1302,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1303,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1303,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1303,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1303,
+          "event": "fetch.body.cancel.settled",
+          "fetchId": "fetch5"
+        },
+        {
+          "ms": 1303,
+          "event": "process.beforeExit",
+          "code": 0,
+          "resources": {
+            "PipeWrap": 2
+          }
+        },
+        {
+          "ms": 1303,
+          "event": "process.exit",
+          "code": 0
+        }
+      ],
+      "serverEvents": [
+        {
+          "ms": 1720,
+          "event": "server.request",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1720,
+          "event": "server.response.finish",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1720,
+          "event": "server.response.close",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1750,
+          "event": "server.socket.close",
+          "socket": "server-socket1"
+        },
+        {
+          "ms": 1773,
+          "event": "server.request",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1773,
+          "event": "server.response.finish",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1773,
+          "event": "server.response.close",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1778,
+          "event": "server.socket.close",
+          "socket": "server-socket2"
+        },
+        {
+          "ms": 1787,
+          "event": "server.request",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "path": "/synthetic-mcp",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1791,
+          "event": "server.request",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1791,
+          "event": "server.response.finish",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1791,
+          "event": "server.response.close",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1799,
+          "event": "server.socket.close",
+          "socket": "server-socket4"
+        },
+        {
+          "ms": 1808,
+          "event": "server.request",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "path": "/synthetic-mcp",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1813,
+          "event": "server.socket.close",
+          "socket": "server-socket5"
+        },
+        {
+          "ms": 1813,
+          "event": "server.response.close",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1814,
+          "event": "server.socket.close",
+          "socket": "server-socket3"
+        },
+        {
+          "ms": 1814,
+          "event": "server.response.close",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1948,
+          "event": "supervisor.child_joined",
+          "code": 0,
+          "signal": null,
+          "killed": false
+        }
+      ],
+      "stderr": "",
+      "assertions": {
+        "naturalChildExitZero": true,
+        "outputComplete": true,
+        "noTcpAtBeforeExit": true,
+        "zeroServerSocketsAtChildExit": true,
+        "expectedCleanupResult": true,
+        "expectedReadOutcome": true,
+        "remoteErrorPreserved": true,
+        "peerRemainsUsable": true
+      }
+    },
+    {
+      "scenario": "sse-close",
+      "elapsedMs": 1674,
+      "naturalExit": true,
+      "code": 0,
+      "signal": null,
+      "openServerConnectionsAtChildExit": [],
+      "events": [
+        {
+          "ms": 929,
+          "event": "fetch.start",
+          "fetchId": "fetch1",
+          "method": "POST"
+        },
+        {
+          "ms": 945,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher1",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 949,
+          "event": "request.create",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 957,
+          "event": "socket.connected",
+          "socket": "socket3"
+        },
+        {
+          "ms": 959,
+          "event": "request.socket",
+          "request": "request2",
+          "socket": "socket3"
+        },
+        {
+          "ms": 971,
+          "event": "request.headers",
+          "request": "request2",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 973,
+          "event": "request.trailers",
+          "request": "request2",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 978,
+          "event": "fetch.response",
+          "fetchId": "fetch1",
+          "status": 200
+        },
+        {
+          "ms": 991,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 991,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1010,
+          "event": "fetch.start",
+          "fetchId": "fetch2",
+          "method": "POST"
+        },
+        {
+          "ms": 1013,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher4",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1014,
+          "event": "request.create",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1017,
+          "event": "socket.closed",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1017,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1017,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1017,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1017,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1017,
+          "event": "socket.connected",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1017,
+          "event": "request.socket",
+          "request": "request5",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1019,
+          "event": "request.headers",
+          "request": "request5",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 202
+        },
+        {
+          "ms": 1019,
+          "event": "request.trailers",
+          "request": "request5",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1020,
+          "event": "fetch.response",
+          "fetchId": "fetch2",
+          "status": 202
+        },
+        {
+          "ms": 1021,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1021,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1021,
+          "event": "socket.closed",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1022,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1022,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1022,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1022,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1023,
+          "event": "fetch.start",
+          "fetchId": "fetch3",
+          "method": "GET"
+        },
+        {
+          "ms": 1025,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher7",
+          "method": "GET",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1025,
+          "event": "request.create",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "method": "GET",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1025,
+          "event": "connect.complete"
+        },
+        {
+          "ms": 1026,
+          "event": "fetch.start",
+          "fetchId": "fetch4",
+          "method": "POST"
+        },
+        {
+          "ms": 1027,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher9",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1028,
+          "event": "request.create",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1029,
+          "event": "socket.connected",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1029,
+          "event": "request.socket",
+          "request": "request8",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1029,
+          "event": "socket.connected",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1030,
+          "event": "request.socket",
+          "request": "request10",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1030,
+          "event": "request.headers",
+          "request": "request8",
+          "dispatcher": null,
+          "method": "GET",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1030,
+          "event": "request.trailers",
+          "request": "request8",
+          "dispatcher": null,
+          "method": "GET",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1032,
+          "event": "fetch.response",
+          "fetchId": "fetch3",
+          "status": 200
+        },
+        {
+          "ms": 1038,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1038,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1040,
+          "event": "socket.closed",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1040,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1040,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1040,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1040,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1041,
+          "event": "request.headers",
+          "request": "request10",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1041,
+          "event": "request.trailers",
+          "request": "request10",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1042,
+          "event": "fetch.response",
+          "fetchId": "fetch4",
+          "status": 200
+        },
+        {
+          "ms": 1043,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1044,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1048,
+          "event": "tools.complete",
+          "count": 1
+        },
+        {
+          "ms": 1048,
+          "event": "fetch.start",
+          "fetchId": "fetch5",
+          "method": "DELETE"
+        },
+        {
+          "ms": 1050,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher13",
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1051,
+          "event": "request.create",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1052,
+          "event": "socket.closed",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1052,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1052,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1052,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1052,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1052,
+          "event": "socket.connected",
+          "socket": "socket15"
+        },
+        {
+          "ms": 1052,
+          "event": "request.socket",
+          "request": "request14",
+          "socket": "socket15"
+        },
+        {
+          "ms": 1054,
+          "event": "request.headers",
+          "request": "request14",
+          "dispatcher": null,
+          "method": "DELETE",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1055,
+          "event": "request.trailers",
+          "request": "request14",
+          "dispatcher": null,
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1056,
+          "event": "fetch.response",
+          "fetchId": "fetch5",
+          "status": 200
+        },
+        {
+          "ms": 1056,
+          "event": "fetch.body.cancel.start",
+          "fetchId": "fetch5"
+        },
+        {
+          "ms": 1060,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1060,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1063,
+          "event": "cleanup.complete",
+          "result": "closed",
+          "resources": {
+            "PipeWrap": 2,
+            "TCPSocketWrap": 1,
+            "Immediate": 1
+          }
+        },
+        {
+          "ms": 1064,
+          "event": "output.complete"
+        },
+        {
+          "ms": 1064,
+          "event": "socket.closed",
+          "socket": "socket15"
+        },
+        {
+          "ms": 1064,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1064,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1064,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1064,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1065,
+          "event": "fetch.body.cancel.settled",
+          "fetchId": "fetch5"
+        },
+        {
+          "ms": 1065,
+          "event": "process.beforeExit",
+          "code": 0,
+          "resources": {
+            "PipeWrap": 2
+          }
+        },
+        {
+          "ms": 1065,
+          "event": "process.exit",
+          "code": 0
+        }
+      ],
+      "serverEvents": [
+        {
+          "ms": 1481,
+          "event": "server.request",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1481,
+          "event": "server.response.finish",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1481,
+          "event": "server.response.close",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1511,
+          "event": "server.socket.close",
+          "socket": "server-socket1"
+        },
+        {
+          "ms": 1535,
+          "event": "server.request",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1535,
+          "event": "server.response.finish",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1535,
+          "event": "server.response.close",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1538,
+          "event": "server.socket.close",
+          "socket": "server-socket2"
+        },
+        {
+          "ms": 1546,
+          "event": "server.request",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "path": "/synthetic-mcp",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1546,
+          "event": "server.response.finish",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1546,
+          "event": "server.response.close",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1549,
+          "event": "server.request",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1549,
+          "event": "server.response.finish",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1549,
+          "event": "server.response.close",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1556,
+          "event": "server.socket.close",
+          "socket": "server-socket3"
+        },
+        {
+          "ms": 1561,
+          "event": "server.socket.close",
+          "socket": "server-socket4"
+        },
+        {
+          "ms": 1570,
+          "event": "server.request",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "path": "/synthetic-mcp",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1570,
+          "event": "server.response.finish",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1570,
+          "event": "server.response.close",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1579,
+          "event": "server.socket.close",
+          "socket": "server-socket5"
+        },
+        {
+          "ms": 1674,
+          "event": "supervisor.child_joined",
+          "code": 0,
+          "signal": null,
+          "killed": false
+        }
+      ],
+      "stderr": "",
+      "assertions": {
+        "naturalChildExitZero": true,
+        "outputComplete": true,
+        "noTcpAtBeforeExit": true,
+        "zeroServerSocketsAtChildExit": true,
+        "expectedCleanupResult": true,
+        "expectedReadOutcome": true,
+        "remoteErrorPreserved": true,
+        "peerRemainsUsable": true
+      }
+    },
+    {
+      "scenario": "abort-post",
+      "elapsedMs": 1965,
+      "naturalExit": true,
+      "code": 0,
+      "signal": null,
+      "openServerConnectionsAtChildExit": [],
+      "events": [
+        {
+          "ms": 1114,
+          "event": "fetch.start",
+          "fetchId": "fetch1",
+          "method": "POST"
+        },
+        {
+          "ms": 1136,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher1",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1144,
+          "event": "request.create",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1155,
+          "event": "socket.connected",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1157,
+          "event": "request.socket",
+          "request": "request2",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1168,
+          "event": "request.headers",
+          "request": "request2",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1169,
+          "event": "request.trailers",
+          "request": "request2",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1176,
+          "event": "fetch.response",
+          "fetchId": "fetch1",
+          "status": 200
+        },
+        {
+          "ms": 1192,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1192,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1211,
+          "event": "fetch.start",
+          "fetchId": "fetch2",
+          "method": "POST"
+        },
+        {
+          "ms": 1214,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher4",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1214,
+          "event": "request.create",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1217,
+          "event": "socket.closed",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1218,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1218,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1218,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1218,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1218,
+          "event": "socket.connected",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1219,
+          "event": "request.socket",
+          "request": "request5",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1220,
+          "event": "request.headers",
+          "request": "request5",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 202
+        },
+        {
+          "ms": 1220,
+          "event": "request.trailers",
+          "request": "request5",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1222,
+          "event": "fetch.response",
+          "fetchId": "fetch2",
+          "status": 202
+        },
+        {
+          "ms": 1223,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1223,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1224,
+          "event": "socket.closed",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1224,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1224,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1224,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1224,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1226,
+          "event": "fetch.start",
+          "fetchId": "fetch3",
+          "method": "GET"
+        },
+        {
+          "ms": 1228,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher7",
+          "method": "GET",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1229,
+          "event": "request.create",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "method": "GET",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1229,
+          "event": "connect.complete"
+        },
+        {
+          "ms": 1230,
+          "event": "fetch.start",
+          "fetchId": "fetch4",
+          "method": "POST"
+        },
+        {
+          "ms": 1231,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher9",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1232,
+          "event": "request.create",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1233,
+          "event": "socket.connected",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1233,
+          "event": "request.socket",
+          "request": "request8",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1234,
+          "event": "socket.connected",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1234,
+          "event": "request.socket",
+          "request": "request10",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1236,
+          "event": "request.headers",
+          "request": "request8",
+          "dispatcher": null,
+          "method": "GET",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1238,
+          "event": "fetch.response",
+          "fetchId": "fetch3",
+          "status": 200
+        },
+        {
+          "ms": 1244,
+          "event": "request.headers",
+          "request": "request10",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1245,
+          "event": "fetch.response",
+          "fetchId": "fetch4",
+          "status": 200
+        },
+        {
+          "ms": 1430,
+          "event": "fetch.start",
+          "fetchId": "fetch5",
+          "method": "POST"
+        },
+        {
+          "ms": 1430,
+          "event": "tools.error",
+          "name": "McpError",
+          "code": -32001
+        },
+        {
+          "ms": 1431,
+          "event": "fetch.start",
+          "fetchId": "fetch6",
+          "method": "DELETE"
+        },
+        {
+          "ms": 1433,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher13",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1434,
+          "event": "request.create",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1435,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher15",
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1435,
+          "event": "request.create",
+          "request": "request16",
+          "dispatcher": "dispatcher15",
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1436,
+          "event": "socket.connected",
+          "socket": "socket17"
+        },
+        {
+          "ms": 1437,
+          "event": "request.socket",
+          "request": "request14",
+          "socket": "socket17"
+        },
+        {
+          "ms": 1437,
+          "event": "socket.connected",
+          "socket": "socket18"
+        },
+        {
+          "ms": 1437,
+          "event": "request.socket",
+          "request": "request16",
+          "socket": "socket18"
+        },
+        {
+          "ms": 1438,
+          "event": "request.headers",
+          "request": "request14",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 202
+        },
+        {
+          "ms": 1438,
+          "event": "request.trailers",
+          "request": "request14",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1438,
+          "event": "fetch.response",
+          "fetchId": "fetch5",
+          "status": 202
+        },
+        {
+          "ms": 1439,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1439,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1440,
+          "event": "socket.closed",
+          "socket": "socket17"
+        },
+        {
+          "ms": 1440,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1440,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1440,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1440,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1441,
+          "event": "request.headers",
+          "request": "request16",
+          "dispatcher": null,
+          "method": "DELETE",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1441,
+          "event": "request.trailers",
+          "request": "request16",
+          "dispatcher": null,
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1442,
+          "event": "fetch.response",
+          "fetchId": "fetch6",
+          "status": 200
+        },
+        {
+          "ms": 1442,
+          "event": "fetch.body.cancel.start",
+          "fetchId": "fetch6"
+        },
+        {
+          "ms": 1443,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher15"
+        },
+        {
+          "ms": 1443,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher15"
+        },
+        {
+          "ms": 1444,
+          "event": "request.error",
+          "request": "request8",
+          "dispatcher": null,
+          "method": "GET",
+          "path": "/synthetic-mcp",
+          "error": 20
+        },
+        {
+          "ms": 1445,
+          "event": "request.error",
+          "request": "request10",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "error": 20
+        },
+        {
+          "ms": 1446,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1446,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1446,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1447,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1449,
+          "event": "cleanup.complete",
+          "result": "closed",
+          "resources": {
+            "PipeWrap": 2,
+            "TCPSocketWrap": 3,
+            "Immediate": 1
+          }
+        },
+        {
+          "ms": 1449,
+          "event": "output.complete"
+        },
+        {
+          "ms": 1449,
+          "event": "socket.closed",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1449,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1449,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1450,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1450,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1450,
+          "event": "socket.closed",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1450,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1450,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1450,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1450,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1450,
+          "event": "socket.closed",
+          "socket": "socket18"
+        },
+        {
+          "ms": 1450,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher15"
+        },
+        {
+          "ms": 1450,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher15"
+        },
+        {
+          "ms": 1450,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher15"
+        },
+        {
+          "ms": 1450,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher15"
+        },
+        {
+          "ms": 1450,
+          "event": "fetch.body.cancel.settled",
+          "fetchId": "fetch6"
+        },
+        {
+          "ms": 1451,
+          "event": "process.beforeExit",
+          "code": 0,
+          "resources": {
+            "PipeWrap": 2
+          }
+        },
+        {
+          "ms": 1451,
+          "event": "process.exit",
+          "code": 0
+        }
+      ],
+      "serverEvents": [
+        {
+          "ms": 1642,
+          "event": "server.request",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1642,
+          "event": "server.response.finish",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1642,
+          "event": "server.response.close",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1675,
+          "event": "server.socket.close",
+          "socket": "server-socket1"
+        },
+        {
+          "ms": 1700,
+          "event": "server.request",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1700,
+          "event": "server.response.finish",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1700,
+          "event": "server.response.close",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1704,
+          "event": "server.socket.close",
+          "socket": "server-socket2"
+        },
+        {
+          "ms": 1714,
+          "event": "server.request",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "path": "/synthetic-mcp",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1715,
+          "event": "server.request",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1918,
+          "event": "server.request",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "notifications/cancelled"
+        },
+        {
+          "ms": 1918,
+          "event": "server.response.finish",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "method": "POST",
+          "rpcMethod": "notifications/cancelled"
+        },
+        {
+          "ms": 1918,
+          "event": "server.response.close",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "method": "POST",
+          "rpcMethod": "notifications/cancelled"
+        },
+        {
+          "ms": 1918,
+          "event": "server.request",
+          "socket": "server-socket6",
+          "request": "server-request6",
+          "path": "/synthetic-mcp",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1919,
+          "event": "server.response.finish",
+          "socket": "server-socket6",
+          "request": "server-request6",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1919,
+          "event": "server.response.close",
+          "socket": "server-socket6",
+          "request": "server-request6",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1921,
+          "event": "server.socket.close",
+          "socket": "server-socket5"
+        },
+        {
+          "ms": 1924,
+          "event": "server.socket.close",
+          "socket": "server-socket6"
+        },
+        {
+          "ms": 1926,
+          "event": "server.socket.close",
+          "socket": "server-socket3"
+        },
+        {
+          "ms": 1926,
+          "event": "server.response.close",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1926,
+          "event": "server.socket.close",
+          "socket": "server-socket4"
+        },
+        {
+          "ms": 1926,
+          "event": "server.response.close",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1965,
+          "event": "supervisor.child_joined",
+          "code": 0,
+          "signal": null,
+          "killed": false
+        }
+      ],
+      "stderr": "",
+      "assertions": {
+        "naturalChildExitZero": true,
+        "outputComplete": true,
+        "noTcpAtBeforeExit": true,
+        "zeroServerSocketsAtChildExit": true,
+        "expectedCleanupResult": true,
+        "expectedReadOutcome": true,
+        "remoteErrorPreserved": true,
+        "peerRemainsUsable": true
+      }
+    },
+    {
+      "scenario": "legacy-sse",
+      "elapsedMs": 1690,
+      "naturalExit": true,
+      "code": 0,
+      "signal": null,
+      "openServerConnectionsAtChildExit": [],
+      "events": [
+        {
+          "ms": 1046,
+          "event": "fetch.start",
+          "fetchId": "fetch1",
+          "method": "GET"
+        },
+        {
+          "ms": 1064,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher1",
+          "method": "GET",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1068,
+          "event": "request.create",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "method": "GET",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1077,
+          "event": "socket.connected",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1079,
+          "event": "request.socket",
+          "request": "request2",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1087,
+          "event": "request.headers",
+          "request": "request2",
+          "dispatcher": null,
+          "method": "GET",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1096,
+          "event": "fetch.response",
+          "fetchId": "fetch1",
+          "status": 200
+        },
+        {
+          "ms": 1103,
+          "event": "fetch.start",
+          "fetchId": "fetch2",
+          "method": "POST"
+        },
+        {
+          "ms": 1107,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher4",
+          "method": "POST",
+          "path": "/synthetic-message"
+        },
+        {
+          "ms": 1108,
+          "event": "request.create",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "method": "POST",
+          "path": "/synthetic-message"
+        },
+        {
+          "ms": 1109,
+          "event": "socket.connected",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1109,
+          "event": "request.socket",
+          "request": "request5",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1113,
+          "event": "request.headers",
+          "request": "request5",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-message",
+          "status": 202
+        },
+        {
+          "ms": 1113,
+          "event": "request.trailers",
+          "request": "request5",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-message"
+        },
+        {
+          "ms": 1114,
+          "event": "fetch.response",
+          "fetchId": "fetch2",
+          "status": 202
+        },
+        {
+          "ms": 1128,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1128,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1133,
+          "event": "socket.closed",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1134,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1134,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1134,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1134,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1151,
+          "event": "fetch.start",
+          "fetchId": "fetch3",
+          "method": "POST"
+        },
+        {
+          "ms": 1153,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher7",
+          "method": "POST",
+          "path": "/synthetic-message"
+        },
+        {
+          "ms": 1154,
+          "event": "request.create",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "method": "POST",
+          "path": "/synthetic-message"
+        },
+        {
+          "ms": 1154,
+          "event": "socket.connected",
+          "socket": "socket9"
+        },
+        {
+          "ms": 1154,
+          "event": "request.socket",
+          "request": "request8",
+          "socket": "socket9"
+        },
+        {
+          "ms": 1158,
+          "event": "request.headers",
+          "request": "request8",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-message",
+          "status": 202
+        },
+        {
+          "ms": 1158,
+          "event": "request.trailers",
+          "request": "request8",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-message"
+        },
+        {
+          "ms": 1159,
+          "event": "fetch.response",
+          "fetchId": "fetch3",
+          "status": 202
+        },
+        {
+          "ms": 1159,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1159,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1160,
+          "event": "socket.closed",
+          "socket": "socket9"
+        },
+        {
+          "ms": 1160,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1160,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1160,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1160,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1160,
+          "event": "connect.complete"
+        },
+        {
+          "ms": 1161,
+          "event": "fetch.start",
+          "fetchId": "fetch4",
+          "method": "POST"
+        },
+        {
+          "ms": 1163,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher10",
+          "method": "POST",
+          "path": "/synthetic-message"
+        },
+        {
+          "ms": 1163,
+          "event": "request.create",
+          "request": "request11",
+          "dispatcher": "dispatcher10",
+          "method": "POST",
+          "path": "/synthetic-message"
+        },
+        {
+          "ms": 1164,
+          "event": "socket.connected",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1164,
+          "event": "request.socket",
+          "request": "request11",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1169,
+          "event": "request.headers",
+          "request": "request11",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-message",
+          "status": 202
+        },
+        {
+          "ms": 1169,
+          "event": "request.trailers",
+          "request": "request11",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-message"
+        },
+        {
+          "ms": 1170,
+          "event": "fetch.response",
+          "fetchId": "fetch4",
+          "status": 202
+        },
+        {
+          "ms": 1171,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher10"
+        },
+        {
+          "ms": 1171,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher10"
+        },
+        {
+          "ms": 1171,
+          "event": "socket.closed",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1171,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher10"
+        },
+        {
+          "ms": 1171,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher10"
+        },
+        {
+          "ms": 1172,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher10"
+        },
+        {
+          "ms": 1172,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher10"
+        },
+        {
+          "ms": 1177,
+          "event": "tools.complete",
+          "count": 1
+        },
+        {
+          "ms": 1178,
+          "event": "request.error",
+          "request": "request2",
+          "dispatcher": null,
+          "method": "GET",
+          "path": "/synthetic-mcp",
+          "error": 20
+        },
+        {
+          "ms": 1181,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1181,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1182,
+          "event": "cleanup.complete",
+          "result": "closed",
+          "resources": {
+            "PipeWrap": 2,
+            "TCPSocketWrap": 1
+          }
+        },
+        {
+          "ms": 1182,
+          "event": "output.complete"
+        },
+        {
+          "ms": 1182,
+          "event": "socket.closed",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1182,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1182,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1182,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1182,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1183,
+          "event": "process.beforeExit",
+          "code": 0,
+          "resources": {
+            "PipeWrap": 2
+          }
+        },
+        {
+          "ms": 1183,
+          "event": "process.exit",
+          "code": 0
+        }
+      ],
+      "serverEvents": [
+        {
+          "ms": 1525,
+          "event": "server.request",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "path": "/synthetic-mcp",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1557,
+          "event": "server.request",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "path": "/synthetic-message",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1557,
+          "event": "server.response.finish",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1557,
+          "event": "server.response.close",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1575,
+          "event": "server.socket.close",
+          "socket": "server-socket2"
+        },
+        {
+          "ms": 1602,
+          "event": "server.request",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "path": "/synthetic-message",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1602,
+          "event": "server.response.finish",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1602,
+          "event": "server.response.close",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1605,
+          "event": "server.socket.close",
+          "socket": "server-socket3"
+        },
+        {
+          "ms": 1613,
+          "event": "server.request",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "path": "/synthetic-message",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1613,
+          "event": "server.response.finish",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1613,
+          "event": "server.response.close",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1616,
+          "event": "server.socket.close",
+          "socket": "server-socket4"
+        },
+        {
+          "ms": 1625,
+          "event": "server.socket.close",
+          "socket": "server-socket1"
+        },
+        {
+          "ms": 1625,
+          "event": "server.response.close",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1689,
+          "event": "supervisor.child_joined",
+          "code": 0,
+          "signal": null,
+          "killed": false
+        }
+      ],
+      "stderr": "",
+      "assertions": {
+        "naturalChildExitZero": true,
+        "outputComplete": true,
+        "noTcpAtBeforeExit": true,
+        "zeroServerSocketsAtChildExit": true,
+        "expectedCleanupResult": true,
+        "expectedReadOutcome": true,
+        "remoteErrorPreserved": true,
+        "peerRemainsUsable": true
+      }
+    },
+    {
+      "scenario": "peer-control",
+      "elapsedMs": 1731,
+      "naturalExit": true,
+      "code": 0,
+      "signal": null,
+      "openServerConnectionsAtChildExit": [],
+      "events": [
+        {
+          "ms": 967,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher1",
+          "method": "POST",
+          "path": "/synthetic-peer"
+        },
+        {
+          "ms": 970,
+          "event": "request.create",
+          "request": "request2",
+          "dispatcher": "dispatcher1",
+          "method": "POST",
+          "path": "/synthetic-peer"
+        },
+        {
+          "ms": 981,
+          "event": "socket.connected",
+          "socket": "socket3"
+        },
+        {
+          "ms": 984,
+          "event": "request.socket",
+          "request": "request2",
+          "socket": "socket3"
+        },
+        {
+          "ms": 995,
+          "event": "request.headers",
+          "request": "request2",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-peer",
+          "status": 200
+        },
+        {
+          "ms": 997,
+          "event": "request.trailers",
+          "request": "request2",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-peer"
+        },
+        {
+          "ms": 1022,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1022,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1042,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher4",
+          "method": "POST",
+          "path": "/synthetic-peer"
+        },
+        {
+          "ms": 1043,
+          "event": "request.create",
+          "request": "request5",
+          "dispatcher": "dispatcher4",
+          "method": "POST",
+          "path": "/synthetic-peer"
+        },
+        {
+          "ms": 1046,
+          "event": "socket.closed",
+          "socket": "socket3"
+        },
+        {
+          "ms": 1047,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1047,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1047,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1047,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher1"
+        },
+        {
+          "ms": 1047,
+          "event": "socket.connected",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1047,
+          "event": "request.socket",
+          "request": "request5",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1049,
+          "event": "request.headers",
+          "request": "request5",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-peer",
+          "status": 202
+        },
+        {
+          "ms": 1049,
+          "event": "request.trailers",
+          "request": "request5",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-peer"
+        },
+        {
+          "ms": 1051,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1051,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1052,
+          "event": "socket.closed",
+          "socket": "socket6"
+        },
+        {
+          "ms": 1053,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1053,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1053,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1053,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher4"
+        },
+        {
+          "ms": 1057,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher7",
+          "method": "GET",
+          "path": "/synthetic-peer"
+        },
+        {
+          "ms": 1057,
+          "event": "request.create",
+          "request": "request8",
+          "dispatcher": "dispatcher7",
+          "method": "GET",
+          "path": "/synthetic-peer"
+        },
+        {
+          "ms": 1058,
+          "event": "peer.connect.complete"
+        },
+        {
+          "ms": 1059,
+          "event": "fetch.start",
+          "fetchId": "fetch1",
+          "method": "POST"
+        },
+        {
+          "ms": 1061,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher9",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1061,
+          "event": "request.create",
+          "request": "request10",
+          "dispatcher": "dispatcher9",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1063,
+          "event": "socket.connected",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1063,
+          "event": "request.socket",
+          "request": "request8",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1064,
+          "event": "socket.connected",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1064,
+          "event": "request.socket",
+          "request": "request10",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1065,
+          "event": "request.headers",
+          "request": "request8",
+          "dispatcher": null,
+          "method": "GET",
+          "path": "/synthetic-peer",
+          "status": 200
+        },
+        {
+          "ms": 1074,
+          "event": "request.headers",
+          "request": "request10",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1075,
+          "event": "request.trailers",
+          "request": "request10",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1077,
+          "event": "fetch.response",
+          "fetchId": "fetch1",
+          "status": 200
+        },
+        {
+          "ms": 1078,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1078,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1079,
+          "event": "fetch.start",
+          "fetchId": "fetch2",
+          "method": "POST"
+        },
+        {
+          "ms": 1082,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher13",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1082,
+          "event": "request.create",
+          "request": "request14",
+          "dispatcher": "dispatcher13",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1083,
+          "event": "socket.closed",
+          "socket": "socket12"
+        },
+        {
+          "ms": 1084,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1084,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1084,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1084,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher9"
+        },
+        {
+          "ms": 1084,
+          "event": "socket.connected",
+          "socket": "socket15"
+        },
+        {
+          "ms": 1084,
+          "event": "request.socket",
+          "request": "request14",
+          "socket": "socket15"
+        },
+        {
+          "ms": 1087,
+          "event": "request.headers",
+          "request": "request14",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 202
+        },
+        {
+          "ms": 1087,
+          "event": "request.trailers",
+          "request": "request14",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1088,
+          "event": "fetch.response",
+          "fetchId": "fetch2",
+          "status": 202
+        },
+        {
+          "ms": 1089,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1089,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1090,
+          "event": "socket.closed",
+          "socket": "socket15"
+        },
+        {
+          "ms": 1090,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1090,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1090,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1090,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher13"
+        },
+        {
+          "ms": 1090,
+          "event": "fetch.start",
+          "fetchId": "fetch3",
+          "method": "GET"
+        },
+        {
+          "ms": 1092,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher16",
+          "method": "GET",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1092,
+          "event": "request.create",
+          "request": "request17",
+          "dispatcher": "dispatcher16",
+          "method": "GET",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1093,
+          "event": "connect.complete"
+        },
+        {
+          "ms": 1094,
+          "event": "fetch.start",
+          "fetchId": "fetch4",
+          "method": "POST"
+        },
+        {
+          "ms": 1096,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher18",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1096,
+          "event": "request.create",
+          "request": "request19",
+          "dispatcher": "dispatcher18",
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1097,
+          "event": "socket.connected",
+          "socket": "socket20"
+        },
+        {
+          "ms": 1097,
+          "event": "request.socket",
+          "request": "request17",
+          "socket": "socket20"
+        },
+        {
+          "ms": 1098,
+          "event": "socket.connected",
+          "socket": "socket21"
+        },
+        {
+          "ms": 1098,
+          "event": "request.socket",
+          "request": "request19",
+          "socket": "socket21"
+        },
+        {
+          "ms": 1102,
+          "event": "request.headers",
+          "request": "request17",
+          "dispatcher": null,
+          "method": "GET",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1103,
+          "event": "fetch.response",
+          "fetchId": "fetch3",
+          "status": 200
+        },
+        {
+          "ms": 1108,
+          "event": "request.headers",
+          "request": "request19",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1108,
+          "event": "request.trailers",
+          "request": "request19",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1120,
+          "event": "fetch.response",
+          "fetchId": "fetch4",
+          "status": 200
+        },
+        {
+          "ms": 1121,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher18"
+        },
+        {
+          "ms": 1121,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher18"
+        },
+        {
+          "ms": 1133,
+          "event": "tools.complete",
+          "count": 1
+        },
+        {
+          "ms": 1134,
+          "event": "fetch.start",
+          "fetchId": "fetch5",
+          "method": "DELETE"
+        },
+        {
+          "ms": 1139,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher22",
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1139,
+          "event": "request.create",
+          "request": "request23",
+          "dispatcher": "dispatcher22",
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1144,
+          "event": "socket.closed",
+          "socket": "socket21"
+        },
+        {
+          "ms": 1144,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher18"
+        },
+        {
+          "ms": 1144,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher18"
+        },
+        {
+          "ms": 1144,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher18"
+        },
+        {
+          "ms": 1144,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher18"
+        },
+        {
+          "ms": 1144,
+          "event": "socket.connected",
+          "socket": "socket24"
+        },
+        {
+          "ms": 1145,
+          "event": "request.socket",
+          "request": "request23",
+          "socket": "socket24"
+        },
+        {
+          "ms": 1145,
+          "event": "request.headers",
+          "request": "request23",
+          "dispatcher": null,
+          "method": "DELETE",
+          "path": "/synthetic-mcp",
+          "status": 200
+        },
+        {
+          "ms": 1146,
+          "event": "request.trailers",
+          "request": "request23",
+          "dispatcher": null,
+          "method": "DELETE",
+          "path": "/synthetic-mcp"
+        },
+        {
+          "ms": 1147,
+          "event": "fetch.response",
+          "fetchId": "fetch5",
+          "status": 200
+        },
+        {
+          "ms": 1147,
+          "event": "fetch.body.cancel.start",
+          "fetchId": "fetch5"
+        },
+        {
+          "ms": 1152,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 1152,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 1153,
+          "event": "request.error",
+          "request": "request17",
+          "dispatcher": null,
+          "method": "GET",
+          "path": "/synthetic-mcp",
+          "error": 20
+        },
+        {
+          "ms": 1157,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 1157,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 1159,
+          "event": "cleanup.complete",
+          "result": "closed",
+          "resources": {
+            "PipeWrap": 2,
+            "TCPSocketWrap": 3,
+            "Immediate": 1
+          }
+        },
+        {
+          "ms": 1161,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher25",
+          "method": "POST",
+          "path": "/synthetic-peer"
+        },
+        {
+          "ms": 1162,
+          "event": "request.create",
+          "request": "request26",
+          "dispatcher": "dispatcher25",
+          "method": "POST",
+          "path": "/synthetic-peer"
+        },
+        {
+          "ms": 1163,
+          "event": "socket.closed",
+          "socket": "socket20"
+        },
+        {
+          "ms": 1163,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 1163,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 1163,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 1163,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher16"
+        },
+        {
+          "ms": 1164,
+          "event": "socket.closed",
+          "socket": "socket24"
+        },
+        {
+          "ms": 1164,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 1164,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 1164,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 1164,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher22"
+        },
+        {
+          "ms": 1164,
+          "event": "fetch.body.cancel.settled",
+          "fetchId": "fetch5"
+        },
+        {
+          "ms": 1171,
+          "event": "socket.connected",
+          "socket": "socket27"
+        },
+        {
+          "ms": 1171,
+          "event": "request.socket",
+          "request": "request26",
+          "socket": "socket27"
+        },
+        {
+          "ms": 1175,
+          "event": "request.headers",
+          "request": "request26",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-peer",
+          "status": 200
+        },
+        {
+          "ms": 1175,
+          "event": "request.trailers",
+          "request": "request26",
+          "dispatcher": null,
+          "method": "POST",
+          "path": "/synthetic-peer"
+        },
+        {
+          "ms": 1182,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 1182,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 1185,
+          "event": "peer.tools.after_other_disposal",
+          "count": 1
+        },
+        {
+          "ms": 1188,
+          "event": "dispatcher.dispatch",
+          "dispatcher": "dispatcher28",
+          "method": "DELETE",
+          "path": "/synthetic-peer"
+        },
+        {
+          "ms": 1193,
+          "event": "request.create",
+          "request": "request29",
+          "dispatcher": "dispatcher28",
+          "method": "DELETE",
+          "path": "/synthetic-peer"
+        },
+        {
+          "ms": 1194,
+          "event": "socket.closed",
+          "socket": "socket27"
+        },
+        {
+          "ms": 1194,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 1194,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 1194,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 1194,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher25"
+        },
+        {
+          "ms": 1195,
+          "event": "socket.connected",
+          "socket": "socket30"
+        },
+        {
+          "ms": 1195,
+          "event": "request.socket",
+          "request": "request29",
+          "socket": "socket30"
+        },
+        {
+          "ms": 1199,
+          "event": "request.headers",
+          "request": "request29",
+          "dispatcher": null,
+          "method": "DELETE",
+          "path": "/synthetic-peer",
+          "status": 200
+        },
+        {
+          "ms": 1200,
+          "event": "request.trailers",
+          "request": "request29",
+          "dispatcher": null,
+          "method": "DELETE",
+          "path": "/synthetic-peer"
+        },
+        {
+          "ms": 1201,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 1203,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 1204,
+          "event": "request.error",
+          "request": "request8",
+          "dispatcher": null,
+          "method": "GET",
+          "path": "/synthetic-peer",
+          "error": 20
+        },
+        {
+          "ms": 1205,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1206,
+          "event": "dispatcher.close.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1206,
+          "event": "peer.cleanup.complete",
+          "result": "closed"
+        },
+        {
+          "ms": 1206,
+          "event": "output.complete"
+        },
+        {
+          "ms": 1209,
+          "event": "socket.closed",
+          "socket": "socket11"
+        },
+        {
+          "ms": 1209,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1209,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1210,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1210,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher7"
+        },
+        {
+          "ms": 1210,
+          "event": "socket.closed",
+          "socket": "socket30"
+        },
+        {
+          "ms": 1210,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 1210,
+          "event": "dispatcher.destroy.start",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 1210,
+          "event": "dispatcher.destroy.settled",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 1210,
+          "event": "dispatcher.close.settled",
+          "dispatcher": "dispatcher28"
+        },
+        {
+          "ms": 1250,
+          "event": "process.beforeExit",
+          "code": 0,
+          "resources": {
+            "PipeWrap": 2
+          }
+        },
+        {
+          "ms": 1250,
+          "event": "process.exit",
+          "code": 0
+        }
+      ],
+      "serverEvents": [
+        {
+          "ms": 1419,
+          "event": "server.request",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "path": "/synthetic-peer",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1419,
+          "event": "server.response.finish",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1419,
+          "event": "server.response.close",
+          "socket": "server-socket1",
+          "request": "server-request1",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1455,
+          "event": "server.socket.close",
+          "socket": "server-socket1"
+        },
+        {
+          "ms": 1479,
+          "event": "server.request",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "path": "/synthetic-peer",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1479,
+          "event": "server.response.finish",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1479,
+          "event": "server.response.close",
+          "socket": "server-socket2",
+          "request": "server-request2",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1483,
+          "event": "server.socket.close",
+          "socket": "server-socket2"
+        },
+        {
+          "ms": 1495,
+          "event": "server.request",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "path": "/synthetic-peer",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1495,
+          "event": "server.request",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1496,
+          "event": "server.response.finish",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1496,
+          "event": "server.response.close",
+          "socket": "server-socket4",
+          "request": "server-request4",
+          "method": "POST",
+          "rpcMethod": "initialize"
+        },
+        {
+          "ms": 1509,
+          "event": "server.socket.close",
+          "socket": "server-socket4"
+        },
+        {
+          "ms": 1517,
+          "event": "server.request",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1517,
+          "event": "server.response.finish",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1517,
+          "event": "server.response.close",
+          "socket": "server-socket5",
+          "request": "server-request5",
+          "method": "POST",
+          "rpcMethod": "notifications/initialized"
+        },
+        {
+          "ms": 1520,
+          "event": "server.socket.close",
+          "socket": "server-socket5"
+        },
+        {
+          "ms": 1532,
+          "event": "server.request",
+          "socket": "server-socket6",
+          "request": "server-request6",
+          "path": "/synthetic-mcp",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1532,
+          "event": "server.request",
+          "socket": "server-socket7",
+          "request": "server-request7",
+          "path": "/synthetic-mcp",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1532,
+          "event": "server.response.finish",
+          "socket": "server-socket7",
+          "request": "server-request7",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1532,
+          "event": "server.response.close",
+          "socket": "server-socket7",
+          "request": "server-request7",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1553,
+          "event": "server.socket.close",
+          "socket": "server-socket7"
+        },
+        {
+          "ms": 1575,
+          "event": "server.request",
+          "socket": "server-socket8",
+          "request": "server-request8",
+          "path": "/synthetic-mcp",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1576,
+          "event": "server.response.finish",
+          "socket": "server-socket8",
+          "request": "server-request8",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1576,
+          "event": "server.response.close",
+          "socket": "server-socket8",
+          "request": "server-request8",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1584,
+          "event": "server.socket.close",
+          "socket": "server-socket8"
+        },
+        {
+          "ms": 1586,
+          "event": "server.socket.close",
+          "socket": "server-socket6"
+        },
+        {
+          "ms": 1586,
+          "event": "server.response.close",
+          "socket": "server-socket6",
+          "request": "server-request6",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1604,
+          "event": "server.request",
+          "socket": "server-socket9",
+          "request": "server-request9",
+          "path": "/synthetic-peer",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1604,
+          "event": "server.response.finish",
+          "socket": "server-socket9",
+          "request": "server-request9",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1604,
+          "event": "server.response.close",
+          "socket": "server-socket9",
+          "request": "server-request9",
+          "method": "POST",
+          "rpcMethod": "tools/list"
+        },
+        {
+          "ms": 1613,
+          "event": "server.socket.close",
+          "socket": "server-socket9"
+        },
+        {
+          "ms": 1628,
+          "event": "server.request",
+          "socket": "server-socket10",
+          "request": "server-request10",
+          "path": "/synthetic-peer",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1628,
+          "event": "server.response.finish",
+          "socket": "server-socket10",
+          "request": "server-request10",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1628,
+          "event": "server.response.close",
+          "socket": "server-socket10",
+          "request": "server-request10",
+          "method": "DELETE",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1637,
+          "event": "server.socket.close",
+          "socket": "server-socket3"
+        },
+        {
+          "ms": 1637,
+          "event": "server.response.close",
+          "socket": "server-socket3",
+          "request": "server-request3",
+          "method": "GET",
+          "rpcMethod": null
+        },
+        {
+          "ms": 1637,
+          "event": "server.socket.close",
+          "socket": "server-socket10"
+        },
+        {
+          "ms": 1730,
+          "event": "supervisor.child_joined",
+          "code": 0,
+          "signal": null,
+          "killed": false
+        }
+      ],
+      "stderr": "",
+      "assertions": {
+        "naturalChildExitZero": true,
+        "outputComplete": true,
+        "noTcpAtBeforeExit": true,
+        "zeroServerSocketsAtChildExit": true,
+        "expectedCleanupResult": true,
+        "expectedReadOutcome": true,
+        "remoteErrorPreserved": true,
+        "peerRemainsUsable": true
+      }
+    }
+  ]
+}
